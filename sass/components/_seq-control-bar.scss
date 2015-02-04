@@ -1,0 +1,99 @@
+.seq-control-bar {
+	background: #eeeeee;
+	padding: 25px 15px;
+	@extend .clear;
+
+	.seq-control-bar-search {
+		float: left;
+		width: 33%;
+
+		input {
+			border: none;
+			font-size: 15px;
+			border-radius: 0;
+			color: #363636;
+		}
+
+		::-webkit-input-placeholder {
+		   color: #363636;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+		   color: #363636;  
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+		   color: #363636;  
+		}
+
+		:-ms-input-placeholder {  
+		   color: #363636;  
+		}
+
+		.btn {
+			background: #f26c4f;
+			border-radius: 0 4px 4px 0;
+			border: none;
+			color: #ffffff;
+		}
+
+	}
+
+	.seq-control-bar-toggle {
+		float: right;
+		padding: 6px 10px;
+		.glyphicon {
+			font-size: 16px;
+		}
+	}
+
+	.seq-control-bar-sort {
+		float: right;
+
+		.btn {
+			border: none;
+			font-size: 15px;
+			color: #363636;
+		}
+
+		.caret {
+			margin-left: 10px;
+		}
+
+		.seq-label {
+			float: left;
+			font-weight: normal;
+			padding: 5px 10px;
+			margin: 0;
+		}
+		.btn-group.open .dropdown-toggle {
+			box-shadow: none;
+			background: #ffffff;
+		}
+		.btn-default:hover, 
+		.btn-default:focus, 
+		.btn-default:active, 
+		.btn-default.active, 
+		.dropdown-toggle.btn-default {
+			background: #ffffff;
+		}
+	} 
+
+}
+
+@media (max-width: 480px) {
+	.seq-control-bar {
+		.seq-control-bar-search,
+		.seq-control-bar-toggle,
+		.seq-control-bar-sort {
+			width: 100%;
+			float: none;
+		}
+		.seq-control-bar-toggle {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+	}
+}
+

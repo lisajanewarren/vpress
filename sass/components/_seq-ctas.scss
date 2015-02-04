@@ -1,0 +1,33 @@
+.seq-ctas {
+	@extend .clear;
+	padding: 40px 0;
+
+	> ul {
+		margin: 0 -10px; 
+		padding: 20px 0;
+		clear: both;
+		@extend .clear;
+
+		> li {
+			float: left;
+			width: 50%;
+			padding: 10px;
+
+			img {
+				width: 100%;
+			}
+		}
+
+	}
+	
+}
+
+@media (min-width: 768px){
+
+	.seq-ctas {
+		> ul > li {
+			width: 25%;
+		}
+	}
+
+}

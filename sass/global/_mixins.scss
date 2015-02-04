@@ -1,0 +1,26 @@
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+
+@mixin vertical-centre($position: relative) {
+	position: $position;
+	top: 50%;
+  	@include transform(translateY(-50%));
+}
+
+@mixin box-sizing ($box) {
+-webkit-box-sizing: $box;
+   -moz-box-sizing: $box;
+        box-sizing: $box;
+}

@@ -1,0 +1,19 @@
+.offscreen {
+	position: absolute;
+	left: -5000em;
+	text-indent: -5000em;
+	font-size: 0;
+	height: 0;
+	width: 0;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.clear {
+	 &:after {
+	    content: "";
+	    display: table;
+	    clear: both;
+	  }
+}

@@ -1,0 +1,64 @@
+.dropdown-menu, 
+.dropdown-menu li > a, 
+.dropdown-menu li > a:hover, 
+.dropdown-menu li > a:focus {
+    background-color: #2f2f2f;
+    color: #d7d7d7;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn.vpress-black {
+    background-color: #101010;
+    border: none;
+    color: $white;
+}
+
+.btn.vpress {
+    background-color: #f26c4f;
+    border: #f26c4f;
+    border-bottom: solid 2px #ca5c44;
+    border-radius: 4px;
+    color: $white;
+    text-align: left;
+}
+
+.label.vpress {
+    background-color: #f26c4f;
+    border: #f26c4f;
+    border-radius: 32px;
+    color: $white;
+    padding: 6px;
+}
+
+.btn.dashboard {
+    background-color: #363636;
+    color: $white;
+    height: 125px;
+    width: 100%;
+}
+
+.btn-info {
+    background-color: #eeeeee;
+    border: none;
+    color: #000000;
+    font-weight: bold;
+    padding: 4px 6px;
+}
+
+.btn-circle {
+    border-radius: 15px;
+    color: $white;
+    height: 30px;
+    width: 30px;
+    border: none;
+    margin: 0 0 0 7px;
+    padding: 0;
+
+    span {
+        font-size: 12px;
+    }
+
+}

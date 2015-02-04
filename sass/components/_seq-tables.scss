@@ -1,0 +1,209 @@
+.seq-table {
+	width: 100%;
+	border-bottom: 3px solid #ebebeb;
+	margin: 20px 0 0 0;
+	table-layout: fixed;
+
+		th {
+			position: relative;
+			padding: 20px 10px;
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: -3px;
+				left: 0;
+				width: 100%;
+				height: 6px;
+				background: #363636;
+			}
+		}
+
+
+		td {
+			border-top: 3px solid #ebebeb;
+			padding: 10px;
+			text-align: left;
+		}
+		.seq-td-date {
+			width: 6%;
+			padding: 10px 0;
+
+			.day {
+				font-size: 20px;
+				font-weight: bold;
+				display: block;
+				line-height: 1em;
+			}
+			.month-year {
+				font-size: 12px;
+			}
+
+			.dashboard-order-date {
+			    background-color: #00a99d;
+			    color: $white;
+			    height: 50px;
+			    line-height: 16pt;
+			    padding-top: 4px;
+			    text-align: center;
+			    width: 50px;
+			}
+		}
+		.seq-td-icon {
+			width: 5%;
+			text-align: center;
+
+			.glyphicon-eye-open {
+				font-size: 1.3em;
+			}
+		}
+		.seq-td-num {
+			width: 10%;
+			text-align: center;
+		}
+		.seq-td-name,
+		.seq-td-company {
+			  width: 33%;
+			  white-space: nowrap;
+			  overflow: hidden;
+			  text-overflow: ellipsis;
+		}
+		.seq-td-actions {
+			width: 13%;
+			padding: 10px 0;
+			text-align: right;
+		}
+		.seq-td-order {
+			width: 8%;
+		}
+		.seq-td-code {
+			width: 16%;
+		}
+		.seq-td-status {
+			width: 14%;
+		}
+		.seq-td-price {
+			width: 14%;
+		}
+		.seq-td-quantity {
+			width: 14%;
+		}
+		.seq-td-action-bar {
+			width: 25%;
+		}
+		.seq-td-time {
+			width: 15%;
+			.glyphicon {
+				font-size: 1.6em;
+			}
+			span, p {
+				float: left;
+				margin: 0;
+			}
+			p {
+				line-height: 1.6em;
+				padding-left: 5px;
+			}
+
+		}
+		.seq-td-prod {
+			width: 25%;
+		}
+
+
+		.seq-td-action-bar ul {
+			padding: 0;
+			margin: 0;
+			overflow: hidden;
+			li {
+				float: left;
+				padding: 0 5px;
+			}
+			p {
+				text-align: center;
+				margin: 0;
+				padding: 4px 0 0 0;
+				color: #363636;
+			}
+		}
+
+
+}
+
+.seq-table-awaiting-approval tr .seq-td-date .dashboard-order-date {
+	background: #f26c4f;
+}
+
+
+@media (max-width: 1070px) {
+	.seq-table {
+		.seq-td-actions {
+			.btn-circle {
+				font-size: 12px;
+				width: 22px;
+				height: 22px;
+				padding: 0;
+			}
+		}
+		.seq-td-icon,
+		.seq-td-order,
+		.seq-td-code {
+			display: none !important;
+		}
+		.seq-td-date {
+			width: 10%;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.seq-td-action-bar ul {
+		.btn {
+			font-size: 11px;
+			width: 33px;
+			height: 33px;
+			padding: 0;
+		}
+		p {
+			font-size: 12px;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.seq-table {
+		.seq-td-icon,
+		.seq-td-order,
+		.seq-td-code,
+		.seq-td-status,
+		.seq-td-time 
+		 {
+			display: none !important;
+		}
+		.seq-td-date {
+			width: 18%;
+		}
+		.seq-td-quantity {
+			width: 28%;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.seq-table {
+		.seq-td-icon,
+		.seq-td-order,
+		.seq-td-code,
+		.seq-td-status,
+		.seq-td-price,
+		.seq-td-num 
+		 {
+			display: none !important;
+		}
+		.seq-td-date {
+			width: 18%;
+		}
+		.seq-td-quantity {
+			width: 28%;
+		}
+	}
+}
