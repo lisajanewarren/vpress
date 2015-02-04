@@ -77,105 +77,145 @@
                         <section class="seq-tab-panel">   
                             <h1>Orders awaiting approval</h1>
 
-                            
-                            <table class="seq-table seq-table-awaiting-approval" border="0">
-                                <tr>
-                                    <td class="seq-td-date" data-priority="persist">
-                                        <div class="dashboard-order-date"><span class="day">20</span><div class="month-year">04/14</div></div>
-                                    </td>
-                                    <td class="seq-td-icon">
-                                        <span class="glyphicon glyphicon-eye-open"></span>
-                                    </td>
-                                    <td class="seq-td-num" data-priority="2">
-                                        1234
-                                    </td>
-                                    <td class="seq-td-name">
-                                        By <strong>David James Very Very Very Longname DeMontforte</strong>
-                                    </td>
-                                    <td class="seq-td-company" data-priority="3">For <strong>An extremely long company name goes here</strong></td>
-                                    <td class="seq-td-actions">
-                                        <button class="btn btn-default btn-circle background-orange"><span class="glyphicon glyphicon-ok"></span></button>
-                                        <button class="btn btn-default btn-circle background-grey"><span class="glyphicon glyphicon-remove"></span></button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="seq-td-date" data-priority="persist">
-                                        <div class="dashboard-order-date"><span class="day">20</span><div class="month-year">04/14</div></div>
-                                    </td>
-                                    <td class="seq-td-icon">
-                                        <span class="glyphicon glyphicon-eye-open"></span>
-                                    </td>
-                                    <td class="seq-td-num" data-priority="2">
-                                        1234
-                                    </td>
-                                    <td class="seq-td-name">
-                                        By <strong>David James Very Very Very Longname DeMontforte</strong>
-                                    </td>
-                                    <td class="seq-td-company" data-priority="3">For <strong>An extremely long company name goes here</strong></td>
-                                    <td class="seq-td-actions">
-                                        <button class="btn btn-default btn-circle background-orange"><span class="glyphicon glyphicon-ok"></span></button>
-                                        <button class="btn btn-default btn-circle background-grey"><span class="glyphicon glyphicon-remove"></span></button>
-                                    </td>
-                                </tr> 
-                                <tr>
-                                    <td class="seq-td-date" data-priority="persist">
-                                        <div class="dashboard-order-date"><span class="day">20</span><div class="month-year">04/14</div></div>
-                                    </td>
-                                    <td class="seq-td-icon">
-                                        <span class="glyphicon glyphicon-eye-open"></span>
-                                    </td>
-                                    <td class="seq-td-num" data-priority="2">
-                                        1234
-                                    </td>
-                                    <td class="seq-td-name">
-                                        By <strong>David James</strong>
-                                    </td>
-                                    <td class="seq-td-company" data-priority="3">For <strong>Sequence Agency</strong></td>
-                                    <td class="seq-td-actions">
-                                        <button class="btn btn-default btn-circle background-orange"><span class="glyphicon glyphicon-ok"></span></button>
-                                        <button class="btn btn-default btn-circle background-grey"><span class="glyphicon glyphicon-remove"></span></button>
-                                    </td>
-                                </tr> 
-                                <tr>
-                                    <td class="seq-td-date" data-priority="persist">
-                                        <div class="dashboard-order-date"><span class="day">20</span><div class="month-year">04/14</div></div>
-                                    </td>
-                                    <td class="seq-td-icon">
-                                        <span class="glyphicon glyphicon-eye-open"></span>
-                                    </td>
-                                    <td class="seq-td-num" data-priority="2">
-                                        1234
-                                    </td>
-                                    <td class="seq-td-name">
-                                        By <strong>David James Very Very Very Longname DeMontforte</strong>
-                                    </td>
-                                    <td class="seq-td-company" data-priority="3">For <strong>An extremely long company name goes here</strong></td>
-                                    <td class="seq-td-actions">
-                                        <button class="btn btn-default btn-circle background-orange"><span class="glyphicon glyphicon-ok"></span></button>
-                                        <button class="btn btn-default btn-circle background-grey"><span class="glyphicon glyphicon-remove"></span></button>
-                                    </td>
-                                </tr> 
-                                <tr>
-                                    <td class="seq-td-date" data-priority="persist">
-                                        <div class="dashboard-order-date"><span class="day">20</span><div class="month-year">04/14</div></div>
-                                    </td>
-                                    <td class="seq-td-icon">
-                                        <span class="glyphicon glyphicon-eye-open"></span>
-                                    </td>
-                                    <td class="seq-td-num" data-priority="2">
-                                        1234
-                                    </td>
-                                    <td class="seq-td-name">
-                                        By <strong>David James</strong>
-                                    </td>
-                                    <td class="seq-td-company" data-priority="3">For <strong>Sequence Agency</strong></td>
-                                    <td class="seq-td-actions">
-                                        <button class="btn btn-default btn-circle background-orange"><span class="glyphicon glyphicon-ok"></span></button>
-                                        <button class="btn btn-default btn-circle background-grey"><span class="glyphicon glyphicon-remove"></span></button>
-                                    </td>
-                                </tr>          
-                            </table>
 
+                        <!-- Responsive Tables: http://gergeo.se/RWD-Table-Patterns -->
+                        <!-- table header responsive options
+                            data-priority=""    Always visible and not hideable from dropdown
+                            data-priority="1"   Always visible (but hidable from dropdown)
+                            data-priority="2"   Visible when (min-width: 480px)
+                            data-priority="3"   (min-width: 640px)
+                            data-priority="4"   (min-width: 800px)
+                            data-priority="5"   (min-width: 960px)
+                            data-priority="6"   (min-width: 1120px)
+                        -->
+                            <div class="seq-table-responsive seq-th-hidden table-responsive" data-pattern="priority-columns" data-add-display-all-btn="false" data-add-focus-btn="false" data-focus-btn-icon="false" data-sticky-table-header="false">
+                                <table class="table">
+                                   <thead>
+                                        <tr>
+                                            <th data-priority="2" class="seq-td-width-60">Date</th>
+                                            <th data-priority="1" class="seq-td-width-60">Eye</th>
+                                            <th data-priority="3" class="seq-td-width-60">Number</th>
+                                            <th data-priority="1">Name</th>
+                                            <th data-priority="5">Company</th>
+                                            <th data-priority="2">actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="seq-date-block">
+                                                    <span class="day">20</span>
+                                                    <span class="month-year">04/14</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="seq-icon-eye">
+                                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                                </div>
+                                            </td>
+                                            <td>1234</td>
+                                            <td>By <strong>David James Very Very Very Longname DeMontforte</strong></td>
+                                            <td>For <strong>An extremely long company name goes here</strong></td>
+                                            <td>
+                                                <ul class="seq-circular-actions">
+                                                    <li><button class="btn background-orange"><span class="glyphicon glyphicon-ok"></span></button></li>
+                                                    <li><button class="btn background-grey"><span class="glyphicon glyphicon-remove"></span></button></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="seq-date-block">
+                                                    <span class="day">20</span>
+                                                    <span class="month-year">04/14</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="seq-icon-eye">
+                                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                                </div>                                            
+                                            </td>
+                                            <td>1234</td>
+                                            <td>By <strong>David James Very Very Very Longname DeMontforte</strong></td>
+                                            <td>For <strong>An extremely long company name goes here</strong></td>
+                                            <td>
+                                                <ul class="seq-circular-actions">
+                                                    <li><button class="btn background-orange"><span class="glyphicon glyphicon-ok"></span></button></li>
+                                                    <li><button class="btn background-grey"><span class="glyphicon glyphicon-remove"></span></button></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="seq-date-block">
+                                                    <span class="day">20</span>
+                                                    <span class="month-year">04/14</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="seq-icon-eye">
+                                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                                </div>                                            
+                                            </td>
+                                            <td>1234</td>
+                                            <td>By <strong>David James</strong></td>
+                                            <td>For <strong>Sequence Agency</strong></td>
+                                            <td>
+                                                <ul class="seq-circular-actions">
+                                                    <li><button class="btn background-grey"><span class="glyphicon glyphicon-remove"></span></button></li>
+                                                    <li><button class="btn background-orange"><span class="glyphicon glyphicon-ok"></span></button></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="seq-date-block">
+                                                    <span class="day">20</span>
+                                                    <span class="month-year">04/14</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="seq-icon-eye">
+                                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                                </div>
+                                            </td>
+                                            <td>1234</td>
+                                            <td>By <strong>David James Very Very Very Longname DeMontforte</strong></td>
+                                            <td>For <strong>An extremely long company name goes here</strong></td>
+                                            <td>
+                                                <ul class="seq-circular-actions">
+                                                    <li><button class="btn background-orange"><span class="glyphicon glyphicon-ok"></span></button></li>
+                                                    <li><button class="btn background-grey"><span class="glyphicon glyphicon-remove"></span></button></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="seq-date-block">
+                                                    <span class="day">20</span>
+                                                    <span class="month-year">04/14</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="seq-icon-eye">
+                                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                                </div>
+                                            </td>
+                                            <td>1234</td>
+                                            <td>By <strong>David James</strong></td>
+                                            <td>For <strong>Sequence Agency</strong></td>
+                                            <td>
+                                                <ul class="seq-circular-actions">
+                                                    <li><button class="btn background-orange"><span class="glyphicon glyphicon-ok"></span></button></li>
+                                                    <li><button class="btn background-grey"><span class="glyphicon glyphicon-remove"></span></button></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div> <!-- end responsive table -->
+
+                        
 
                             <aside class="seq-ctas">
                                     <h1>Your categories</h1>

@@ -243,6 +243,8 @@ ul {
   overflow: hidden; }
   .seq-tab-box .seq-tab-nav {
     display: none; }
+  .seq-tab-box h1 {
+    margin: 10px 0 40px 0; }
   .seq-tab-box .seq-tab-panel {
     position: relative;
     padding: 30px 0; }
@@ -333,6 +335,10 @@ ul {
       font-size: 16px;
       max-width: 120px;
       padding: 20px 0 0 0; } }
+@media (max-width: 640px) {
+  h1 {
+    margin: 0;
+    font-size: 22px; } }
 .seq-table {
   width: 100%;
   border-bottom: 3px solid #ebebeb;
@@ -476,7 +482,8 @@ ul {
   display: none; }
 
 .seq-table-responsive[data-pattern="priority-columns"] {
-  border: none; }
+  border: none;
+  margin: 20px 0; }
   .seq-table-responsive[data-pattern="priority-columns"] .sticky-table-header {
     display: none;
     /* remove the header added in by bootstrap plugin */ }
@@ -485,10 +492,10 @@ ul {
     .seq-table-responsive[data-pattern="priority-columns"] .table tr, .seq-table-responsive[data-pattern="priority-columns"] .table td, .seq-table-responsive[data-pattern="priority-columns"] .table th {
       border: none;
       text-align: left;
-      /* white-space: normal !important; */
+      white-space: normal !important;
       /* add this in to stop tables being verically scrollable */ }
     .seq-table-responsive[data-pattern="priority-columns"] .table tr {
-      border-bottom: 3px solid #f5f5f5; }
+      border-bottom: 3px solid #ebebeb; }
     .seq-table-responsive[data-pattern="priority-columns"] .table th {
       border-bottom: 6px solid #363636; }
     .seq-table-responsive[data-pattern="priority-columns"] .table th, .seq-table-responsive[data-pattern="priority-columns"] .table td {
@@ -498,10 +505,18 @@ ul {
       padding-left: 0; }
     .seq-table-responsive[data-pattern="priority-columns"] .table tr td:last-child,
     .seq-table-responsive[data-pattern="priority-columns"] .table tr th:last-child {
-      padding-left: 0; }
+      padding-right: 0; }
+
+.seq-th-hidden thead tr {
+  display: none; }
+
+.seq-th-hidden[data-pattern="priority-columns"] .table tbody tr:first-child {
+  border-top: 6px solid #ebebeb; }
 
 .seq-ctas {
   padding: 40px 0; }
+  .seq-ctas h1 {
+    margin: 0; }
   .seq-ctas > ul {
     margin: 0 -10px;
     padding: 20px 0;
@@ -872,6 +887,57 @@ ul {
   #header-graphic .seq-breadcrumb li.active,
   #header-graphic .seq-breadcrumb li.active a {
     color: #f6512d; }
+
+.seq-date-block {
+  background: #f26c4f;
+  color: #ffffff;
+  height: 50px;
+  line-height: 16px;
+  padding-top: 4px;
+  text-align: center;
+  width: 50px; }
+  .seq-date-block .day {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    line-height: 1em; }
+  .seq-date-block .month-year {
+    display: block;
+    font-size: 12px; }
+
+.seq-circular-actions {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap; }
+  .seq-circular-actions li {
+    margin: 0;
+    display: table-cell; }
+  .seq-circular-actions .btn {
+    border-radius: 11px;
+    color: #ffffff;
+    height: 22px;
+    width: 22px;
+    border: none;
+    margin: 0 0 5px 5px;
+    padding: 0;
+    font-size: 10px; }
+    .seq-circular-actions .btn:hover {
+      background: #ebebeb; }
+
+.seq-icon-eye {
+  font-size: 20px;
+  line-height: 50px; }
+  .seq-icon-eye .glyphicon {
+    vertical-align: super; }
+
+.seq-table-responsive[data-pattern="priority-columns"] .seq-td-width-60 {
+  width: 60px; }
+.seq-table-responsive[data-pattern="priority-columns"] .seq-td-width-120 {
+  width: 120px; }
+.seq-table-responsive[data-pattern="priority-columns"] .seq-td-width-150 {
+  width: 150px; }
+.seq-table-responsive[data-pattern="priority-columns"] .seq-td-width-270 {
+  width: 270px; }
 
 /*!
  * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
@@ -1603,18 +1669,24 @@ ul {
     border-radius: none; }
 
 /* bootstrap table style overrides */
+/* to remove
 #seq-vdp .fixed-table-container {
-  border: none; }
-  #seq-vdp .fixed-table-container tr:hover td,
-  #seq-vdp .fixed-table-container .selected td {
-    background: #ffffff; }
-  #seq-vdp .fixed-table-container .th-inner {
-    padding: 10px 0; }
-  #seq-vdp .fixed-table-container .order {
-    display: none; }
-  #seq-vdp .fixed-table-container .pagination-info {
-    display: none; }
+    border: none;
+    tr:hover td,
+    .selected td {
+        background: #ffffff;
+    }
+    .th-inner {
+        padding: 10px 0;
+    }
+    .order {
+        display: none;
+    }
 
+    .pagination-info {
+        display: none;
+    }
+}*/
 /* end bootstrap table style overrides */
 /* titles */
 #seq-vdp .num {
@@ -1625,66 +1697,105 @@ ul {
 
 /* end titles */
 /* seq vdp search results */
+/* to remove...
 #seq-vdp .seq-vdp-results {
-  border: none; }
-  #seq-vdp .seq-vdp-results td, #seq-vdp .seq-vdp-results th, #seq-vdp .seq-vdp-results tr {
-    border: none; }
-  #seq-vdp .seq-vdp-results td {
-    padding: 20px 0; }
-    #seq-vdp .seq-vdp-results td input[type="checkbox"] {
-      position: relative;
-      top: -1px; }
-  #seq-vdp .seq-vdp-results th {
-    border-bottom: 6px solid #363636; }
-    #seq-vdp .seq-vdp-results th .sortable {
-      position: relative; }
-      #seq-vdp .seq-vdp-results th .sortable:after {
-        content: '';
-        background: url(../images/sort-toggle.png) no-repeat 0 0;
-        background-size: contain;
-        width: 10px;
-        height: 16px;
-        position: absolute;
-        top: 50%;
-        right: 30px;
-        margin-top: -8px; }
-  #seq-vdp .seq-vdp-results th.seq-vdp-title {
-    width: 15%; }
-  #seq-vdp .seq-vdp-results th.seq-vdp-salutation {
-    width: 15%; }
-  #seq-vdp .seq-vdp-results th.seq-vdp-firstname {
-    width: 15%; }
-  #seq-vdp .seq-vdp-results th.seq-vdp-address {
-    width: 26%; }
-  #seq-vdp .seq-vdp-results th.seq-vdp-telephone {
-    width: 11%; }
-  #seq-vdp .seq-vdp-results tr {
-    border-bottom: 3px solid #f5f5f5; }
+    border: none;
 
+    td, th, tr {
+        border: none;
+    }
+    td {
+        padding: 20px 0;
+
+        input[type="checkbox"] {
+            position: relative;
+            top: -1px;
+        }
+    }
+
+    th {
+        border-bottom: 6px solid #363636;
+
+        .sortable {
+            position: relative;
+            &:after {
+                content: '';
+                background: url(../images/sort-toggle.png) no-repeat 0 0;
+                background-size: contain;
+                width: 10px;
+                height: 16px;
+                position: absolute;
+                top: 50%;
+                right: 30px;
+                margin-top: -8px;
+            }
+        }
+    }
+
+    th.seq-vdp-title {
+        width: 15%;
+    }
+    th.seq-vdp-salutation {
+        width: 15%;
+    }
+    th.seq-vdp-firstname {
+        width: 15%;
+    }
+    th.seq-vdp-address {
+        width: 26%;
+    }
+    th.seq-vdp-telephone {
+        width: 11%;
+    }
+
+    tr {
+        border-bottom: 3px solid #f5f5f5;
+    }
+}*/
 /* end seq vdp search results */
 /* seq-vdp-pagination */
-#seq-vdp .fixed-table-pagination .pagination .page-first,
-#seq-vdp .fixed-table-pagination .pagination .page-last {
-  display: none; }
-#seq-vdp .fixed-table-pagination .pagination .page-pre a {
-  font-size: 0;
-  border-radius: 4px 0 0 4px; }
-  #seq-vdp .fixed-table-pagination .pagination .page-pre a:after {
-    content: "\e079";
-    font-size: 16px;
-    font-family: 'Glyphicons Halflings';
-    color: #363636; }
-#seq-vdp .fixed-table-pagination .pagination .page-next a {
-  font-size: 0;
-  border-radius: 0 4px 4px 0; }
-  #seq-vdp .fixed-table-pagination .pagination .page-next a:after {
-    content: "\e080";
-    font-size: 16px;
-    font-family: 'Glyphicons Halflings';
-    color: #363636; }
-#seq-vdp .fixed-table-pagination .pagination .active a {
-  color: #F26C4F; }
+/*
+#seq-vdp .fixed-table-pagination .pagination {
 
+    .page-first,
+    .page-last {
+        display: none;
+    }
+
+    .page-pre a {
+        font-size: 0;
+        border-radius: 4px 0 0 4px;
+        &:after {
+           content: "\e079";
+           font-size: 16px;
+           font-family: 'Glyphicons Halflings';
+           color: #363636;
+        }
+    }
+
+    .page-next a {
+        font-size: 0;
+        border-radius: 0 4px 4px 0;
+        &:after {
+           content: "\e080";
+           font-size: 16px;
+           font-family: 'Glyphicons Halflings';
+           color: #363636;
+        }
+    }
+
+
+    .active a {
+        color: #F26C4F;
+    }
+
+    li {
+
+        a, span {
+  
+        }
+    }
+}*/
 /* end seq-vdp-pagination */
 #seq-vdp .seq-vdp-summary {
   padding: 0 0 40px 0;

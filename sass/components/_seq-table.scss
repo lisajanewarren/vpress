@@ -2,26 +2,30 @@
 	display: none;
 }
 
+
 .seq-table-responsive[data-pattern="priority-columns"] {
+	border: none;
+	margin: 20px 0;
 
 	.sticky-table-header {
 		display: none; /* remove the header added in by bootstrap plugin */
 	}
-	border: none;
+
 	.table {
+
 		border: none;
 		tr, td, th {
 			border: none;
 			text-align: left;
-			/* white-space: normal !important; */ /* add this in to stop tables being verically scrollable */
+			white-space: normal !important; /* add this in to stop tables being verically scrollable */
 		}
 
 		tr {
-			border-bottom: 3px solid #f5f5f5;
+			border-bottom: 3px solid #ebebeb;
 		}
 
 		th {
-			border-bottom: 6px solid #363636;
+        	border-bottom: 6px solid #363636;
 		}
 
 		th, td {
@@ -35,8 +39,19 @@
 
 		tr td:last-child,
 		tr th:last-child {
-			padding-left: 0;
+			padding-right: 0;
 		}
 	}
 
 }
+
+.seq-th-hidden thead tr {
+	display: none;
+}
+
+.seq-th-hidden[data-pattern="priority-columns"] .table tbody tr:first-child {
+	border-top: 6px solid #ebebeb;
+}
+
+
+

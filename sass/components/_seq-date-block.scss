@@ -1,0 +1,20 @@
+.seq-date-block {
+	background: #f26c4f;
+	color: #ffffff;
+	height: 50px;
+	line-height: 16px;
+	padding-top: 4px;
+	text-align: center;
+	width: 50px;
+
+	.day {
+		font-size: 20px;
+		font-weight: bold;
+		display: block;
+		line-height: 1em;
+	}
+	.month-year {
+		display: block;
+		font-size: 12px;
+	}
+}

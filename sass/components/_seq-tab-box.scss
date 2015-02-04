@@ -6,6 +6,10 @@
         @extend .clear; 
     }
 
+    h1 {
+        margin: 10px 0 40px 0;
+    }
+
     .seq-tab-panel {
         position: relative;
         padding: 30px 0;
@@ -141,3 +145,9 @@
     }
 }
 
+@media (max-width: 640px) {
+    h1 {
+        margin: 0;
+        font-size: 22px;
+    }
+}

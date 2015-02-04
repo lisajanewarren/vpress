@@ -77,6 +77,33 @@
                         <section class="seq-tab-panel">   
                             <h1>Recently Saved</h1>
 
+
+                            <!-- Responsive Tables: http://gergeo.se/RWD-Table-Patterns -->
+                            <!-- table header responsive options
+                                data-priority=""    Always visible and not hideable from dropdown
+                                data-priority="1"   Always visible (but hidable from dropdown)
+                                data-priority="2"   Visible when (min-width: 480px)
+                                data-priority="3"   (min-width: 640px)
+                                data-priority="4"   (min-width: 800px)
+                                data-priority="5"   (min-width: 960px)
+                                data-priority="6"   (min-width: 1120px)
+                            -->
+                            <div class="seq-table-responsive table-responsive" data-pattern="priority-columns" data-add-display-all-btn="false" data-add-focus-btn="false" data-focus-btn-icon="false" data-sticky-table-header="false">
+                                <table class="table">
+                                   <thead>
+                                        <tr>
+                                            <th data-priority="1" class="seq-td-width-60">Modified</th>
+                                            <th data-priority="6" class="seq-td-width-60"><span class="offscreen">Time</span></th>
+                                            <th data-priority="6" class="seq-td-width-150">Product</th>
+                                            <th data-priority="1">Details</th>
+                                            <th data-priority="2" class="seq-td-width-150"><span class="offscreen">Actions</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div> <!-- end responsive table -->
+
                             <table class="seq-table seq-table-recently-saved" border="0">
                                 <tr>
                                     <th class="seq-td-date">Modified</th>

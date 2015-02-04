@@ -110,6 +110,8 @@
                         </section>
 
                         <h2>Results <span class="num">(500)</span></h2>
+                        
+                        <!-- Responsive Tables Info: http://gergeo.se/RWD-Table-Patterns -->
                         <!-- table header responsive options
                             data-priority=""    Always visible and not hideable from dropdown
                             data-priority="1"   Always visible (but hidable from dropdown)
@@ -120,20 +122,58 @@
                             data-priority="6"   (min-width: 1120px)
                         -->
 
-                        <div id="table-1" class="table-responsive seq-table-responsive" data-pattern="priority-columns" data-add-display-all-btn="false" data-add-focus-btn="false" data-focus-btn-icon="false" data-sticky-table-header="false">
+                        <div class="table-responsive seq-table-responsive" data-pattern="priority-columns" data-add-display-all-btn="false" data-add-focus-btn="false" data-focus-btn-icon="false" data-sticky-table-header="false">
                             <table class="table">
                                <thead>
                                     <tr>
                                         <th data-priority="1"><input type="checkbox"></th>
-                                        <th data-priority="4">Title</th>
+                                        <th data-priority="2">Title</th>
                                         <th data-priority="1">Salutation</th>
-                                        <th data-priority="5">Firstname</th>
+                                        <th data-priority="3">Firstname</th>
                                         <th data-priority="1">Surname</th>
                                         <th data-priority="5">Address</th>
-                                        <th data-priority="5">Tel</th>
+                                        <th data-priority="2">Tel</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <tr>
+                                        <td><input type="checkbox"></td>
+                                        <td>Goldstone</td>
+                                        <td>Mr</td>
+                                        <td>Steven</td>
+                                        <td>Goldstone</td>
+                                        <td>Fitzalan House, Fitzalan Place, Cardiff. CF24 0EL</td>
+                                        <td>02920 252555</td>
+                                    </tr>
+                                    <tr>
+                                        <td><input name="" type="checkbox"></td>
+                                        <td>Hornsby</td>
+                                        <td>Mr</td>
+                                        <td>John</td>
+                                        <td>Hornsby</td>
+                                        <td>Fitzalan House, Fitzalan Place, Cardiff. CF24 0EL</td>
+                                        <td>02920 252555</td>
+                                    </tr>
+                                    <tr>
+                                        <tr>
+                                            <td><input type="checkbox"></td>
+                                            <td>Goldstone</td>
+                                            <td>Mr</td>
+                                            <td>Steven</td>
+                                            <td>Goldstone</td>
+                                            <td>Fitzalan House, Fitzalan Place, Cardiff. CF24 0EL</td>
+                                            <td>02920 252555</td>
+                                        </tr>
+                                    </tr>
+                                    <tr>
+                                        <td><input name="" type="checkbox"></td>
+                                        <td>Hornsby</td>
+                                        <td>Mr</td>
+                                        <td>John</td>
+                                        <td>Hornsby</td>
+                                        <td>Fitzalan House, Fitzalan Place, Cardiff. CF24 0EL</td>
+                                        <td>02920 252555</td>
+                                    </tr>
                                     <tr>
                                         <tr>
                                             <td><input type="checkbox"></td>
@@ -156,24 +196,8 @@
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
+                        </div> <!-- end responsive table -->
 
-                        <!-- bootstrap sortable table - http://bootstrap-table.wenzhixin.net.cn/ -->
-                        <table  class="seq-vdp-results" data-toggle="table" data-pagination="true"  data-click-to-select="true" data-url="example-json/example-json.json">
-                            <thead>
-                                <tr>
-                                    <th data-checkbox="true" class="seq-vpd-checkbox"></th>
-                                    <th data-field="title" data-sortable="true" class="seq-vdp-title">Title</th>
-                                    <th data-field="salutation" data-sortable="true" class="seq-vdp-salutation">Salutation</th>
-                                    <th data-field="firstname" data-sortable="true" class="seq-vdp-firstname">Firstname</th>
-                                    <th data-field="surname" data-sortable="true" class="seq-vdp-surname">Surname</th>
-                                    <th data-field="address" data-sortable="true" class="seq-vdp-address">Address</th>
-                                    <th data-field="tel" data-sortable="true" class="seq-vdp-telephone">Tel</th>
-                                </tr>
-                                <!-- table data from data source pulled in here -->
-                            </thead>
-
-                        </table>
 
                         <div class="seq-vdp-summary">
                             <p class="seq-vdp-credit">Your credit &pound;988.07</p>

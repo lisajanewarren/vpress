@@ -78,9 +78,7 @@
                             <h1>Quotes Received</h1>
 
 
-                            <table class="seq-table seq-table-quotes-received" border="0">
-                                <tr><td></td></tr>
-                            </table>
+                           
 
 
                             <aside class="seq-ctas">

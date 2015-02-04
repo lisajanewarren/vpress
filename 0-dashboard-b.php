@@ -77,128 +77,142 @@
                         <section class="seq-tab-panel">   
                             <h1>Your Orders</h1>
 
-                            <table class="seq-table seq-table-curr-orders" border="0">
-                                <tr>
-                                    <th class="seq-td-date">
-                                        Date
-                                    </th>
-                                    <th class="seq-td-order">
-                                        Order
-                                    </th>
-                                    <th class="seq-td-code">
-                                        Code
-                                    </th>
-                                    <th class="seq-td-prod-details">
-                                        Product Details
-                                    </th>
-                                    <th class="seq-td-quantity">
-                                        Quantity
-                                    </th>
-                                    <th class="seq-td-price">
-                                        Price
-                                    </th>
-                                    <th class="seq-td-status">
-                                        Status
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <td class="seq-td-date" data-priority="persist">
-                                        <div class="dashboard-order-date"><span class="day">20</span><div class="month-year">04/14</div></div>
-                                    </td>
-                                    <td class="seq-td-order">
-                                        1676
-                                    </td>
-                                    <td class="seq-td-code" data-priority="2">
-                                        PRODCODE
-                                    </td>
-                                    <td class="seq-td-prod-details">
-                                        <strong>Product name</strong>
-                                        <p>Document name</p>
-                                    </td>
-                                    <td class="seq-td-quantity" data-priority="3">
-                                        9 x boxes of 100
-                                    </td>
-                                    <td class="seq-td-price">
-                                        &pound;1000.00
-                                    </td>
-                                    <td class="seq-td-status">
-                                        Awaiting delivery
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="seq-td-date" data-priority="persist">
-                                        <div class="dashboard-order-date"><span class="day">20</span><div class="month-year">04/14</div></div>
-                                    </td>
-                                    <td class="seq-td-order">
-                                        1676
-                                    </td>
-                                    <td class="seq-td-code" data-priority="2">
-                                        PRODCODE
-                                    </td>
-                                    <td class="seq-td-prod-details">
-                                        <strong>Product name</strong>
-                                        <p>A really long document name lorem ipsum sit amet et dolor lorem ipsum sit amet et dolor lorem ipsum sit amet et dolor</p>
-                                    </td>
-                                    <td class="seq-td-quantity" data-priority="3">
-                                        9 x boxes of 100
-                                    </td>
-                                    <td class="seq-td-price">
-                                        &pound;1000.00
-                                    </td>
-                                    <td class="seq-td-status">
-                                        Awaiting delivery
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="seq-td-date" data-priority="persist">
-                                        <div class="dashboard-order-date"><span class="day">20</span><div class="month-year">04/14</div></div>
-                                    </td>
-                                    <td class="seq-td-order">
-                                        1676
-                                    </td>
-                                    <td class="seq-td-code" data-priority="2">
-                                        PRODCODE
-                                    </td>
-                                    <td class="seq-td-prod-details">
-                                        <strong>Product name</strong>
-                                        <p>Document name</p>
-                                    </td>
-                                    <td class="seq-td-quantity" data-priority="3">
-                                        9 x boxes of 100
-                                    </td>
-                                    <td class="seq-td-price">
-                                        &pound;1000.00
-                                    </td>
-                                    <td class="seq-td-status">
-                                        Awaiting delivery
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="seq-td-date" data-priority="persist">
-                                        <div class="dashboard-order-date"><span class="day">20</span><div class="month-year">04/14</div></div>
-                                    </td>
-                                    <td class="seq-td-order">
-                                        1676
-                                    </td>
-                                    <td class="seq-td-code" data-priority="2">
-                                        PRODCODE
-                                    </td>
-                                    <td class="seq-td-prod-details">
-                                        <strong>Product name</strong>
-                                        <p>Document name</p>
-                                    </td>
-                                    <td class="seq-td-quantity" data-priority="3">
-                                        9 x boxes of 100
-                                    </td>
-                                    <td class="seq-td-price">
-                                        &pound;1000.00
-                                    </td>
-                                    <td class="seq-td-status">
-                                        Awaiting delivery
-                                    </td>
-                                </tr>         
-                            </table>
 
+                            <!-- Responsive Tables: http://gergeo.se/RWD-Table-Patterns -->
+                            <!-- table header responsive options
+                                data-priority=""    Always visible and not hideable from dropdown
+                                data-priority="1"   Always visible (but hidable from dropdown)
+                                data-priority="2"   Visible when (min-width: 480px)
+                                data-priority="3"   (min-width: 640px)
+                                data-priority="4"   (min-width: 800px)
+                                data-priority="5"   (min-width: 960px)
+                                data-priority="6"   (min-width: 1120px)
+                            -->
+                            <div class="seq-table-responsive table-responsive" data-pattern="priority-columns" data-add-display-all-btn="false" data-add-focus-btn="false" data-focus-btn-icon="false" data-sticky-table-header="false">
+                                <table class="table">
+                                   <thead>
+                                        <tr>
+                                            <th data-priority="1" class="seq-td-width-60">Date</th>
+                                            <th data-priority="6" class="seq-td-width-60">Order</th>
+                                            <th data-priority="6" class="seq-td-width-150">Code</th>
+                                            <th data-priority="1">Product Details</th>
+                                            <th data-priority="2" class="seq-td-width-150">Quantity</th>
+                                            <th data-priority="2" class="seq-td-width-120">Price</th>
+                                            <th data-priority="3" class="seq-td-width-120">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="seq-date-block">                        
+                                                    <span class="day">20</span>
+                                                    <span class="month-year">04/14</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                1676
+                                            </td>
+                                            <td>
+                                                PRODCODE
+                                            </td>
+                                            <td>
+                                                <strong>Product name</strong>
+                                                <p>Document name</p>
+                                            </td>
+                                            <td>
+                                                9 x boxes of 100
+                                            </td>
+                                            <td>
+                                                &pound;1000.00
+                                            </td>
+                                            <td>
+                                                Awaiting delivery
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="seq-date-block">                        
+                                                    <span class="day">20</span>
+                                                    <span class="month-year">04/14</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                1676
+                                            </td>
+                                            <td>
+                                                PRODCODE
+                                            </td>
+                                            <td>
+                                                <strong>Product name</strong>
+                                                <p>A really long document name lorem ipsum sit amet et dolor lorem ipsum sit amet et dolor lorem ipsum sit amet et dolore</p>
+                                            </td>
+                                            <td>
+                                                9 x boxes of 100
+                                            </td>
+                                            <td>
+                                                &pound;1000.00
+                                            </td>
+                                            <td>
+                                                Awaiting delivery
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="seq-date-block">                        
+                                                    <span class="day">20</span>
+                                                    <span class="month-year">04/14</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                1676
+                                            </td>
+                                            <td>
+                                                PRODCODE
+                                            </td>
+                                            <td>
+                                                <strong>Product name</strong>
+                                                <p>Document name</p>
+                                            </td>
+                                            <td>
+                                                9 x boxes of 100
+                                            </td>
+                                            <td>
+                                                &pound;1000.00
+                                            </td>
+                                            <td>
+                                                Awaiting delivery
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="seq-date-block">                        
+                                                    <span class="day">20</span>
+                                                    <span class="month-year">04/14</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                1676
+                                            </td>
+                                            <td>
+                                                PRODCODE
+                                            </td>
+                                            <td>
+                                                <strong>Product name</strong>
+                                                <p>Document name</p>
+                                            </td>
+                                            <td>
+                                                9 x boxes of 100
+                                            </td>
+                                            <td>
+                                                &pound;1000.00
+                                            </td>
+                                            <td>
+                                                Awaiting delivery
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div> <!-- end responsive table -->
 
                             <aside class="seq-ctas">
                                     <h1>Your categories</h1>
