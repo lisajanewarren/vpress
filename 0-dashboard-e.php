@@ -93,170 +93,184 @@
                                    <thead>
                                         <tr>
                                             <th data-priority="1" class="seq-td-width-60">Modified</th>
-                                            <th data-priority="6" class="seq-td-width-60"><span class="offscreen">Time</span></th>
-                                            <th data-priority="6" class="seq-td-width-150">Product</th>
-                                            <th data-priority="1">Details</th>
-                                            <th data-priority="2" class="seq-td-width-150"><span class="offscreen">Actions</span></th>
+                                            <th data-priority="6" class="seq-td-width-120"><span class="offscreen">Time</span></th>
+                                            <th data-priority="1">Product</th>
+                                            <th data-priority="4">Details</th>
+                                            <th data-priority="1" class="seq-td-width-150"><span class="offscreen">Actions</span></th>
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="seq-date-block">                        
+                                                    <span class="day">20</span>
+                                                    <span class="month-year">04/14</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="seq-time-block">
+                                                    <span class="glyphicon glyphicon-time"></span>
+                                                    <p>10:22</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                Stationary Catalogue
+                                            </td>
+                                            <td>
+                                                Mok_test
+                                            </td>
+                                            <td>
+                                                <ul class="seq-circular-actions">
+                                                    <li>
+                                                        <button class="btn btn-default btn-circle background-grey">
+                                                            <span class="glyphicon glyphicon-arrow-right"></span>
+                                                        </button>
+                                                        <p>Order</p>
+                                                    </li>
+                                                    <li>
+                                                        <button class="btn btn-default btn-circle background-grey">
+                                                            <span class="glyphicon glyphicon-pencil"></span>
+                                                        </button>
+                                                        <p>Edit</p>
+                                                    </li>
+                                                    <li>
+                                                         <button class="btn btn-default btn-circle background-grey">
+                                                            <span class="glyphicon glyphicon-trash"></span>
+                                                        </button>
+                                                        <p>Delete</p>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="seq-date-block">                        
+                                                    <span class="day">20</span>
+                                                    <span class="month-year">04/14</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="seq-time-block">
+                                                    <span class="glyphicon glyphicon-time"></span>
+                                                    <p>10:22</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                Stationary Catalogue
+                                            </td>
+                                            <td>
+                                                Mok_test
+                                            </td>
+                                            <td>
+                                                <ul class="seq-circular-actions">
+                                                    <li>
+                                                        <button class="btn btn-default btn-circle background-grey">
+                                                            <span class="glyphicon glyphicon-arrow-right"></span>
+                                                        </button>
+                                                        <p>Order</p>
+                                                    </li>
+                                                    <li>
+                                                        <button class="btn btn-default btn-circle background-grey">
+                                                            <span class="glyphicon glyphicon-pencil"></span>
+                                                        </button>
+                                                        <p>Edit</p>
+                                                    </li>
+                                                    <li>
+                                                         <button class="btn btn-default btn-circle background-grey">
+                                                            <span class="glyphicon glyphicon-trash"></span>
+                                                        </button>
+                                                        <p>Delete</p>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="seq-date-block">                        
+                                                    <span class="day">20</span>
+                                                    <span class="month-year">04/14</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="seq-time-block">
+                                                    <span class="glyphicon glyphicon-time"></span>
+                                                    <p>10:22</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                Stationary Catalogue
+                                            </td>
+                                            <td>
+                                                Mok_test
+                                            </td>
+                                            <td>
+                                                <ul class="seq-circular-actions">
+                                                    <li>
+                                                        <button class="btn btn-default btn-circle background-grey">
+                                                            <span class="glyphicon glyphicon-arrow-right"></span>
+                                                        </button>
+                                                        <p>Order</p>
+                                                    </li>
+                                                    <li>
+                                                        <button class="btn btn-default btn-circle background-grey">
+                                                            <span class="glyphicon glyphicon-pencil"></span>
+                                                        </button>
+                                                        <p>Edit</p>
+                                                    </li>
+                                                    <li>
+                                                         <button class="btn btn-default btn-circle background-grey">
+                                                            <span class="glyphicon glyphicon-trash"></span>
+                                                        </button>
+                                                        <p>Delete</p>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="seq-date-block">                        
+                                                    <span class="day">20</span>
+                                                    <span class="month-year">04/14</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="seq-time-block">
+                                                    <span class="glyphicon glyphicon-time"></span>
+                                                    <p>10:22</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                Stationary Catalogue
+                                            </td>
+                                            <td>
+                                                Mok_test
+                                            </td>
+                                            <td>
+                                                <ul class="seq-circular-actions">
+                                                    <li>
+                                                        <button class="btn btn-default btn-circle background-grey">
+                                                            <span class="glyphicon glyphicon-arrow-right"></span>
+                                                        </button>
+                                                        <p>Order</p>
+                                                    </li>
+                                                    <li>
+                                                        <button class="btn btn-default btn-circle background-grey">
+                                                            <span class="glyphicon glyphicon-pencil"></span>
+                                                        </button>
+                                                        <p>Edit</p>
+                                                    </li>
+                                                    <li>
+                                                         <button class="btn btn-default btn-circle background-grey">
+                                                            <span class="glyphicon glyphicon-trash"></span>
+                                                        </button>
+                                                        <p>Delete</p>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div> <!-- end responsive table -->
-
-                            <table class="seq-table seq-table-recently-saved" border="0">
-                                <tr>
-                                    <th class="seq-td-date">Modified</th>
-                                    <th class="seq-td-time"></th>
-                                    <th class="seq-td-prod">Product</th>
-                                    <th class="seq-td-details">Details</th>
-                                    <th class="seq-td-action-bar"></th>
-                                </tr>
-                                <tr>
-                                    <td class="seq-td-date" data-priority="persist">
-                                        <div class="dashboard-order-date"><span class="day">20</span><div class="month-year">04/14</div></div>
-                                    </td>
-                                    <td class="seq-td-time">
-                                        <span class="glyphicon glyphicon-time"></span>
-                                        <p>10:22</p>
-                                    </td>
-                                    <td class="seq-td-prod" data-priority="2">
-                                        Stationary Catalogue
-                                    </td>
-                                    <td class="seq-td-details">
-                                        Mok_test
-                                    </td>
-                                    <td class="seq-td-action-bar">
-                                        <ul>
-                                            <li>
-                                                <button class="btn btn-default btn-circle background-grey">
-                                                    <span class="glyphicon glyphicon-arrow-right"></span>
-                                                </button>
-                                                <p>Order</p>
-                                            </li>
-                                            <li>
-                                                <button class="btn btn-default btn-circle background-grey">
-                                                    <span class="glyphicon glyphicon-pencil"></span>
-                                                </button>
-                                                <p>Edit</p>
-                                            </li>
-                                            <li>
-                                                 <button class="btn btn-default btn-circle background-grey">
-                                                    <span class="glyphicon glyphicon-trash"></span>
-                                                </button>
-                                                <p>Delete</p>
-                                            </li>
-                                    </td>
-                                </tr> 
-                                <tr>
-                                    <td class="seq-td-date" data-priority="persist">
-                                        <div class="dashboard-order-date"><span class="day">20</span><div class="month-year">04/14</div></div>
-                                    </td>
-                                    <td class="seq-td-time">
-                                        <span class="glyphicon glyphicon-time"></span>
-                                        <p>10:22</p>
-                                    </td>
-                                    <td class="seq-td-prod" data-priority="2">
-                                        Stationary Catalogue
-                                    </td>
-                                    <td class="seq-td-details">
-                                        Mok_test
-                                    </td>
-                                    <td class="seq-td-action-bar">
-                                        <ul>
-                                            <li>
-                                                <button class="btn btn-default btn-circle background-grey">
-                                                    <span class="glyphicon glyphicon-arrow-right"></span>
-                                                </button>
-                                                <p>Order</p>
-                                            </li>
-                                            <li>
-                                                <button class="btn btn-default btn-circle background-grey">
-                                                    <span class="glyphicon glyphicon-pencil"></span>
-                                                </button>
-                                                <p>Edit</p>
-                                            </li>
-                                            <li>
-                                                 <button class="btn btn-default btn-circle background-grey">
-                                                    <span class="glyphicon glyphicon-trash"></span>
-                                                </button>
-                                                <p>Delete</p>
-                                            </li>
-                                    </td>
-                                </tr> 
-                                <tr>
-                                    <td class="seq-td-date" data-priority="persist">
-                                        <div class="dashboard-order-date"><span class="day">20</span><div class="month-year">04/14</div></div>
-                                    </td>
-                                    <td class="seq-td-time">
-                                        <span class="glyphicon glyphicon-time"></span>
-                                        <p>10:22</p>
-                                    </td>
-                                    <td class="seq-td-prod" data-priority="2">
-                                        Stationary Catalogue
-                                    </td>
-                                    <td class="seq-td-details">
-                                        Mok_test
-                                    </td>
-                                    <td class="seq-td-action-bar">
-                                        <ul>
-                                            <li>
-                                                <button class="btn btn-default btn-circle background-grey">
-                                                    <span class="glyphicon glyphicon-arrow-right"></span>
-                                                </button>
-                                                <p>Order</p>
-                                            </li>
-                                            <li>
-                                                <button class="btn btn-default btn-circle background-grey">
-                                                    <span class="glyphicon glyphicon-pencil"></span>
-                                                </button>
-                                                <p>Edit</p>
-                                            </li>
-                                            <li>
-                                                 <button class="btn btn-default btn-circle background-grey">
-                                                    <span class="glyphicon glyphicon-trash"></span>
-                                                </button>
-                                                <p>Delete</p>
-                                            </li>
-                                    </td>
-                                </tr> 
-                                <tr>
-                                    <td class="seq-td-date" data-priority="persist">
-                                        <div class="dashboard-order-date"><span class="day">20</span><div class="month-year">04/14</div></div>
-                                    </td>
-                                    <td class="seq-td-time">
-                                        <span class="glyphicon glyphicon-time"></span>
-                                        <p>10:22</p>
-                                    </td>
-                                    <td class="seq-td-prod" data-priority="2">
-                                        Stationary Catalogue
-                                    </td>
-                                    <td class="seq-td-details">
-                                        Mok_test
-                                    </td>
-                                    <td class="seq-td-action-bar">
-                                        <ul>
-                                            <li>
-                                                <button class="btn btn-default btn-circle background-grey">
-                                                    <span class="glyphicon glyphicon-arrow-right"></span>
-                                                </button>
-                                                <p>Order</p>
-                                            </li>
-                                            <li>
-                                                <button class="btn btn-default btn-circle background-grey">
-                                                    <span class="glyphicon glyphicon-pencil"></span>
-                                                </button>
-                                                <p>Edit</p>
-                                            </li>
-                                            <li>
-                                                 <button class="btn btn-default btn-circle background-grey">
-                                                    <span class="glyphicon glyphicon-trash"></span>
-                                                </button>
-                                                <p>Delete</p>
-                                            </li>
-                                    </td>
-                                </tr>         
-                            </table>
 
 
                             <aside class="seq-ctas">

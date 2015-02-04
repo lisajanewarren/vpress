@@ -20,6 +20,7 @@
 			white-space: normal !important; /* add this in to stop tables being verically scrollable */
 		}
 
+
 		tr {
 			border-bottom: 3px solid #ebebeb;
 		}
@@ -30,6 +31,7 @@
 
 		th, td {
 			padding: 20px 10px;
+			vertical-align: middle;
 		}
 
 		tr td:first-child,

@@ -96,9 +96,9 @@
                                             <th data-priority="6" class="seq-td-width-60">Order</th>
                                             <th data-priority="6" class="seq-td-width-150">Code</th>
                                             <th data-priority="1">Product Details</th>
-                                            <th data-priority="2" class="seq-td-width-150">Quantity</th>
+                                            <th data-priority="3" class="seq-td-width-150">Quantity</th>
                                             <th data-priority="2" class="seq-td-width-120">Price</th>
-                                            <th data-priority="3" class="seq-td-width-120">Status</th>
+                                            <th data-priority="4" class="seq-td-width-120">Status</th>
                                         </tr>
                                     </thead>
                                     <tbody>
