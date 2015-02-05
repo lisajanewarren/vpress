@@ -5,6 +5,8 @@
 @import "global/base";
 @import "global/base-new";
 
+@import "plugins/magnific-popup";
+
 @import "components/vpress-bootstrap-btn-extensions"; 
 @import "components/vpress-bg-colours";
 @import "components/forms";
@@ -13,8 +15,8 @@
 @import "components/seq-table"; 
 @import "components/seq-ctas";
 @import "components/seq-list";
-@import "components/seq-btns";
 @import "components/seq-btn-bar";
+@import "components/seq-btn-colours";
 @import "components/seq-control-bar";
 @import "components/seq-griddable-list";
 @import "components/seq-breadcrumb";
@@ -24,7 +26,7 @@
 @import "components/seq-icons";
 @import "components/seq-table-content";
 @import "components/seq-resources";
-
+@import "components/seq-layout-toggle";
 
 @import "sections/header";
 @import "sections/sidebar";

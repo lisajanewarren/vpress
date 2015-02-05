@@ -1,7 +1,7 @@
 .seq-btn-bar {
 	@extend .clear;
 	margin: 0;
-	padding: 40px 0 10px 0;
+	padding: 20px 0;
 
 	li {
 		float: left;
@@ -9,20 +9,58 @@
 	}
 
 	li button {
-		background: #ebebeb;
+		background: #f26c4f;
 		border: none;
 		border-radius: 4px;
 		font-size: 16px;
 		line-height: 1em;
-		padding: 16px 40px;
+		padding: 10px 15px;
+
+		border-bottom: solid 2px #ca5c44;
+		border-radius: 4px;
+		color: #ffffff;
+		text-align: left;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		cursor: pointer;
 	}
 
-	li.active button {
-		background: #363636;
+	button.seq-btn-orange {
+		background: #f26c4f;
 		color: #ffffff;
+		border-bottom: 2px solid #c45239;
 	}
+
+	button.seq-btn-grey {
+		background: #cfcfcf;
+		color: #ffffff;
+		border-bottom: 2px solid #c8c8c8;
+	}
+
 }
 
+.seq-btn-bar-left {
+	float: left;
+}
+.seq-btn-bar-right {
+	float: right;
+}
+
+@media (max-width: 767px) {
+	.seq-btn-bar-left,
+	.seq-btn-bar-right {
+		float: none;
+	}
+	.seq-btn-bar li {
+		float: none;
+		margin: 0 0 10px 0;
+		padding: 0;
+		button { width: 100%; }
+	}
+
+}
 
 
 

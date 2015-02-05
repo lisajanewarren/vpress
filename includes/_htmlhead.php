@@ -12,6 +12,9 @@
     <script type="text/javascript" src="bootstrap/rwd-table.min.js"> </script>
     <link href="bootstrap/rwd-table.css" rel="stylesheet" type="text/css" />
 
+    <script type="text/javascript" src="jquery/jquery.magnific-popup.js"> </script>
+
+
 
     <!-- custom css and js -->
     <script type="text/javascript" src="jquery/jquery.seq.togglebox.js"> </script>

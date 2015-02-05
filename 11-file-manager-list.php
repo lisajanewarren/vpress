@@ -49,42 +49,81 @@
                         <div class="seq-file-manager-main">
 
 
-                    <!-- Search Bar -->
-                    <div class="seq-control-bar">
+                            <!-- Search bar -->
+                            <div class="seq-control-bar">
 
-                        <div class="seq-control-bar-search"
-                            <form action="#" method="post">
-                                <div class="input-group">
-                                    <input class="form-control" placeholder="Enter keyword" type="text" />
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-default" type="button">Search</button>
-                                    </span>
-                                </div><!-- /input-group -->
-                            </form>
-                        </div>
+                                <div class="seq-control-bar-search"
+                                    <form action="#" method="post">
+                                        <div class="input-group">
+                                            <input class="form-control" placeholder="Enter keyword" type="text" />
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" type="button">Search</button>
+                                            </span>
+                                        </div><!-- /input-group -->
+                                    </form>
+                                </div>
 
-                        <div class="seq-control-bar-sort">
-                            <form action="#" method="post">
-                                <div class="input-group">
-                                        <div class="btn-group">
-                                            <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                                                All file types <span class="caret"></span>
-                                            </button>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">option 1</a></li>
-                                                <li><a href="#">option 2</a></li>
-                                                <li><a href="#">option 3</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">Separated link</a></li>
-                                            </ul>
-                                        </div><!-- /btn-group -->
-                                </div><!-- /input-group -->
-                            </form>
-                        </div>
-                    </div>
-                    <!-- Search Bar -->
+                                <div class="seq-control-bar-sort">
+                                    <form action="#" method="post">
+                                        <div class="input-group">
+                                                <div class="btn-group">
+                                                    <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+                                                        All file types <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a href="#">option 1</a></li>
+                                                        <li><a href="#">option 2</a></li>
+                                                        <li><a href="#">option 3</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#">Separated link</a></li>
+                                                    </ul>
+                                                </div><!-- /btn-group -->
+                                        </div><!-- /input-group -->
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- End search bar -->
 
 
+                            <h2 class="seq-folder-title">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                Folder title
+                            </h2>
+
+
+                            <ul class="seq-btn-bar seq-btn-bar-left">
+                                <li>
+                                    <button type="button" class="seq-btn-orange">
+                                        <span class="glyphicon glyphicon-plus"></span>
+                                        <span class="btn-text">New folder</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="seq-btn-orange">
+                                        <span class="glyphicon glyphicon-open"></span>
+                                        <span class="btn-text">Upload</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="seq-btn-grey">
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                        <span class="btn-text">Delete</span>
+                                    </button>
+
+                                </li>
+                                <li>
+                                    <button type="button" class="seq-btn-grey">
+                                        <span class="glyphicon glyphicon-move"></span>
+                                        <span class="btn-text">Move</span>
+                                    </button>
+                                </li>
+                            </ul>
+
+
+                            <ul class="seq-layout-toggle seq-layout-toggle-right">
+                                <li class="active"><span class="glyphicon glyphicon-th-list"></span></li>
+                                <li><a href="11-file-manager-grid.php"><span class="glyphicon glyphicon-th"></span></a></li>
+                            </ul>
 
 
                             <!-- Responsive Tables: http://gergeo.se/RWD-Table-Patterns -->
@@ -111,7 +150,13 @@
                                         <tr>
                                             <td><input type="checkbox"></td>
                                             <td>01 Invoice Letterhead on recycled paper</td>
-                                            <td><a class="seq-pdf" href="#">PDF</a></td>
+                                            <td>
+                                                <a class="seq-pdf" href="#">PDF</a>
+                                                <a href="#test-popup" class="open-popup-link">Show inline popup</a>
+                                                <div id="test-popup" class="white-popup mfp-hide">
+                                                    Popup content
+                                                </div>
+                                            </td>
                                             <td>1.2MB</td>                                   
                                         </tr>
                                         <tr>

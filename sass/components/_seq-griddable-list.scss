@@ -1,4 +1,6 @@
 .seq-griddable {
+	overflow: hidden;
+	clear: both;
 	padding: 30px 0;
 
 	.seq-griddable-actions {

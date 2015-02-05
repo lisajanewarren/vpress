@@ -69,6 +69,13 @@
 
 	&-main {
 		overflow: hidden;
+
+		.seq-folder-title {
+			color: #363636;
+			font-size: 16px;
+			margin: 40px 0 20px 0;
+			a {color: #363636;}
+		}
 	}
 
 }
@@ -84,3 +91,34 @@
 	}
 
 }
+
+
+
+.seq-file-manager .seq-griddable-grid {
+	.seq-griddable-item {
+		width: 33%;
+		position: relative;
+		padding: 0 10px 20px 10px;
+
+		input[type="checkbox"] {
+			position: absolute;
+			top: 10px;
+			right: 20px;
+			cursor: pointer;
+		}
+	}
+}
+
+@media (max-width: 959px) {
+	.seq-file-manager .seq-griddable-grid .seq-griddable-item {
+		width: 50%;
+	}
+}
+
+@media (max-width: 480px) {
+	.seq-file-manager .seq-griddable-grid .seq-griddable-item {
+		width: 100%;
+	}
+}
+
+

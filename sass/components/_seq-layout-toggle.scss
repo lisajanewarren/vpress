@@ -1,0 +1,31 @@
+.seq-layout-toggle {
+	overflow: hidden;
+	margin: 20px 0;
+	padding: 0;
+	li {
+		float: left;
+		margin: 0 10px;
+		font-size: 25px;
+		.glyphicon {
+			color: #a8a8a8;
+		}
+	}
+	li.active .glyphicon {
+		color: #363636;
+	}
+}
+
+.seq-layout-toggle-left {
+	float: left;
+
+	li {
+		margin: 0 10px 0 0;
+	}
+}
+
+.seq-layout-toggle-right {
+	float: right;
+	li {
+		margin:  0 0 0 10px;
+	}
+}

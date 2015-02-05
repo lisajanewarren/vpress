@@ -1,6 +1,10 @@
 .seq-jpg {
 	position: relative;
 	margin: 0 0 0 25px;
+	color: #363636;
+	&:hover {
+		color: #363636;
+	}
 	&:before {
 		content: '';
 		background: url(../images/resource-jpg.png) no-repeat 0 0;
@@ -15,6 +19,10 @@
 .seq-pdf {
 	position: relative;
 	margin: 0 0 0 25px;
+	color: #363636;
+	&:hover {
+		color: #363636;
+	}
 	&:before {
 		content: '';
 		background: url(../images/resource-pdf.png) no-repeat 0 0;
