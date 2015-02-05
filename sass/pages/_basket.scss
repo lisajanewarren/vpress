@@ -1,7 +1,30 @@
 #seq-basket {
 
-	#basket-list td {
-	    vertical-align: top;
+	/* responsive table modifications */
+	.seq-table-responsive[data-pattern="priority-columns"] .table th, 
+	.seq-table-responsive[data-pattern="priority-columns"] .table td {
+		vertical-align: top;
+	}
+
+	.seq-circular-actions .btn {
+		font-size: 13px;
+		width: 30px;
+		height: 30px;
+		border-radius: 15px;
+		.glyphicon {
+			top: 3px;
+		}
+	}
+	/* end responsive table modifications */
+
+	.data-cost-centre {
+		background: #f5f5f5;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #363636;
+		font-weight: bold;
+		padding: 5px 10px;
+		float: left;
 	}
 
 	.seq-basket-header {

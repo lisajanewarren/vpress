@@ -34,99 +34,97 @@
                         </div>
 
 
+                        <!-- Responsive Tables: http://gergeo.se/RWD-Table-Patterns -->
+                        <!-- table header responsive options
+                            data-priority=""    Always visible and not hideable from dropdown
+                            data-priority="1"   Always visible (but hidable from dropdown)
+                            data-priority="2"   Visible when (min-width: 480px)
+                            data-priority="3"   (min-width: 640px)
+                            data-priority="4"   (min-width: 800px)
+                            data-priority="5"   (min-width: 960px)
+                            data-priority="6"   (min-width: 1120px)
+                        -->
+                        <div class="seq-table-responsive table-responsive" data-pattern="priority-columns" data-add-display-all-btn="false" data-add-focus-btn="false" data-focus-btn-icon="false" data-sticky-table-header="false">
+                            <table class="table">
+                               <thead>
+                                    <tr>
+                                        <th data-priority="5" class="seq-td-width-90">Product</th>
+                                        <th data-priority="1" class="seq-td-width-240"><span class="offscreen">Product Description</span></th>
+                                        <th data-priority="6">Deliver to</th>
+                                        <th data-priority="6" class="seq-td-width-120">Cost Centre</th>
+                                        <th data-priority="4" class="seq-td-width-120">Quantity</th>
+                                        <th data-priority="4" class="seq-td-width-90">Subtotal</th>
+                                        <th data-priority="6" class="seq-td-width-60"><span class="offscreen">actions</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <img src="http://placehold.it/80x80/363636" />
+                                        </td>
+                                        <td>
+                                            <strong>Stationery Catalogue</strong><br />
+                                            Std stationery catalogue. 40pp, full colour, 200gsm cover, 60sgm inners, glued.
+                                        </td>
+                                        <td>
+                                            Sequence<br />
+                                            Fitzalan House<br />
+                                            Fitzalan Road<br />
+                                            Cardiff<br />
+                                            CF24 0EL
+                                        </td>
+                                        <td>
+                                            <span class="data-cost-centre">CODE1</span>
+                                        </td>
+                                        <td>
+                                            9 x boxes of 100
+                                        </td>
+                                        <td>
+                                            &pound;1000.00
+                                        </td>
+                                        <td>
+                                            <ul class="seq-circular-actions seq-circular-actions-stacked">
+                                                <li><button class="btn background-grey"><span class="glyphicon glyphicon-pencil"></span></button></li>
+                                                <li><button class="btn background-orange"><span class="glyphicon glyphicon-trash"></span></button></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="http://placehold.it/80x80/363636" />
+                                        </td>
+                                        <td>
+                                            <strong>Stationery Catalogue</strong><br />
+                                            Std stationery catalogue. 40pp, full colour, 200gsm cover, 60sgm inners, glued.
+                                        </td>
+                                        <td>
+                                            Vpress<br />
+                                            Clarendon House<br />
+                                            42 Clarence Street<br />
+                                            Cheltenham<br />
+                                            Gloucestershire<br />
+                                            GL50 3PL
+                                        </td>
+                                        <td>
+                                            <span class="data-cost-centre">CODE1</span>
+                                        </td>
+                                        <td>
+                                            9 x boxes of 100
+                                        </td>
+                                        <td>
+                                            &pound;1000.00
+                                        </td>
+                                        <td>
+                                            <ul class="seq-circular-actions seq-circular-actions-stacked">
+                                                <li><button class="btn background-grey"><span class="glyphicon glyphicon-pencil"></span></button></li>
+                                                <li><button class="btn background-orange"><span class="glyphicon glyphicon-trash"></span></button></li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> <!-- end responsive table -->
 
-                        <table border="0" id="basket-list" width="100%">
-                            <tr style="border-bottom:solid 6px #363636;">
-                                <th class="hidden-xs hidden-sm" colspan="2" style="width:100px;padding:20px 10px;">Product</th>
-                                <th class="visible-xs visible-sm" style="20px 10px">Product</th>
-                                <th style="width:150px;padding:20px 10px;">Deliver to</th>
-                                <th class="hidden-xs hidden-sm" style="width:100px;padding:20px 10px;">Cost centre</th>
-                                <th style="width:100px;padding:20px 10px;">Quantity</th>
-                                <th style="width:100px;padding:20px 10px;">Subtotal</th>
-                                <th style="width:50px;padding:20px 10px;">&nbsp;</th>
-                            </tr>
-
-                            <tr style="border-bottom:solid 3px #f5f5f5;">
-                                <td class="hidden-xs hidden-sm" style="padding-top:10px; width:90px;"><img src="http://placehold.it/80x80" /></td>
-                                <td style="padding-top:10px;">
-                                    <strong>Stationery Catalogue</strong><br />
-                                    Std stationery catalogue. 40pp, full colour, 200gsm cover, 60sgm inners, glued.
-                                </td>
-                                <td style="padding-top:10px;">
-                                    Sequence<br />
-                                    Fitzalan House<br />
-                                    Fitzalan Road<br />
-                                    Cardiff<br />
-                                    CF24 0EL
-                                </td>
-                                <td class="hidden-xs hidden-sm" style="padding-top:10px;"><button class="btn btn-info btn-xs">CODE01</button></td>
-                                <td style="padding-top:10px;">9 x boxes of 100</td>
-                                <td style="padding-top:10px;">&#163;1000.00</td>
-                                <td style="padding-top:10px;">
-                                    <div class="basket-circle-grey"><span class="glyphicon glyphicon-pencil"></span></div>
-                                    <div class="basket-circle-orange"><span class="glyphicon glyphicon-trash"></span></div>
-                                </td>
-                            </tr>
-
-                            <tr style="border-bottom:solid 3px #f5f5f5;">
-                                <td class="hidden-xs hidden-sm" style="padding-top:10px;"><img src="http://placehold.it/80x80" /></td>
-                                <td class="row-buffer-top">
-                                    <strong>Stationery Catalogue</strong><br />
-                                    Std stationery catalogue. 40pp, full colour, 200gsm cover, 60sgm inners, glued.
-                                </td>
-                                <td style="padding-top:10px;">
-                                    Sequence<br />
-                                    Fitzalan House<br />
-                                    Fitzalan Road<br />
-                                    Cardiff<br />
-                                    CF24 0EL
-                                </td>
-                                <td class="hidden-xs hidden-sm" style="padding-top:10px;"><button class="btn btn-info btn-xs">CODE01</button></td>
-                                <td style="padding-top:10px;">9 x boxes of 100</td>
-                                <td style="padding-top:10px;">&#163;1000.00</td>
-                                <td style="padding-top:10px;">
-                                    <div class="basket-circle-grey"><span class="glyphicon glyphicon-pencil"></span></div>
-                                    <div class="basket-circle-orange"><span class="glyphicon glyphicon-trash"></span></div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td class="hidden-xs hidden-sm"></td>
-                                <td style="padding-right:20px; text-align:right;" colspan="2"><h4>Subtotal</h4></td>
-                                <td><h4>&#163;2000.00</h4></td>
-                                <td class="hidden-xs hidden-sm"></td>
-                            </tr>
-
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td class="hidden-xs hidden-sm"></td>
-                                <td style="padding-right:20px; text-align:right;" colspan="2"><h4>Delivery</h4></td>
-                                <td><h4>&#163;10.00</h4></td>
-                                <td class="hidden-xs hidden-sm"></td>
-                            </tr>
-
-                            <tr style="background-color:#EEEEEE;">
-                                <td colspan="2" style="padding:20px; vertical-align:middle;">
-                                    <form action="#">
-                                        <div class="discount-code input-group">
-                                            <input type="text" class="form-control" placeholder="Enter your discount code" style="width:200px;">
-                                            <span class="input-group-btn">
-                                                <button class="btn btn-default vpress" type="button">Apply</button>
-                                            </span>
-                                        </div>
-                                    </form>
-                                </td>
-                                <td class="hidden-xs hidden-sm"></td>
-                                <td style="padding: 20px 16px; text-align:right;" colspan="2"><h3 style="margin:0;">Order TOTAL</h3></td>
-                                <td style="padding:20px 0;"><h3 style="margin:0;">&#163;2010.00</h3></td>
-                                <td class="hidden-xs hidden-sm"></td>
-                            </tr>
-                        </table>
-
-                       
 
                         <ul class="seq-basket-actions">
                             <li><a href="#"><span class="glyphicon glyphicon-chevron-left"></span> Continue Shopping</a></li>
