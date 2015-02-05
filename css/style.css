@@ -306,7 +306,9 @@ button::-moz-focus-inner {
   top: 1px; }
 
 .mfp-close-btn-in .mfp-close {
-  color: #333; }
+  color: #fff;
+  opacity: 1;
+  font-size: 50px; }
 
 .mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
   color: #FFF;
@@ -1246,6 +1248,69 @@ img.mfp-img {
   .seq-layout-toggle-right li {
     margin: 0 0 0 10px; }
 
+.seq-popup-file-preview {
+  position: relative;
+  padding: 20px;
+  width: auto;
+  width: 820px;
+  margin: 20px auto; }
+  .seq-popup-file-preview .image {
+    float: left;
+    width: 58%;
+    padding: 0 40px 0 0; }
+    .seq-popup-file-preview .image img {
+      max-width: 100%; }
+  .seq-popup-file-preview .description {
+    overflow: hidden;
+    color: #fff; }
+    .seq-popup-file-preview .description ul, .seq-popup-file-preview .description h3, .seq-popup-file-preview .description h4 {
+      margin: 0;
+      padding: 0; }
+    .seq-popup-file-preview .description ul {
+      margin: 0 0 20px 0; }
+    .seq-popup-file-preview .description ul li {
+      font-size: 15px;
+      line-height: 1.8em;
+      font-weight: 200; }
+    .seq-popup-file-preview .description h3 {
+      font-size: 14px;
+      text-transform: uppercase;
+      margin: 0 0 10px 0; }
+    .seq-popup-file-preview .description h4 {
+      font-size: 34px;
+      margin: 15px 0; }
+    .seq-popup-file-preview .description .user-actions {
+      overflow: hidden; }
+      .seq-popup-file-preview .description .user-actions li {
+        float: left;
+        color: #fff;
+        font-weight: normal;
+        font-size: 16px;
+        padding: 0 15px 0 20px;
+        position: relative; }
+        .seq-popup-file-preview .description .user-actions li a {
+          color: #fff; }
+      .seq-popup-file-preview .description .user-actions li:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 6px;
+        background: url(../images/icon-bin.png) no-repeat 0 0;
+        background-size: contain;
+        width: 16px;
+        height: 16px; }
+      .seq-popup-file-preview .description .user-actions .delete:after {
+        background-image: url(../images/icon-bin.png); }
+      .seq-popup-file-preview .description .user-actions .crop:after {
+        background-image: url(../images/icon-crop.png); }
+
+@media (max-width: 768px) {
+  .seq-popup-file-preview {
+    width: 100%; }
+    .seq-popup-file-preview .image, .seq-popup-file-preview .description {
+      float: none;
+      width: 100%;
+      padding: 20px; } }
 /*!
  * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.

@@ -52,7 +52,7 @@
                             <!-- Search bar -->
                             <div class="seq-control-bar">
 
-                                <div class="seq-control-bar-search"
+                                <div class="seq-control-bar-search">
                                     <form action="#" method="post">
                                         <div class="input-group">
                                             <input class="form-control" placeholder="Enter keyword" type="text" />
@@ -109,7 +109,6 @@
                                         <span class="glyphicon glyphicon-remove"></span>
                                         <span class="btn-text">Delete</span>
                                     </button>
-
                                 </li>
                                 <li>
                                     <button type="button" class="seq-btn-grey">
@@ -136,7 +135,40 @@
                                     <div class="seq-griddable-description">
                                         <div class="seq-griddable-text">
                                             <p>01 Invoice Letterhead on recycled paper</p>
-                                            <a class="seq-pdf" href="#">PDF</a>
+
+                                            <a class="seq-pdf seq-inline-popup-trigger" href="#popup-1">PDF</a>
+                                            <div id="popup-1" class="seq-popup mfp-hide">         
+                                                <div class="seq-popup-file-preview">
+                                                    <div class="image">
+                                                        <img src="example-images/example-logo.jpg" alt="" />
+                                                    </div>
+                                                    <div class="description">
+                                                        <h3>Preview</h3>
+                                                        <h4>Sequencelogo.jpg</h4>
+                                                        <ul class="details">
+                                                            <li><strong>Size</strong> 230.90kb</li>
+                                                            <li><strong>Type</strong> Image (JPG)</li>
+                                                            <li><strong>Dimensions</strong>  460px x 460px</li>
+                                                            <li><strong>Created</strong> 05/05/2014 10.00am</li>
+                                                        </ul>
+
+                                                        <ul class="seq-btn-bar">
+                                                            <li>
+                                                                <button type="button" class="seq-btn-orange">
+                                                                    <span class="btn-text">Select</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+
+                                                        <ul class="user-actions">
+                                                            <li class="delete"><a href="#">Delete</a></li>
+                                                            <li class="crop"><a href="#">Crop</a></li>
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end inline popup -->
+
                                         </div>
                                     </div>
                                     <input type="checkbox">
@@ -149,7 +181,38 @@
                                     <div class="seq-griddable-description">
                                         <div class="seq-griddable-text">
                                             <p>01 Invoice Letterhead on recycled paper</p>
-                                            <a class="seq-pdf" href="#">PDF</a>
+                                            <a class="seq-pdf seq-inline-popup-trigger" href="#popup-2">PDF</a>
+                                            <div id="popup-2" class="seq-popup mfp-hide">         
+                                                <div class="seq-popup-file-preview">
+                                                    <div class="image">
+                                                        <img src="example-images/example-logo.jpg" alt="" />
+                                                    </div>
+                                                    <div class="description">
+                                                        <h3>Preview</h3>
+                                                        <h4>Sequencelogo.jpg</h4>
+                                                        <ul class="details">
+                                                            <li><strong>Size</strong> 230.90kb</li>
+                                                            <li><strong>Type</strong> Image (JPG)</li>
+                                                            <li><strong>Dimensions</strong>  460px x 460px</li>
+                                                            <li><strong>Created</strong> 05/05/2014 10.00am</li>
+                                                        </ul>
+
+                                                        <ul class="seq-btn-bar">
+                                                            <li>
+                                                                <button type="button" class="seq-btn-orange">
+                                                                    <span class="btn-text">Select</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+
+                                                        <ul class="user-actions">
+                                                            <li class="delete"><a href="#">Delete</a></li>
+                                                            <li class="crop"><a href="#">Crop</a></li>
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end inline popup -->
                                         </div>
                                     </div>
                                     <input type="checkbox">
@@ -162,7 +225,38 @@
                                     <div class="seq-griddable-description">
                                         <div class="seq-griddable-text">
                                             <p>01 Invoice Letterhead on recycled paper</p>
-                                            <a class="seq-pdf" href="#">PDF</a>
+                                            <a class="seq-pdf seq-inline-popup-trigger" href="#popup-3">PDF</a>
+                                            <div id="popup-3" class="seq-popup mfp-hide">         
+                                                <div class="seq-popup-file-preview">
+                                                    <div class="image">
+                                                        <img src="example-images/example-logo.jpg" alt="" />
+                                                    </div>
+                                                    <div class="description">
+                                                        <h3>Preview</h3>
+                                                        <h4>Sequencelogo.jpg</h4>
+                                                        <ul class="details">
+                                                            <li><strong>Size</strong> 230.90kb</li>
+                                                            <li><strong>Type</strong> Image (JPG)</li>
+                                                            <li><strong>Dimensions</strong>  460px x 460px</li>
+                                                            <li><strong>Created</strong> 05/05/2014 10.00am</li>
+                                                        </ul>
+
+                                                        <ul class="seq-btn-bar">
+                                                            <li>
+                                                                <button type="button" class="seq-btn-orange">
+                                                                    <span class="btn-text">Select</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+
+                                                        <ul class="user-actions">
+                                                            <li class="delete"><a href="#">Delete</a></li>
+                                                            <li class="crop"><a href="#">Crop</a></li>
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end inline popup -->
                                         </div>
                                     </div>
                                     <input type="checkbox">
@@ -175,7 +269,38 @@
                                     <div class="seq-griddable-description">
                                         <div class="seq-griddable-text">
                                             <p>01 Invoice Letterhead on recycled paper</p>
-                                            <a class="seq-pdf" href="#">PDF</a>
+                                            <a class="seq-pdf seq-inline-popup-trigger" href="#popup-4">PDF</a>
+                                            <div id="popup-4" class="seq-popup mfp-hide">         
+                                                <div class="seq-popup-file-preview">
+                                                    <div class="image">
+                                                        <img src="example-images/example-logo.jpg" alt="" />
+                                                    </div>
+                                                    <div class="description">
+                                                        <h3>Preview</h3>
+                                                        <h4>Sequencelogo.jpg</h4>
+                                                        <ul class="details">
+                                                            <li><strong>Size</strong> 230.90kb</li>
+                                                            <li><strong>Type</strong> Image (JPG)</li>
+                                                            <li><strong>Dimensions</strong>  460px x 460px</li>
+                                                            <li><strong>Created</strong> 05/05/2014 10.00am</li>
+                                                        </ul>
+
+                                                        <ul class="seq-btn-bar">
+                                                            <li>
+                                                                <button type="button" class="seq-btn-orange">
+                                                                    <span class="btn-text">Select</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+
+                                                        <ul class="user-actions">
+                                                            <li class="delete"><a href="#">Delete</a></li>
+                                                            <li class="crop"><a href="#">Crop</a></li>
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end inline popup -->
                                         </div>
                                     </div>
                                     <input type="checkbox">
@@ -188,7 +313,38 @@
                                     <div class="seq-griddable-description">
                                         <div class="seq-griddable-text">
                                             <p>01 Invoice Letterhead on recycled paper</p>
-                                            <a class="seq-pdf" href="#">PDF</a>
+                                            <a class="seq-pdf seq-inline-popup-trigger" href="#popup-5">PDF</a>
+                                            <div id="popup-5" class="seq-popup mfp-hide">         
+                                                <div class="seq-popup-file-preview">
+                                                    <div class="image">
+                                                        <img src="example-images/example-logo.jpg" alt="" />
+                                                    </div>
+                                                    <div class="description">
+                                                        <h3>Preview</h3>
+                                                        <h4>Sequencelogo.jpg</h4>
+                                                        <ul class="details">
+                                                            <li><strong>Size</strong> 230.90kb</li>
+                                                            <li><strong>Type</strong> Image (JPG)</li>
+                                                            <li><strong>Dimensions</strong>  460px x 460px</li>
+                                                            <li><strong>Created</strong> 05/05/2014 10.00am</li>
+                                                        </ul>
+
+                                                        <ul class="seq-btn-bar">
+                                                            <li>
+                                                                <button type="button" class="seq-btn-orange">
+                                                                    <span class="btn-text">Select</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+
+                                                        <ul class="user-actions">
+                                                            <li class="delete"><a href="#">Delete</a></li>
+                                                            <li class="crop"><a href="#">Crop</a></li>
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end inline popup -->
                                         </div>
                                     </div>
                                     <input type="checkbox">
@@ -201,7 +357,38 @@
                                     <div class="seq-griddable-description">
                                         <div class="seq-griddable-text">
                                             <p>01 Invoice Letterhead on recycled paper</p>
-                                            <a class="seq-pdf" href="#">PDF</a>
+                                            <a class="seq-pdf seq-inline-popup-trigger" href="#popup-6">PDF</a>
+                                            <div id="popup-6" class="seq-popup mfp-hide">         
+                                                <div class="seq-popup-file-preview">
+                                                    <div class="image">
+                                                        <img src="example-images/example-logo.jpg" alt="" />
+                                                    </div>
+                                                    <div class="description">
+                                                        <h3>Preview</h3>
+                                                        <h4>Sequencelogo.jpg</h4>
+                                                        <ul class="details">
+                                                            <li><strong>Size</strong> 230.90kb</li>
+                                                            <li><strong>Type</strong> Image (JPG)</li>
+                                                            <li><strong>Dimensions</strong>  460px x 460px</li>
+                                                            <li><strong>Created</strong> 05/05/2014 10.00am</li>
+                                                        </ul>
+
+                                                        <ul class="seq-btn-bar">
+                                                            <li>
+                                                                <button type="button" class="seq-btn-orange">
+                                                                    <span class="btn-text">Select</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+
+                                                        <ul class="user-actions">
+                                                            <li class="delete"><a href="#">Delete</a></li>
+                                                            <li class="crop"><a href="#">Crop</a></li>
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end inline popup -->
                                         </div>
                                     </div>
                                     <input type="checkbox">
@@ -214,7 +401,38 @@
                                     <div class="seq-griddable-description">
                                         <div class="seq-griddable-text">
                                             <p>01 Invoice Letterhead on recycled paper</p>
-                                            <a class="seq-pdf" href="#">PDF</a>
+                                            <a class="seq-pdf seq-inline-popup-trigger" href="#popup-7">PDF</a>
+                                            <div id="popup-7" class="seq-popup mfp-hide">         
+                                                <div class="seq-popup-file-preview">
+                                                    <div class="image">
+                                                        <img src="example-images/example-logo.jpg" alt="" />
+                                                    </div>
+                                                    <div class="description">
+                                                        <h3>Preview</h3>
+                                                        <h4>Sequencelogo.jpg</h4>
+                                                        <ul class="details">
+                                                            <li><strong>Size</strong> 230.90kb</li>
+                                                            <li><strong>Type</strong> Image (JPG)</li>
+                                                            <li><strong>Dimensions</strong>  460px x 460px</li>
+                                                            <li><strong>Created</strong> 05/05/2014 10.00am</li>
+                                                        </ul>
+
+                                                        <ul class="seq-btn-bar">
+                                                            <li>
+                                                                <button type="button" class="seq-btn-orange">
+                                                                    <span class="btn-text">Select</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+
+                                                        <ul class="user-actions">
+                                                            <li class="delete"><a href="#">Delete</a></li>
+                                                            <li class="crop"><a href="#">Crop</a></li>
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end inline popup -->
                                         </div>
                                     </div>
                                     <input type="checkbox">
@@ -227,7 +445,38 @@
                                     <div class="seq-griddable-description">
                                         <div class="seq-griddable-text">
                                             <p>01 Invoice Letterhead on recycled paper</p>
-                                            <a class="seq-pdf" href="#">PDF</a>
+                                            <a class="seq-pdf seq-inline-popup-trigger" href="#popup-8">PDF</a>
+                                            <div id="popup-8" class="seq-popup mfp-hide">         
+                                                <div class="seq-popup-file-preview">
+                                                    <div class="image">
+                                                        <img src="example-images/example-logo.jpg" alt="" />
+                                                    </div>
+                                                    <div class="description">
+                                                        <h3>Preview</h3>
+                                                        <h4>Sequencelogo.jpg</h4>
+                                                        <ul class="details">
+                                                            <li><strong>Size</strong> 230.90kb</li>
+                                                            <li><strong>Type</strong> Image (JPG)</li>
+                                                            <li><strong>Dimensions</strong>  460px x 460px</li>
+                                                            <li><strong>Created</strong> 05/05/2014 10.00am</li>
+                                                        </ul>
+
+                                                        <ul class="seq-btn-bar">
+                                                            <li>
+                                                                <button type="button" class="seq-btn-orange">
+                                                                    <span class="btn-text">Select</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+
+                                                        <ul class="user-actions">
+                                                            <li class="delete"><a href="#">Delete</a></li>
+                                                            <li class="crop"><a href="#">Crop</a></li>
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end inline popup -->
                                         </div>
                                     </div>
                                     <input type="checkbox">
@@ -240,7 +489,38 @@
                                     <div class="seq-griddable-description">
                                         <div class="seq-griddable-text">
                                             <p>01 Invoice Letterhead on recycled paper</p>
-                                            <a class="seq-pdf" href="#">PDF</a>
+                                            <a class="seq-pdf seq-inline-popup-trigger" href="#popup-9">PDF</a>
+                                            <div id="popup-9" class="seq-popup mfp-hide">         
+                                                <div class="seq-popup-file-preview">
+                                                    <div class="image">
+                                                        <img src="example-images/example-logo.jpg" alt="" />
+                                                    </div>
+                                                    <div class="description">
+                                                        <h3>Preview</h3>
+                                                        <h4>Sequencelogo.jpg</h4>
+                                                        <ul class="details">
+                                                            <li><strong>Size</strong> 230.90kb</li>
+                                                            <li><strong>Type</strong> Image (JPG)</li>
+                                                            <li><strong>Dimensions</strong>  460px x 460px</li>
+                                                            <li><strong>Created</strong> 05/05/2014 10.00am</li>
+                                                        </ul>
+
+                                                        <ul class="seq-btn-bar">
+                                                            <li>
+                                                                <button type="button" class="seq-btn-orange">
+                                                                    <span class="btn-text">Select</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+
+                                                        <ul class="user-actions">
+                                                            <li class="delete"><a href="#">Delete</a></li>
+                                                            <li class="crop"><a href="#">Crop</a></li>
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end inline popup -->
                                         </div>
                                     </div>
                                     <input type="checkbox">
