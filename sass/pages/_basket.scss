@@ -60,10 +60,76 @@
 		}
 	}
 
-	.discount-code {
-		input {
+
+
+	.seq-basket-subtotal-bar {
+		overflow: hidden;
+		p {
+			margin: 3px 0;
+			color: #3c3d3e;
+			width: 300px;
+			margin: 0 20px 0 0;
+			float: right;
+			clear: both;
+			font-weight: 500;
+			font-size: 20px;
+
+			span {
+				float: left;
+				width: 50%;
+			}
+			span:first-child {
+				text-align: right;
+				padding: 0 20px 0 0;
+			}
+		} 
+	}
+	.seq-basket-total-bar {
+		background: #f5f5f5;
+		padding: 20px;
+		margin: 20px 0;
+		white-space: nowrap;
+		overflow: hidden;
+
+		.input-group {
+			float: left;
+		}
+
+		.seq-basket-final-total {
+			float: right;
+			width: 300px;
+			margin: 0;
+			font-size: 22px;
+			color: #3c3d3e;
+			font-weight: 500;
+			padding: 6px 0;
+
+			span {
+				float: left;
+				width: 50%;
+			}
+			span:first-child {
+				text-align: right;
+				padding: 0 20px 0 0;
+			}
+		}
+
+		input, button {
+			display: table-cell;
+			height: 44px;
+			padding: 6px 15px;
+		}
+
+		input[type="text"] {
 			border: none;
 			border-radius: 0;
+			float: left;
+			box-shadow: none;
+			border: none;
+		}
+
+		button {
+			border-radius: 0 4px 4px 0;
 		}
 
 		::-webkit-input-placeholder {
@@ -82,6 +148,7 @@
 		   color: #363636;
 		}
 	}
+
 
 	.seq-basket-summary-bar {
 		@extend .clear;

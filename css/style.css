@@ -1823,19 +1823,67 @@ img.mfp-img {
         font-weight: bold; }
     #seq-basket .seq-basket-actions li:first-child {
       float: left; }
-  #seq-basket .discount-code input {
-    border: none;
-    border-radius: 0; }
-  #seq-basket .discount-code ::-webkit-input-placeholder {
-    color: #363636; }
-  #seq-basket .discount-code :-moz-placeholder {
-    /* Firefox 18- */
-    color: #363636; }
-  #seq-basket .discount-code ::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #363636; }
-  #seq-basket .discount-code :-ms-input-placeholder {
-    color: #363636; }
+  #seq-basket .seq-basket-subtotal-bar {
+    overflow: hidden; }
+    #seq-basket .seq-basket-subtotal-bar p {
+      margin: 3px 0;
+      color: #3c3d3e;
+      width: 300px;
+      margin: 0 20px 0 0;
+      float: right;
+      clear: both;
+      font-weight: 500;
+      font-size: 20px; }
+      #seq-basket .seq-basket-subtotal-bar p span {
+        float: left;
+        width: 50%; }
+      #seq-basket .seq-basket-subtotal-bar p span:first-child {
+        text-align: right;
+        padding: 0 20px 0 0; }
+  #seq-basket .seq-basket-total-bar {
+    background: #f5f5f5;
+    padding: 20px;
+    margin: 20px 0;
+    white-space: nowrap;
+    overflow: hidden; }
+    #seq-basket .seq-basket-total-bar .input-group {
+      float: left; }
+    #seq-basket .seq-basket-total-bar .seq-basket-final-total {
+      float: right;
+      width: 300px;
+      margin: 0;
+      font-size: 22px;
+      color: #3c3d3e;
+      font-weight: 500;
+      padding: 6px 0; }
+      #seq-basket .seq-basket-total-bar .seq-basket-final-total span {
+        float: left;
+        width: 50%; }
+      #seq-basket .seq-basket-total-bar .seq-basket-final-total span:first-child {
+        text-align: right;
+        padding: 0 20px 0 0; }
+    #seq-basket .seq-basket-total-bar input, #seq-basket .seq-basket-total-bar button {
+      display: table-cell;
+      height: 44px;
+      padding: 6px 15px; }
+    #seq-basket .seq-basket-total-bar input[type="text"] {
+      border: none;
+      border-radius: 0;
+      float: left;
+      box-shadow: none;
+      border: none; }
+    #seq-basket .seq-basket-total-bar button {
+      border-radius: 0 4px 4px 0; }
+    #seq-basket .seq-basket-total-bar ::-webkit-input-placeholder {
+      color: #363636; }
+    #seq-basket .seq-basket-total-bar :-moz-placeholder {
+      /* Firefox 18- */
+      color: #363636; }
+    #seq-basket .seq-basket-total-bar ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #363636; }
+    #seq-basket .seq-basket-total-bar :-ms-input-placeholder {
+      color: #363636; }
   #seq-basket .seq-basket-summary-bar {
     overflow: hidden;
     padding: 30px 0; }

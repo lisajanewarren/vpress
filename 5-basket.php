@@ -49,8 +49,8 @@
                                <thead>
                                     <tr>
                                         <th data-priority="5" class="seq-td-width-90">Product</th>
-                                        <th data-priority="1" class="seq-td-width-240"><span class="offscreen">Product Description</span></th>
-                                        <th data-priority="6">Deliver to</th>
+                                        <th data-priority="1"><span class="offscreen">Product Description</span></th>
+                                        <th data-priority="6" class="seq-td-width-150">Deliver to</th>
                                         <th data-priority="6" class="seq-td-width-120">Cost Centre</th>
                                         <th data-priority="4" class="seq-td-width-120">Quantity</th>
                                         <th data-priority="4" class="seq-td-width-90">Subtotal</th>
@@ -124,6 +124,29 @@
                                 </tbody>
                             </table>
                         </div> <!-- end responsive table -->
+
+                        <div class="seq-basket-subtotal-bar">
+                            <p>
+                                <span class="seq-basket-label">Subtotal</span> 
+                                <span class="seq-basket-value">&pound;1144.00</span>
+                            </p>
+                            <p>
+                                <span class="seq-basket-label">Delivery</span> 
+                                <span class="seq-basket-value">&pound;10.00</span>
+                            </p>
+                        </div>
+
+                        
+                        <div class="seq-basket-total-bar">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Enter your discount code">
+                                <button class="btn btn-default vpress" type="button">Apply</button>
+                            </div>
+                            <p class="seq-basket-final-total">
+                                <span class="seq-basket-label">Order TOTAL</span> 
+                                <span class="seq-basket-value">&pound;1154.00</span>
+                            </p>
+                        </div>
 
 
                         <ul class="seq-basket-actions">
