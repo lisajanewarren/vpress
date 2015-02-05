@@ -28,26 +28,77 @@
 
                 <div id="page">
                     
-                    <div id="seq-vdp">
 
-                       
-                        <!-- bootstrap sortable table - http://bootstrap-table.wenzhixin.net.cn/ -->
-                        <table  class="seq-vdp-results" data-toggle="table" data-pagination="true"  data-click-to-select="true" data-url="example-json/example-json-2.json">
-                            <thead>
+                    <!-- Responsive Tables: http://gergeo.se/RWD-Table-Patterns -->
+                    <!-- table header responsive options
+                        data-priority=""    Always visible and not hideable from dropdown
+                        data-priority="1"   Always visible (but hidable from dropdown)
+                        data-priority="2"   Visible when (min-width: 480px)
+                        data-priority="3"   (min-width: 640px)
+                        data-priority="4"   (min-width: 800px)
+                        data-priority="5"   (min-width: 960px)
+                        data-priority="6"   (min-width: 1120px)
+                    -->
+                    <div class="seq-table-responsive table-responsive" data-pattern="priority-columns" data-add-display-all-btn="false" data-add-focus-btn="false" data-focus-btn-icon="false" data-sticky-table-header="false">
+                        <table class="table">
+                           <thead>
                                 <tr>
-                                    <th data-checkbox="true" class="seq-vpd-checkbox"></th>
-                                    <th data-field="title" data-sortable="true" class="seq-vdp-title">Name</th>
-                                    <th data-field="salutation" data-sortable="true" class="seq-vdp-salutation">Author</th>
-                                    <th data-field="firstname" data-sortable="true" class="seq-vdp-firstname">Created</th>
-                                    <th data-field="surname" data-sortable="true" class="seq-vdp-surname">Modified</th>
-                                    <th data-field="address" data-sortable="true" class="seq-vdp-address">Actions</th>
+                                    <th data-priority="1" class="seq-td-width-30"><input type="checkbox"></th>
+                                    <th data-priority="1">Name</th>
+                                    <th data-priority="6">Author</th>
+                                    <th data-priority="1" class="seq-td-width-150">Created</th>
+                                    <th data-priority="4" class="seq-td-width-150">Modified</th>
+                                    <th data-priority="1" class="seq-td-width-150">Actions</th>
                                 </tr>
-                                <!-- table data from data source pulled in here -->
                             </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>MOK Business Card 2014</td>
+                                    <td>Matt O'Keefe</td>
+                                    <td>04/06/13</td>
+                                    <td>09/07/13</td>
+                                    <td>dropdown here</td>
+                                </tr>
+                                 <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>MOK Business Card 2014</td>
+                                    <td>Matt O'Keefe</td>
+                                    <td>04/06/13</td>
+                                    <td>09/07/13</td>
+                                    <td>dropdown here</td>
+                                </tr>
+                                 <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>MOK Business Card 2014</td>
+                                    <td>Matt O'Keefe</td>
+                                    <td>04/06/13</td>
+                                    <td>09/07/13</td>
+                                    <td>dropdown here</td>
+                                </tr>
+                                 <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>MOK Business Card 2014</td>
+                                    <td>Matt O'Keefe</td>
+                                    <td>04/06/13</td>
+                                    <td>09/07/13</td>
+                                    <td>dropdown here</td>
+                                </tr>
+                                 <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>MOK Business Card 2014</td>
+                                    <td>Matt O'Keefe</td>
+                                    <td>04/06/13</td>
+                                    <td>09/07/13</td>
+                                    <td>dropdown here</td>
+                                </tr>
+        
 
+
+                            </tbody>
                         </table>
+                    </div> <!-- end responsive table -->
 
-                    </div> <!-- end seq-vdp -->
 
                     
 

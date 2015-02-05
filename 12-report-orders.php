@@ -26,30 +26,89 @@
                 </div>
 
                 <div id="page">
-                    
-                    <div id="seq-vdp">
 
-                    
-                        <!-- bootstrap sortable table - http://bootstrap-table.wenzhixin.net.cn/ -->
-                        <table  class="seq-vdp-results" data-toggle="table" data-pagination="true"  data-click-to-select="true" data-url="example-json/example-json-3.json">
-                            <thead>
+                    <!-- Responsive Tables: http://gergeo.se/RWD-Table-Patterns -->
+                    <!-- table header responsive options
+                        data-priority=""    Always visible and not hideable from dropdown
+                        data-priority="1"   Always visible (but hidable from dropdown)
+                        data-priority="2"   Visible when (min-width: 480px)
+                        data-priority="3"   (min-width: 640px)
+                        data-priority="4"   (min-width: 800px)
+                        data-priority="5"   (min-width: 960px)
+                        data-priority="6"   (min-width: 1120px)
+                    -->
+                    <div class="seq-table-responsive table-responsive" data-pattern="priority-columns" data-add-display-all-btn="false" data-add-focus-btn="false" data-focus-btn-icon="false" data-sticky-table-header="false">
+                        <table class="table">
+                           <thead>
                                 <tr>
-                                    <th data-checkbox="true" class="seq-vpd-checkbox"></th>
-                                    <th data-field="title" data-sortable="true" class="seq-vdp-title">Order No</th>
-                                    <th data-field="salutation" data-sortable="true" class="seq-vdp-salutation">Date</th>
-                                    <th data-field="firstname" data-sortable="true" class="seq-vdp-firstname">Code</th>
-                                    <th style="width:150px;" data-field="surname" data-sortable="true">Name</th>
-                                    <th style="width:200px;" data-field="address" data-sortable="true">Document</th>
-                                    <th style="width: 50px" data-field="quantity" data-sortable="true">Qty</th>
-                                    <th style="width: 50px" data-field="price" data-sortable="true">Price</th>
+                                    <th data-priority="1" class="seq-td-width-30"><input type="checkbox"></th>
+                                    <th data-priority="4" class="seq-td-width-150">Order No</th>
+                                    <th data-priority="6" class="seq-td-width-150">Date</th>
+                                    <th data-priority="6" class="seq-td-width-60">Code</th>
+                                    <th data-priority="1">Name</th>
+                                    <th data-priority="1">Document</th>
+                                    <th data-priority="1" class="seq-td-width-30">Qty</th>
+                                    <th data-priority="1" class="seq-td-width-90">Price</th>
+
                                 </tr>
-                                <!-- table data from data source pulled in here -->
                             </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>891 COMPLETED</td>
+                                    <td>01/05/14 13:00</td>
+                                    <td>VP017</td>
+                                    <td>Egyptian Cotton Bath Robes</td>
+                                    <td>Document name here</td>
+                                    <td>5</td>
+                                    <td>&pound;89.95</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>891 COMPLETED</td>
+                                    <td>01/05/14 13:00</td>
+                                    <td>VP017</td>
+                                    <td>Egyptian Cotton Bath Robes</td>
+                                    <td>Document name here</td>
+                                    <td>5</td>
+                                    <td>&pound;89.95</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>891 COMPLETED</td>
+                                    <td>01/05/14 13:00</td>
+                                    <td>VP017</td>
+                                    <td>Egyptian Cotton Bath Robes</td>
+                                    <td>Document name here</td>
+                                    <td>5</td>
+                                    <td>&pound;89.95</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>891 COMPLETED</td>
+                                    <td>01/05/14 13:00</td>
+                                    <td>VP017</td>
+                                    <td>Egyptian Cotton Bath Robes</td>
+                                    <td>Document name here</td>
+                                    <td>5</td>
+                                    <td>&pound;89.95</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>891 COMPLETED</td>
+                                    <td>01/05/14 13:00</td>
+                                    <td>VP017</td>
+                                    <td>Egyptian Cotton Bath Robes</td>
+                                    <td>Document name here</td>
+                                    <td>5</td>
+                                    <td>&pound;89.95</td>
+                                </tr>
+        
 
+
+                            </tbody>
                         </table>
-
-                    </div> <!-- end seq-vdp -->
-
+                    </div> <!-- end responsive table -->
                     
 
                 </div> <!-- end page-->

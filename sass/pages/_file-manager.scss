@@ -1,0 +1,86 @@
+.seq-file-manager {
+	overflow: hidden;
+
+	&-nav {
+		width: 240px;
+		float: left;
+		padding: 0 30px 0 0;
+
+		/* top level inactive chevron */
+		> ul > li > a:after {
+			content: "\e114";
+		}
+
+		/* 2nd level inactive chevron */
+		> ul > li.active > ul > li a:after {
+			content: "\e080";	
+		}
+
+		/* 2nd level active chevron */
+		> ul > li.active > ul > li.active a:after
+		/*> ul > li.active > ul > li a:hover:after*/ {
+			color: #ffffff;	
+		}
+		
+
+		/* Top level active and hover state */
+		> ul > li.active > a
+		/*> ul > li > a:hover*/ {
+			background: #d3d3d3;
+		}
+		> ul > li.active > a:after {
+			content: "\e113";
+		}
+		
+
+		/* 2nd level active and hover state */
+		> ul > li.active > ul > li.active > a
+		/*> ul > li.active > ul > li > a:hover*/ {
+			background: #f26c4f;
+			color: #ffffff;	
+		}
+
+		
+
+		ul {
+			background: #eeeeee;
+			margin: 0;
+			padding: 0;
+
+			li a {
+				color: #363636;
+				font-size: 16px;
+				padding: 15px 20px;
+				display: block;
+				position: relative;
+				&:hover {
+					text-decoration: none;
+				}
+				&:after {
+					font-family: 'Glyphicons Halflings';
+					position: absolute;
+					color: #666666;
+					right: 15px;
+					top: 18px;
+				}
+			}
+		}
+	}
+
+	&-main {
+		overflow: hidden;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	.seq-file-manager {
+		&-nav {
+			float: none;
+			width: 100%;
+			padding: 0 0 20px 0;
+		}
+	}
+
+}

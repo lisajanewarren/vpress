@@ -14,6 +14,7 @@
 @import "components/seq-ctas";
 @import "components/seq-list";
 @import "components/seq-btns";
+@import "components/seq-btn-bar";
 @import "components/seq-control-bar";
 @import "components/seq-griddable-list";
 @import "components/seq-breadcrumb";
@@ -22,6 +23,7 @@
 @import "components/seq-circular-actions";
 @import "components/seq-icons";
 @import "components/seq-table-content";
+@import "components/seq-resources";
 
 
 @import "sections/header";
@@ -35,3 +37,4 @@
 @import "pages/basket"; 
 @import "pages/dashboard"; 
 @import "pages/variable-data-product"; 
+@import "pages/file-manager"; 

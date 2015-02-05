@@ -1,5 +1,14 @@
 .seq-table-responsive[data-pattern="priority-columns"] {
+	
+	.seq-td-width-30 {
+		width: 30px;
+	}
+
 	.seq-td-width-60 {
+		width: 60px;
+	}
+
+	.seq-td-width-90 {
 		width: 60px;
 	}
 
@@ -11,7 +20,4 @@
 		width: 150px;	
 	}
 
-	.seq-td-width-270 {
-		width: 270px;	
-	}
 }

@@ -48,7 +48,6 @@
                             <form action="#" method="post">
                                 <label class="seq-label">Sort by</label>
                                 <div class="input-group">
-                                    <div class="btn-toolbar" role="toolbar">
                                         <div class="btn-group">
                                             <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
                                                 Most popular <span class="caret"></span>
@@ -61,11 +60,9 @@
                                                 <li><a href="#">Separated link</a></li>
                                             </ul>
                                         </div><!-- /btn-group -->
-                                    </div><!-- /btn-toolbar -->
                                 </div><!-- /input-group -->
                             </form>
                         </div>
-
                     </div>
                     <!-- Search Bar -->
             

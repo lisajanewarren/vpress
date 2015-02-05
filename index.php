@@ -121,9 +121,9 @@
                
             <h1>My To-Do List..</h1>
             <ul>
-                <li>- Make sure all tables work consistently &amp; responsively &amp; double-check they will work with any number of columns</li>
+                <li><del>- Make sure all tables work consistently &amp; responsively &amp; double-check they will work with any number of columns</del></li>
                 <li>- Bootstrap plugin for equal height columns</li>
-                <li>- Remove js bootstrap sortable tables</li>
+                <li><del>- Remove js bootstrap sortable tables</del></li>
                 <li>- Restructure my classnames to make more minimal</li>
                 <li>- Product editor changes</li>
                 <li>...</li>

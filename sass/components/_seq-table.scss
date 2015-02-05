@@ -32,6 +32,8 @@
 		th, td {
 			padding: 20px 10px;
 			vertical-align: middle;
+
+			a {color:#333333;}
 		}
 
 		tr td:first-child,
@@ -55,5 +57,11 @@
 	border-top: 6px solid #ebebeb;
 }
 
-
+@media (min-width: 768px) {
+	.seq-table-responsive[data-pattern="priority-columns"] .table {
+		td, th, tr {
+			//white-space: normal !important; /* add this in to stop tables being verically scrollable */
+		}
+	}
+}
 
