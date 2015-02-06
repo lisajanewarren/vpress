@@ -133,16 +133,6 @@
                 <li>- File Manager</li>
             </ul>
 
-            <h1>Very Approximate timings:</h1>
-            <ul>
-                <li>'3 - Product Editor' - up to 2 hours</li>
-                <li>'5.5 - Checkout ' - up to 2 hours</li>
-                <li>'10 - Order Selected' - up to 2 hours</li>
-                <li>'11 - File Manager' - no idea as I've not seen the designs - but perhaps a day to a day and a half depending on how complex the designs are - it looked a fairly involved section...so say, up to 11 hours for now...</li>
-                <li>'Left Nav' - up to 4 hours</li>
-                <li>'Top Nav' - 1 hour</li>
-                <li>'Login' - 1 hour</li>
-            </ul>
         </section>
     </body>
 

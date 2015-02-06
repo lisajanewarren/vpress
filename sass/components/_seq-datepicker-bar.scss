@@ -1,0 +1,31 @@
+.seq-datepicker-bar {
+	@extend .clear;
+	background: #eeeeee;
+	padding: 25px 15px;
+	margin: 0 0 20px 0;
+
+	.input-group, .join {
+		float: left;
+	}
+
+	.join {
+		padding: 5px 10px;
+	}
+
+	.input-group {
+		position: relative;
+
+		.glyphicon {
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
+	}
+
+	input[type="text"] {
+		border: none;
+		font-size: 15px;
+		border-radius: 0;
+		color: #363636;
+	}
+}

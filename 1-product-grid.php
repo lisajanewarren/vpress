@@ -30,7 +30,7 @@
                     <!-- Search Bar -->
                     <div class="seq-control-bar">
 
-                        <div class="seq-control-bar-search"
+                        <div class="seq-control-bar-search">
                             <form action="#" method="post">
                                 <div class="input-group">
                                     <input class="form-control" placeholder="Enter keyword" type="text" />
@@ -319,6 +319,18 @@
 
                             </ul>
                         </div>
+                    </div>
+
+                    <div class="seq-pagination">
+                        <ul>
+                            <li class="prev">&#10094;</li> 
+                            <li class="current">1</li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li class="next"><a href="#">&#10095;</a></li>
+                        </ul>
                     </div>
 
                 </div> <!-- end page-->

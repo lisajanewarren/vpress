@@ -199,6 +199,18 @@
                         </div> <!-- end responsive table -->
 
 
+                        <div class="seq-pagination">
+                            <ul>
+                                <li class="prev">&#10094;</li> 
+                                <li class="current">1</li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li class="next"><a href="#">&#10095;</a></li>
+                            </ul>
+                        </div>
+
                         <div class="seq-vdp-summary">
                             <p class="seq-vdp-credit">Your credit &pound;988.07</p>
                             <div class="seq-vdp-price">

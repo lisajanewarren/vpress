@@ -6,6 +6,7 @@
 @import "global/base-new";
 
 @import "plugins/magnific-popup";
+@import "plugins/datepicker";
 
 @import "components/vpress-bootstrap-btn-extensions"; 
 @import "components/vpress-bg-colours";
@@ -29,7 +30,7 @@
 @import "components/seq-layout-toggle";
 @import "components/seq-popup";
 @import "components/seq-pagination";
-
+@import "components/seq-datepicker-bar";
 
 @import "sections/header";
 @import "sections/sidebar";
@@ -43,3 +44,4 @@
 @import "pages/dashboard"; 
 @import "pages/variable-data-product"; 
 @import "pages/file-manager"; 
+@import "pages/order"; 

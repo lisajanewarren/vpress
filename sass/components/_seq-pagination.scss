@@ -1,3 +1,32 @@
 .seq-pagination {
-	
+	overflow: hidden;
+
+	ul {
+		float: left;
+		padding: 0;
+		margin: 0 0 20px 0;
+
+		li {
+			float: left;
+			color: #cccccc;
+			font-size: 24px;
+			padding: 0 15px 0 0;
+			a {
+				color: #363636;
+				float: left;
+				&:hover {
+					color: #f26c4f;
+					text-decoration: none;
+				}
+			}
+		}
+		li.active {
+			color: #f26c4f;
+		}
+		li.current {
+			color: #f26c4f;
+			a {color: #f26c4f;}
+		}
+
+	}
 }

@@ -1,5 +1,9 @@
-:focus, :active, :visited, :hover {
+:focus, :active, :visited, :hover, .btn:focus {
 	outline: none;
+}
+
+.form-control:focus {
+	box-shadow: none;
 }
 
 #page {
