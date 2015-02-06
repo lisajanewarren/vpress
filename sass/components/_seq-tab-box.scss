@@ -54,7 +54,6 @@
                     color: #b0b0b0;
                     padding-top: 5px;
                     margin: 0 auto;
-
                     border-radius: 40px;
                     height: 80px;
                     width: 80px;
@@ -68,15 +67,15 @@
 
             li.active {
                 .seq-icon {
-                    background: #00a99d;
-                    border: solid 4px #00a99d;
+                    background: #f26c4f;
+                    border: solid 4px #f26c4f;
                     color: #ffffff;
                 }
                 .seq-text {
-                    color: #00a99d;
+                    color: #f26c4f;
                 }
                 .seq-bar {
-                    background: #00a99d;
+                    background: #f26c4f;
                     position: absolute;
                     bottom: 0;
                     left: 0;
@@ -86,7 +85,7 @@
                     z-index: 1;
                     &:after {
                         content: '';
-                        background: url(../images/arrow-turqoise.png) no-repeat 0 0;
+                        background: url(../images/arrow.png) no-repeat 0 0;
                         background-size: contain;
                         position: absolute;
                         width: 14px;
@@ -97,22 +96,6 @@
                     }
                 }
             }
-            li:first-child.active {
-                .seq-icon {
-                    background: #f26c4f; 
-                    border: solid 4px #f26c4f;
-                }
-                .seq-text {
-                    color: #f26c4f;
-                }
-                .seq-bar {
-                    background: #f26c4f; 
-                    &:after {
-                        content: ''; 
-                        background-image: url(../images/arrow.png);
-                    }
-                }
-            }   
         }
     }
 }

@@ -1479,13 +1479,13 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
         max-width: 120px;
         padding: 20px 0 0 0; }
     .seq-tab-box .seq-tab-nav li.active .seq-icon {
-      background: #00a99d;
-      border: solid 4px #00a99d;
+      background: #f26c4f;
+      border: solid 4px #f26c4f;
       color: #ffffff; }
     .seq-tab-box .seq-tab-nav li.active .seq-text {
-      color: #00a99d; }
+      color: #f26c4f; }
     .seq-tab-box .seq-tab-nav li.active .seq-bar {
-      background: #00a99d;
+      background: #f26c4f;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -1495,24 +1495,14 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
       z-index: 1; }
       .seq-tab-box .seq-tab-nav li.active .seq-bar:after {
         content: '';
-        background: url(../images/arrow-turqoise.png) no-repeat 0 0;
+        background: url(../images/arrow.png) no-repeat 0 0;
         background-size: contain;
         position: absolute;
         width: 14px;
         height: 7px;
         left: 50%;
         margin-left: -7px;
-        bottom: -7px; }
-    .seq-tab-box .seq-tab-nav li:first-child.active .seq-icon {
-      background: #f26c4f;
-      border: solid 4px #f26c4f; }
-    .seq-tab-box .seq-tab-nav li:first-child.active .seq-text {
-      color: #f26c4f; }
-    .seq-tab-box .seq-tab-nav li:first-child.active .seq-bar {
-      background: #f26c4f; }
-      .seq-tab-box .seq-tab-nav li:first-child.active .seq-bar:after {
-        content: '';
-        background-image: url(../images/arrow.png); } }
+        bottom: -7px; } }
 @media (min-width: 1070px) {
   .seq-tab-box .seq-tab-nav li {
     padding: 0 20px 20px 20px; }
@@ -2261,6 +2251,17 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   #wrapper.toggled #page-content-wrapper {
     position: relative;
     margin-right: 0; } }
+@media (max-width: 767px) {
+  #wrapper.toggled {
+    padding-left: 0; }
+
+  #wrapper.toggled #sidebar-wrapper {
+    width: 0;
+    margin-left: -250px; }
+
+  .navbar-collapse {
+    z-index: 1;
+    position: relative; } }
 .menu-close {
   display: none; }
 
