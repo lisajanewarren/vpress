@@ -24,19 +24,15 @@
                 <div id="page">
 
                     <div id="seq-product-editor">
-                        <div class="seq-product-editor-head">
+                        <div class="seq-product-editor-head js-sticky-header">
                             <div class="inner">
 
-                                <div class="seq-product-editor-user-controls">
-                                   <ul class="pagination">
-                                        <li class="prev"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
-                                        <li><a href="#">1 of 2</a></li>
-                                        <li class="next"><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
-                                    </ul>
-
-                                    <ul class="page-layout">
-                                        <li class="page-layout-one active"><a href="#"></a></li>
-                                        <li class="page-layout-two"><a href="#"></a></li>
+                            
+                                <div class="seq-word-pagination seq-word-pagination-left seq-word-pagination-dark">
+                                    <ul>
+                                        <li class="prev">&#10094;</li> 
+                                        <li class="current">1 of 2</li>
+                                        <li class="next"><a href="#">&#10095;</a></li>
                                     </ul>
                                 </div>
 
@@ -44,14 +40,21 @@
                                     <li>
                                         <button type="button" class="btn vpress">Remove item from queue</button>
                                     </li>
-                                    <li><button type="button" class="btn vpress">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                        Back</button></li>
+                                </ul>
+
+                              
+                                <div class="seq-word-pagination seq-word-pagination-right">
+                                    <ul>
+                                        <li class="prev">&#10094;</li> 
+                                        <li class="current">Item 1 of 12</li>
+                                        <li class="next"><a href="#">&#10095;</a></li>
+                                    </ul>
+                                </div>
+
+                                <ul class="seq-product-editor-actions">
                                     <li>
-                                        <button type="button" class="btn vpress">Next
-                                            <span class="glyphicon glyphicon-chevron-right"></span>
-                                        </button>
-                                    </li> 
+                                        <button type="button" class="btn vpress">Add to basket</button>
+                                    </li>
                                 </ul>
             
                             </div>
@@ -65,11 +68,9 @@
                                     <li class="control-one">zoom in</li>
                                     <li class="control-two">zoom out</li>
                                     <li class="control-three">pdf</li>
-                                    <li class="control-four">refresh <span class="num">2</span></li>
                                 </ul>
                                 
-                                <div class="seq-interactive-image">
-                                    <img src="http://placehold.it/400x580/363636" alt="" />
+                                <div class="seq-interactive-image js-sticky-image">
                                 </div>
 
                             </div>
@@ -80,59 +81,113 @@
                                     <p>Description text could go in here. This description could be two or three lines long...</p>
                                 </div>
 
-                                <div class="seq-box">
+                                <div class="seq-product-editor-title">
+                                    <small>Prodcode</small>
+                                    <h2>Variable product title</h2>
+                                </div>
+
+                                <div class="seq-box js-toggle-box">
                                     <header class="seq-box-header ">
-                                        <h2 class="seq-sub-title">Engagement Code</h2>
+                                        <h2 class="seq-title">Engagement Code</h2>
+                                        <ul class="seq-box-controls">
+                                            <li class="js-toggle-trig active">toggle visibility</li>
+                                        </ul>
                                     </header>
-                                    <div class="seq-box-content">
+                                    <div class="seq-box-content js-toggle-panel">
                                         <div class="seq-inner">
-                                           <div class="seq-filter btn-group" style="width: 100%;">
-                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="background:#ffffff;border:1px solid #ccc;width:100%;text-align:left">
-                                                  Please choose <span class="caret" style="float: right;margin: 8px 0 0 0;"></span>
-                                                </button>
-                                                <ul class="dropdown-menu" role="menu" style="width:100%">
-                                                    <li><a href="#">option 2</a></li>
-                                                    <li><a href="#">option 3</a></li>
-                                                    <li><a href="#">option 4</a></li>
-                                                </ul>
-                                            </div>
+
+                                            <div class="seq-box-form">
+                                               <div class="btn-group">
+                                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+                                                      Please choose... <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a href="#">option 2</a></li>
+                                                        <li><a href="#">option 3</a></li>
+                                                        <li><a href="#">option 4</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div> <!-- end seq box form-->
+
                                         </div>
                                     </div>
                                 </div> <!-- end seq box -->
 
                                 
-                                <div class="seq-box">
-                                    <header class="seq-box-header ">
-                                        <h2 class="seq-sub-title">Delivery Address</h2>
+
+                                
+                                <div class="seq-box js-toggle-box">
+                                    <header class="seq-box-header">
+                                        <h2 class="seq-title">Delivery Address</h2>
+                                        <ul class="seq-box-controls">
+                                            <li class="js-toggle-trig active">toggle visibility</li>
+                                        </ul>
                                     </header>
-                                    <div class="seq-box-content">
+                                    <div class="seq-box-content js-toggle-panel">
                                         <div class="seq-inner">
-                                           <div class="seq-filter btn-group" style="width: 100%;">
-                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="background:#ffffff;border:1px solid #ccc;width:100%;text-align:left;">
-                                                  Please choose <span class="caret" style="float: right;margin: 8px 0 0 0;"></span>
-                                                </button>
-                                                <ul class="dropdown-menu" role="menu" style="width:100%">
-                                                    <li><a href="#">option 2</a></li>
-                                                    <li><a href="#">option 3</a></li>
-                                                    <li><a href="#">option 4</a></li>
-                                                </ul>
-                                            </div>
-                                            <div style="overflow:hidden;padding:20px 0;">
-                                                <button type="button" class="btn vpress">Add New Address</button>
-                                            </div>
+                                           
+                                            <div class="seq-box-form">
+                                               <div class="btn-group">
+                                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+                                                      Please choose... <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a href="#">option 2</a></li>
+                                                        <li><a href="#">option 3</a></li>
+                                                        <li><a href="#">option 4</a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="address-info">
+                                                    <p class="address">
+                                                        Sequence<br />
+                                                        Gloworks<br />
+                                                        Porth Teigr Way<br />
+                                                        Cardiff<br />
+                                                        CF10 4GA
+                                                    </p>
+                                                    <p class="add-link">
+                                                        <span class="glyphicon glyphicon-plus"></span>
+                                                        <a href="#">Add New Address</a>
+                                                    </p/>
+                                                </div>
+
+                                            </div> <!-- end seq box form-->
+
                                         </div>
                                     </div>
                                 </div> <!-- end seq box -->
 
 
-                                <div class="seq-box">
+                                <div class="seq-box js-toggle-box">
                                     <header class="seq-box-header ">
-                                        <h2 class="seq-sub-title">Quantity</h2>
+                                        <h2 class="seq-title">Quantity</h2>
+                                        <ul class="seq-box-controls">
+                                            <li class="js-toggle-trig active">toggle visibility</li>
+                                        </ul>
                                     </header>
-                                    <div class="seq-box-content">
+                                    <div class="seq-box-content js-toggle-panel">
                                         <div class="seq-inner">
-                                           <input class="form-control" placeholder="" type="text" style="border-radius: 0;box-shadow:none">
-                                       
+
+                                            <div class="seq-box-form">
+                                                
+                                                <div class="update-quantity">
+                                                    <div class="seq-box-form-field">
+                                                        <input placeholder="Enter quantity..." type="text">
+                                                        <span class="info">Box of 500</span>
+                                                    </div>
+                                                    <p class="result">= &pound;0.00</p>
+                                                </div>
+
+                                                <div class="info-row">
+                                                    <span class="glyphicon glyphicon-ok"></span>
+                                                    <p>2000 boxes in stock</p>
+                                                </div>
+
+                                            </div> <!-- end seq box form-->
+
+                                            <h4 class="seq-box-table-header">Sample prices</h4>
+
                                             <table class="seq-box-table" style="margin-top: 30px">
                                                 <tr>
                                                     <th>Quantity</th>
@@ -161,22 +216,31 @@
 
       
                             </div>
-
                         </div>
 
                         <div class="seq-product-editor-foot">
                             <div class="inner">
 
                                 <ul class="seq-product-editor-actions">
-                                    <li><button type="button" class="btn vpress">Remove Item from Queue</button></li>
-                                    <li><button type="button" class="btn vpress">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                        Back
-                                        </button>
-                                    </li>
                                     <li>
-                                        <button type="button" class="btn vpress">Save &amp; Continue
-                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        <button type="button" class="btn vpress">
+                                            Remove item from queue
+                                        </button>
+                                    </li> 
+                                </ul>
+
+                                <div class="seq-word-pagination seq-word-pagination-right">
+                                    <ul>
+                                        <li class="prev">&#10094;</li> 
+                                        <li class="current">Item 1 of 12</li>
+                                        <li class="next"><a href="#">&#10095;</a></li>
+                                    </ul>
+                                </div>
+
+                                <ul class="seq-product-editor-actions">
+                                    <li>
+                                        <button type="button" class="btn vpress">
+                                            Add to basket
                                         </button>
                                     </li> 
                                 </ul>

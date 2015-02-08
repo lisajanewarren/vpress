@@ -13,8 +13,8 @@
 
 		return this.each(function() { 
 
-				$(this).find(options.togglePanel).hide();
-				$(this).find(options.toggleTrig).toggleClass('active');
+				//$(this).find(options.togglePanel).hide();
+				//$(this).find(options.toggleTrig).toggleClass('active');
 
 				$(this).find(options.toggleTrig).on('click', function() {
 					var curr = $(this).closest(options.toggleBox);

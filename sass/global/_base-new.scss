@@ -15,3 +15,19 @@
 .page-product-editor {
 	background: #ebebeb;
 }
+
+::-webkit-input-placeholder {
+	color: #363636;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: #363636;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	color: #363636;  
+}
+
+:-ms-input-placeholder {  
+	color: #363636;  
+}

@@ -24,29 +24,29 @@
                 <div id="page">
 
                     <div id="seq-product-editor">
-                        <div class="seq-product-editor-head">
+                        <div class="seq-product-editor-head js-sticky-header">
                             <div class="inner">
 
-                                <div class="seq-product-editor-user-controls">
-                                   <ul class="pagination">
-                                        <li class="prev"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
-                                        <li><a href="#">1 of 2</a></li>
-                                        <li class="next"><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
-                                    </ul>
-
-                                    <ul class="page-layout">
-                                        <li class="page-layout-one active"><a href="#"></a></li>
-                                        <li class="page-layout-two"><a href="#"></a></li>
+                            
+                                <div class="seq-word-pagination seq-word-pagination-left seq-word-pagination-dark">
+                                    <ul>
+                                        <li class="prev">&#10094;</li> 
+                                        <li class="current">1 of 2</li>
+                                        <li class="next"><a href="#">&#10095;</a></li>
                                     </ul>
                                 </div>
 
+                               
                                 <ul class="seq-product-editor-actions">
-                                    <li><button type="button" class="btn vpress">Save</button></li>
                                     <li>
-                                        <button type="button" class="btn vpress">Save &amp; Continue
+                                        <button type="button" class="btn vpress">Save</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn vpress">
+                                            Save &amp; continue
                                             <span class="glyphicon glyphicon-chevron-right"></span>
                                         </button>
-                                    </li> 
+                                    </li>
                                 </ul>
             
                             </div>
@@ -63,8 +63,7 @@
                                     <li class="control-four">refresh <span class="num">2</span></li>
                                 </ul>
                                 
-                                <div class="seq-interactive-image">
-                                    <img src="http://placehold.it/400x580/363636" alt="" />
+                                <div class="seq-interactive-image js-sticky-image">
                                 </div>
 
                             </div>
@@ -250,16 +249,19 @@
 
                         <div class="seq-product-editor-foot">
                             <div class="inner">
-
+   
                                 <ul class="seq-product-editor-actions">
-                                    <li><button type="button" class="btn vpress">Save</button></li>
                                     <li>
-                                        <button type="button" class="btn vpress">Save &amp; Continue
+                                        <button type="button" class="btn vpress">Save</button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn vpress">
+                                            Save &amp; continue
                                             <span class="glyphicon glyphicon-chevron-right"></span>
                                         </button>
-                                    </li> 
+                                    </li>
                                 </ul>
-
+            
                             </div>
                         </div>
 

@@ -120,13 +120,14 @@
             <ul>
                 <li>- Banner needs to handle different content over the top (user editable). In phase 2 there will also be ability to change colours.</li>
             </ul>-->
-               
+            <!--
             <h1>My To-Do List..</h1>
             <ul>
                 <li><del>- Make sure all tables work consistently &amp; responsively &amp; double-check they will work with any number of columns</del></li>
                 <li>- Bootstrap plugin for equal height columns</li>
                 <li><del>- Remove js bootstrap sortable tables</del></li>
             </ul>
+            -->
 
         </section>
     </body>

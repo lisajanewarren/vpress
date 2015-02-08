@@ -1,0 +1,162 @@
+.seq-box {
+	background: #ffffff;
+	border-radius: 4px;
+	margin: 0 0 20px 0;
+
+	.seq-title,
+	.seq-sub-title {
+		margin: 0;
+		font-size: 15px;
+	}
+	.seq-title {
+		font-size: 20px;
+	}
+
+	.seq-box-header {
+		padding: 16px;
+		border-bottom: 1px solid #ebebeb;
+	}
+	.seq-box-content .seq-inner {
+		padding: 18px;
+	}
+}
+
+.seq-box-table { 
+
+	&-header {
+		margin: 0;
+		position: relative;
+		top: 16px;
+		font-size: 15px;
+		font-weight: bold;
+	}
+
+	border: none;
+	padding: 0;
+	margin: 0 -18px -18px -18px;
+	width: 100%;
+	max-width: none;
+	@include calc( width, '100% + 36px');
+
+	th, td {
+		border-left: 1px solid #ebebeb;
+		padding: 12px 15px;
+		width: 33.3333333%;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	tr td:first-child,
+	tr th:first-child {
+		border-left: none;
+	}
+
+	th {
+		background: #f6f6f6;
+	}
+
+	td {
+		border-top: 1px solid #ebebeb;
+	}
+
+}
+
+.seq-box-form {
+	@extend .clear;
+	.seq-box-form-field {
+		margin: 15px 0;
+		@extend .clear;
+	}
+
+	.btn-group {
+		width: 100%;
+		.dropdown-toggle {
+			background: #ebebeb;
+			border: none;
+			padding: 8px 12px;
+			text-align: left;
+			width: 100%;
+			box-shadow: none;
+		}
+		.dropdown-menu {
+			width: 100%;
+		}
+		.caret {
+			float: right;
+			margin: 8px 0 0 0;
+		}
+	}
+
+	input[type="text"],
+	textarea {
+		width: 100%;
+		background: #ebebeb;
+		border: none;
+		padding: 8px 12px;
+	}
+	textarea {
+		min-height: 250px;
+	}
+
+	label {
+		display: block;
+		margin: 0 0 8px 0;
+	}
+
+	.btn {
+		float: left;
+		font-size: 22px;
+		padding: 4px 12px;
+		span {
+			top: 3px;
+		}
+	}
+
+	.btn + label {
+		float: left;
+		margin: 10px 14px;
+	}
+}
+
+
+.js-toggle-box {
+
+	header {
+		position: relative;
+		padding-right: 100px;
+	}
+	.js-toggle-trig {
+		position: absolute;
+		top: 20px;
+		right: 15px;
+		font-size: 0;
+		font-family: 'Glyphicons Halflings';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		cursor: pointer;
+
+		&:before {
+			content: "\e114";
+			font-size: 16px;
+		}
+
+		&.active:before {
+			content: "\e113";
+		}
+	}
+
+	.js-popout-trig {
+		background: url(../images/popout-toggle.png) no-repeat 0 0;
+		background-size: contain;
+		width: 18px;
+		height: 16px;
+		position: absolute;
+		top: 21px;
+		right: 45px;
+		font-size: 0;
+		cursor: pointer;
+	}
+}

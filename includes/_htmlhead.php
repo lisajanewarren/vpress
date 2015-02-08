@@ -15,7 +15,7 @@
 
 
     <script type="text/javascript" src="jquery/jquery.magnific-popup.js"> </script>
-
+    <script type="text/javascript" src="jquery/jquery.sticky.js"> </script>
 
 
     <!-- custom css and js -->

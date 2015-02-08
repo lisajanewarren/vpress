@@ -6,6 +6,16 @@ $(function() {
 
 	$('[data-toggle="tooltip"]').tooltip();
 
+	$(".js-sticky-header").sticky({
+		topSpacing:0,
+		getWidthFrom: '#page-content-wrapper',
+		responsiveWidth: true
+	});
+
+	$(".js-sticky-image").sticky({
+		topSpacing:80
+	});
+
 	$('.seq-inline-popup-trigger').magnificPopup({
 	  type:'inline',
 	  alignTop: 'true',

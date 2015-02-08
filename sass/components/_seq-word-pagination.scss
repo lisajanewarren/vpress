@@ -1,0 +1,53 @@
+#seq-product-editor .seq-word-pagination {
+	overflow: hidden;
+
+	ul {
+		float: left;
+		padding: 0;
+		height: 60px;
+		padding: 14px 20px 0 20px;
+
+		li {
+			float: left;
+			color: #cccccc;
+			font-size: 21px;
+			a {
+				color: #363636;
+				float: left;
+				&:hover {
+					color: #f26c4f;
+					text-decoration: none;
+				}
+			}
+		}
+		li.active {
+			color: #f26c4f;
+		}
+		li.current {
+			padding: 1px 8px 0 8px;
+			margin: 0 8px;
+			font-weight: bold;
+			color: #363636;
+			a {color: #363636;}
+		}
+
+	}
+}
+
+.seq-word-pagination-left {
+	float: left;
+}
+
+.seq-word-pagination-right {
+	float: right;
+}
+
+.seq-word-pagination-dark {
+	border-left: 1px solid #d7d7d7;
+	border-right: 1px solid #d7d7d7;
+
+	.current {
+		background: #eeeeee;
+		border-radius: 4px;
+	}
+}
