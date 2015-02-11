@@ -1,0 +1,137 @@
+#seq-sidebar-slider {
+    position: relative;
+    overflow: hidden;
+    margin: 5px 0;
+    height: 80%; //fallback for if calc() not supported
+	height: -webkit-calc(100% - 120px - 10px); //minus the 2 top buttons minus the two 5px margins
+	height: calc(100% - 120px - 10px); //minus the 2 top buttons minus the 2 5px margins
+
+    .inner {
+        width: 200%; /* width set dnamically in js, depending on how many slides */
+        @include transform(translate(0, 0));
+    	@include transition(all, 0.4s, ease-in-out);
+    	overflow: hidden;
+    	height: 100%;
+    }
+
+    .seq-sidebar-slide {
+    	width: $sidebar-width;
+    	float: left;
+    	overflow: hidden;
+    	position: relative;
+    	height: 100%;
+    }
+
+    .nav-holder {
+    	height: 100%;
+    	overflow: hidden;
+    	position: relative;
+    }
+
+    .subnav-holder {
+  		height: 80%; //fallback for if calc() not supported
+		height: -webkit-calc(100% - 60px); //minus the height of back link
+		height: calc(100% - 60px); //minus the height of the back link
+    	overflow: hidden;
+    	position: relative;
+    }
+
+    .back {
+    	display: block;
+		padding: 17px 15px 17px 34px;
+		height: 60px;
+		color: #d7d7d7;
+		font-size: 16px;
+		font-weight: 500;
+		background: #3b3b3b;
+		position: relative;
+		&:hover {
+			text-decoration: none;
+			color: #ffffff;
+        	&:before, &:after {
+				background: #ffffff;
+			}
+		}
+
+
+	    &:before, &:after {
+            content: '';
+            position: absolute;
+            background: #5d5d5d;
+            width: 10px;
+            height: 2px;
+            top: 50%;
+            left: 14px;
+            border-radius: 3px 0 0 3px;
+            margin-top: 2px;
+            @include transform(rotate(45deg));
+
+        }
+        &:after {
+            @include transform(rotate(-45deg));
+            margin-top: -4px;
+        }
+
+
+    }
+}
+
+
+.seq-sidebar-nav {
+    position: relative;
+    z-index: 2;
+    clear: both;
+    padding: 7px 0;
+
+    ul {
+    	display: none; /* for now, whilst styling */
+    }
+
+    li {
+        a, span {
+            display: block;
+            padding: 10px 34px 10px 15px;
+            color: #d7d7d7;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+
+            &:hover {
+                color: #ffffff;
+                text-decoration: none;
+
+                &:before, &:after {
+                    background: #ffffff;
+                }
+            }
+
+
+            &:before, &:after {
+                content: '';
+                position: absolute;
+                background: #5d5d5d;
+                width: 10px;
+                height: 2px;
+                top: 50%;
+                right: 22px;
+                border-radius: 3px 0 0 3px;
+                margin-top: 3px;
+                @include transform(rotate(-45deg));
+            }
+            &:after {
+                @include transform(rotate(45deg));
+                margin-top: -3px;
+            }
+
+        }
+    }
+}
+
+#slide-template {
+	display: none;
+}
+
+
+
+

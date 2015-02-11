@@ -1,0 +1,246 @@
+$sidebar-width: 225px;
+$sidebar-btns-width: 70px;
+
+
+
+#page-content-wrapper {
+    @include transition(padding, 0.4s, ease-in-out);
+    padding-left: $sidebar-btns-width;
+
+    &-inner {
+        position: relative;
+    } 
+}
+
+.seq-sidebar-active #page-content-wrapper {
+    padding-left: $sidebar-width;
+}
+
+#seq-sidebar {
+    background: #434343;
+    width: $sidebar-width;
+    position: fixed;
+    z-index: 20;
+    height: 100%;
+    padding-bottom: 60px; /* to allow for the absolutely positioned basket button */
+    left: -$sidebar-width + $sidebar-btns-width;
+    @include transition(all, 0.4s, ease-in-out);
+}
+
+.seq-sidebar-active #seq-sidebar {
+    background: #2f2f2f;
+    left: 0;
+}
+
+
+
+/* the 3 buttons */
+
+.seq-sidebar-btns {
+    background: #434343;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#seq-hamburger {
+    position: relative;
+    width: 70px;
+    height: 60px;
+    cursor: pointer;
+    float: right;
+
+    &:before,
+    &:after,
+    span {
+        background: #fff;
+        content: '';
+        display: block;
+        width: 30px;
+        height: 4px;
+        position: absolute;
+        left: 20px;
+
+        -webkit-transition: none 0.6s ease 0.6s;
+        transition: none 0.6s ease 0.6s;
+        -webkit-transition-property: transform, top, bottom, left, opacity;
+        transition-property: transform, top, bottom, left, opacity;
+    }
+
+    span {
+        top: 26px;
+    }
+
+    &:before {
+        top: 16px; 
+    }
+
+    &:after {
+        top: 36px; 
+    }
+}
+
+.seq-sidebar-active #seq-hamburger {
+
+    span {
+        left: -50px;
+        opacity: 0;
+    }
+
+    &:before {
+        @include transform(rotate(45deg));
+        top: 26px;
+    }
+
+    &:after {
+        @include transform(rotate(-45deg));
+        top: 26px;
+    }
+}
+
+
+#seq-shopping-cart {
+    height: 60px;
+    overflow: hidden;
+
+    a {  
+        color: #888888;
+        float: right;
+        padding: 14px 0px;
+        height: 60px;
+        width: 70px;
+        text-align: center;
+        position: relative;
+    }
+    .glyphicon-shopping-cart {
+        font-size: 28px;
+        color: #888888;
+    }
+    .count {
+        background: #f26c4f;
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+        width: 24px;
+        height: 24px;
+        border-radius: 12px;
+        color: #fff;
+        text-align: center;
+        padding: 2px 0 0 0;
+
+        span { display: none;}
+    }
+}
+
+.seq-sidebar-active #seq-shopping-cart {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: #434343;
+    width: $sidebar-width;   
+
+    a {
+        width: auto;
+        float: none;
+        display: block;
+        overflow: hidden;
+        padding: 14px;
+    }
+
+    .glyphicon-shopping-cart {
+        float: right;
+    }
+
+    .count {
+        background: none;
+        width: auto;
+        height: auto;
+        border-radius: none;
+        right: auto;
+        left: 10px;
+        float: left;
+        padding: 0 0 15px 0;
+        span {display: inline;}
+    }
+}
+
+#seq-site-search {
+    background: #ffffff;
+    overflow: hidden;
+    position: relative;
+    clear: both;
+    .glyphicon-search {
+        float: right;
+        width: 70px;
+        font-size: 32px;
+        text-align: center;
+        display: block;
+        padding: 13px 0;
+        cursor: pointer;
+    }
+    input[type="text"] {
+        height: 60px;
+        background: #ffffff;
+        border: none;
+        padding: 10px;
+        width: 155px;
+        font-size: 20px;
+    }
+    button {
+        position: absolute;
+        background: none;
+        width: 70px;
+        height: 60px;
+        border: none;
+        z-index: 1;
+        top: 0;
+        right: 0;
+    }
+}
+
+/* end the 3 buttons */
+
+
+@media (max-width: 767px){
+
+    #page-content-wrapper {
+        padding-left: 0;
+    }
+
+    .seq-sidebar-active #page-content-wrapper {
+        padding-left: 0;
+    }
+
+    #seq-sidebar {
+        height: 60px;
+    }
+    .seq-sidebar-active #seq-sidebar {
+        height: 100%;
+    }
+
+    #seq-site-search {
+        display: none;
+    }
+    #seq-shopping-cart {
+        display: none;
+    }
+
+    .seq-sidebar-active {
+        #seq-site-search,
+        #seq-shopping-cart {
+            display: block;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+

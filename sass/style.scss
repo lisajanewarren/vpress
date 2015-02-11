@@ -7,6 +7,7 @@
 
 @import "plugins/magnific-popup";
 @import "plugins/datepicker";
+@import "plugins/perfect-scrollbar";
 
 @import "components/vpress-bootstrap-btn-extensions"; 
 @import "components/vpress-bg-colours";
@@ -35,7 +36,8 @@
 @import "components/seq-box";
 
 @import "sections/header";
-@import "sections/sidebar";
+@import "sections/seq-slide-panel";
+@import "sections/seq-slide-navigation";
 @import "sections/banner";
 @import "sections/content"; 
 @import "sections/nav-lists";
@@ -46,4 +48,5 @@
 @import "pages/dashboard"; 
 @import "pages/variable-data-product"; 
 @import "pages/file-manager"; 
-@import "pages/order"; 
+@import "pages/order";
+@import "pages/login-register"; 

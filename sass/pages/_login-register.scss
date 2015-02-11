@@ -1,0 +1,74 @@
+#login-register {
+	background-size: cover;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+
+	h1 {
+		text-align: center;
+		margin: 0 0 20px 0;
+		line-height: 1.2em;
+	}
+
+	p {
+		text-align: center;
+		margin: 0 0 20px 0;
+		a {
+			color: #363636;
+			text-decoration: underline;
+		}
+	}
+
+	.seq-box-form-field {
+		margin: 1px 0;
+	}
+
+	button {
+		text-align: center;
+		float: none;
+		display: block;
+		margin: 20px auto;
+		font-size: 16px;
+		font-weight: 500;
+		padding: 6px 35px;
+	}
+
+	.panel {
+		padding: 35px;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0,0,0,0.5);
+		z-index: 0;
+	}
+
+	&-logo {
+		position: relative;
+		z-index: 1;
+		img {
+			display: block;
+			max-width: 200px;
+			max-height: 200px;
+			margin: 40px auto 0 auto;
+		}
+	}
+
+	&-box {
+		background: #ffffff;
+		width: 400px;
+		height: 400px;
+		position: relative;
+		z-index: 1;
+		margin: 40px auto;
+	}
+
+	.question {
+		background: #ebebeb;
+	}
+}

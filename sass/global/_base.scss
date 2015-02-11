@@ -7,11 +7,49 @@ html, body {
 	-webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
 }
 
-body {
-	margin-bottom: 40px;
+
+:focus, :active, :visited, :hover, .btn:focus {
+    outline: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+#page {
+    max-width: 980px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.page-product-editor {
+    background: #ebebeb;
+}
+
+::-webkit-input-placeholder {
+    color: #363636;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #363636;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #363636;  
+}
+
+:-ms-input-placeholder {  
+    color: #363636;  
+}
+
+ul {
+    list-style: none;
 }
 
 
+
+
+/* vpress old styles */
 #top-navigation {
     height: 60px;
     margin-bottom:0px;
@@ -40,20 +78,6 @@ body {
     padding: 25px 0;
 }
 
-
-
-
-
-.center {
-    text-align: center;
-}
-
-
-.fader, 
-.pointer {
-    cursor: pointer;
-}
-
 .icon {
     font-size: 2.5em;
     font-weight: bold;
@@ -63,100 +87,10 @@ body {
     font-size: 2.0em;
     font-weight: bold;
 }
-
-#menu-left {
-    margin-left: 18px;
-}
-
-#menu-left a {
-    color: #d7d7d7;
-    line-height: 36px;
-}
-
-#menu-left a:hover, 
-#menu-left li {
-    color: $white;
-    line-height: 36px;
-}
-
-#menu-left a span {
-    color: #5b5b5b;
-    margin-right: 10px;
-    padding-top: 10px;
-}
-
-#menu-search {
- background-color: $white;
-}
-
-#menu-search-field {
-    background-color: $white;
-    border: none;
-    height: 60px;
-    padding-left: 0;
-    margin-left: 0;
-}
-
-.menu-close {
-    color: $white;
-    font-size: 24pt;
-    height: 28px;
-    margin: 10px 0 0 -25px;
-}
-
-.menu-toggle {
- color: $white;
-}
-
-#menu-hide {
-    color: $white;
-    text-align: right;
-    font-size: 24pt;
-    height: 28px;
-    margin-right: 30px;
-}
+/* end vpress old styles */
 
 
 
-.row-buffer-bottom {
-    margin-top: 30px;
-}
-
-.row-buffer-top {
-    margin-top: 30px;
-}
-
-#side-panel {
-    background-color: #434343;
-    float: left;
-    height: 100%;
-    padding: 0;
-    position: fixed;
-    width: 225px;
-}
-
-#center-panel {
-    margin-left: 225px;
-}
-
-ul {
-    list-style: none;
-}
 
 
-.pagination > li > a,
-.pagination > li > span {
-    border: none;
-    color: #363636;
-    font-size: 12pt;
-    font-weight: bold;
-}
-
-#catalogue-structure {
-    display: none;
-}
-
-.submenu:hover {
-    color: #f26c4f;
-}
 

@@ -98,7 +98,7 @@
                     <a href="10-order.php">10 - Order</a> <span class="done">done</span>
                 </li>
                 <li>
-                    <a href="10-order-selected.php">10 - Order Selected</a>
+                     <a href="10-order-selected.php">10 - Order Selected</a>
                     <p>Could do with a design (or accurate wireframe) to confirm exactly what is needed on this page. Remove 'refresh' button. Table needs a scrollbar as it could be long. Check what the buttons should be on this page? Remove 'Save and Continue' button? Remove Two layout options. Remove 'proof' button. Add an 'add to basket' button?<em> - awaiting the signed off design from Steve.</em>.</p>
                 </li>
                 <li>
@@ -110,9 +110,11 @@
                 <li>
                     <a href="12-report-orders.php">12 - Report: Orders</a> <span class="done">done</span>
                 </li>
+                <li>
+                    <a href="13-login-register-page.php">13 - Login/Register</a> - <em>Awaiting signed off design from Steve</em>
+                </li>
                 <li>13. Left nav  - <em>Awaiting signed off design from Steve</em></li>
                 <li>14. Top Nav - also not currently correct - will make similar to design without changing content...</li>
-                <li>15. Login/Register Page - <em>Awaiting signed off design from Steve</em></li>
             </ul>
 
             <!--

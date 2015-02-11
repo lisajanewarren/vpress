@@ -6,6 +6,7 @@
 .seq-table-responsive[data-pattern="priority-columns"] {
 	border: none;
 	margin: 20px 0;
+	clear: both;
 
 	.sticky-table-header {
 		display: none; /* remove the header added in by bootstrap plugin */
