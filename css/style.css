@@ -14,7 +14,7 @@ $body-font-colour: rgb(60, 60, 59);
   margin: 0;
   overflow: hidden; }
 
-.clear:after, .seq-tab-box .seq-tab-nav:after, .seq-ctas:after, .seq-ctas > ul:after, .seq-list .seq-item:after, .seq-btn-bar:after, .seq-control-bar:after, .seq-griddable-list .seq-griddable-item:after, .seq-breadcrumb:after, .seq-datepicker-bar:after, .seq-box-form:after, .seq-box-form .seq-box-form-field:after, #seq-product-editor .inner:after, #seq-product-editor .seq-product-editor-main:after, #seq-product-editor .seq-interactive-image-controls:after, #seq-product-editor .seq-product-editor-options:after, #seq-basket .seq-basket-header:after, #seq-basket .seq-basket-summary-bar:after, #seq-vdp .seq-vdp-search .seq-filter-row:first-child:after, #seq-vdp .seq-vdp-search .seq-filter-row:last-child:after, #seq-vdp .seq-vdp-upload:after, #seq-vdp .seq-vdp-summary:after, #seq-vdp .seq-vdp-summary .seq-vdp-price:after, #seq-vdp .seq-vdp-actions:after {
+.clear:after, #site-header .inner:after, .seq-tab-box .seq-tab-nav:after, .seq-ctas:after, .seq-ctas > ul:after, .seq-list .seq-item:after, .seq-btn-bar:after, .seq-control-bar:after, .seq-griddable-list .seq-griddable-item:after, .seq-breadcrumb:after, .seq-datepicker-bar:after, .seq-box-form:after, .seq-box-form .seq-box-form-field:after, #seq-product-editor .inner:after, #seq-product-editor .seq-product-editor-main:after, #seq-product-editor .seq-interactive-image-controls:after, #seq-product-editor .seq-product-editor-options:after, #seq-basket .seq-basket-header:after, #seq-basket .seq-basket-summary-bar:after, #seq-vdp .seq-vdp-search .seq-filter-row:first-child:after, #seq-vdp .seq-vdp-search .seq-filter-row:last-child:after, #seq-vdp .seq-vdp-upload:after, #seq-vdp .seq-vdp-summary:after, #seq-vdp .seq-vdp-summary .seq-vdp-price:after, #seq-vdp .seq-vdp-actions:after {
   content: "";
   display: table;
   clear: both; }
@@ -60,39 +60,155 @@ html, body {
 ul {
   list-style: none; }
 
-/* vpress old styles */
-#top-navigation {
-  height: 60px;
-  margin-bottom: 0px; }
+#site-header {
+  background: #363636; }
+  #site-header .inner {
+    max-width: 980px;
+    height: 60px;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1; }
+  #site-header .logo {
+    float: left; }
+  #site-header #logout {
+    position: absolute;
+    right: 10px;
+    top: 24px;
+    color: #d7d7d7;
+    font-size: 16px; }
+    #site-header #logout:hover {
+      color: #ffffff; }
+  #site-header #site-top-nav {
+    float: right;
+    background: #363636;
+    margin: 0 20px 0 0; }
+    #site-header #site-top-nav h2 {
+      display: none; }
+    #site-header #site-top-nav ul {
+      text-align: left;
+      margin: 0;
+      padding: 0; }
+      #site-header #site-top-nav ul li {
+        float: left;
+        display: inline;
+        position: relative; }
+        #site-header #site-top-nav ul li a {
+          display: block;
+          padding: 15px 25px;
+          color: #d7d7d7; }
+          #site-header #site-top-nav ul li a:hover {
+            text-decoration: none;
+            color: #ffffff; }
+      #site-header #site-top-nav ul li.has-subnav:after {
+        content: "";
+        background: url(../images/arrow-down.png) no-repeat 0 0;
+        background-size: contain;
+        width: 12px;
+        height: 8px;
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        margin-top: -3px; }
+    #site-header #site-top-nav ul li ul {
+      position: absolute;
+      width: 230px;
+      background: #2f2f2f;
+      z-index: 1;
+      padding: 10px 0; }
+      #site-header #site-top-nav ul li ul li {
+        width: 230px; }
+        #site-header #site-top-nav ul li ul li a {
+          display: block;
+          padding: 12px 20px;
+          color: #d7d7d7; }
+          #site-header #site-top-nav ul li ul li a:hover {
+            color: #ffffff; }
+        #site-header #site-top-nav ul li ul li:before, #site-header #site-top-nav ul li ul li:after {
+          content: '';
+          position: absolute;
+          background: #5d5d5d;
+          width: 10px;
+          height: 2px;
+          top: 51%;
+          right: 22px;
+          border-radius: 3px 0 0 3px;
+          margin-top: 3px;
+          -moz-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+        #site-header #site-top-nav ul li ul li:after {
+          -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+          margin-top: -3px; }
+        #site-header #site-top-nav ul li ul li:hover:before, #site-header #site-top-nav ul li ul li:hover:after {
+          background: #ffffff; }
+    #site-header #site-top-nav ul li:last-child ul {
+      right: 0; }
+  #site-header ul li ul.fallback {
+    display: none; }
+  #site-header ul li:hover ul.fallback {
+    display: block; }
 
-#logo {
-  padding: 0;
-  margin: 0; }
-
-#logobar-grey {
-  background-color: #363636;
-  color: #d7d7d7; }
-
-.navbar-inverse {
-  background-color: #363636;
-  background-image: none;
-  background-repeat: no-repeat;
-  filter: none;
-  border: 0;
-  border-radius: 0; }
-
-#username {
-  padding: 25px 0; }
-
-.icon {
-  font-size: 2.5em;
-  font-weight: bold; }
-
-.stat {
-  font-size: 2.0em;
-  font-weight: bold; }
-
-/* end vpress old styles */
+@media (min-width: 768px) {
+  #site-header #site-top-nav > ul {
+    display: block !important; } }
+@media (max-width: 767px) {
+  #site-header {
+    padding-left: 70px; }
+    #site-header .logo {
+      padding: 11px 0 0 0; }
+      #site-header .logo img {
+        max-width: 60%; }
+    #site-header #site-top-nav h2 {
+      display: block;
+      margin: 0;
+      position: absolute;
+      top: 25px;
+      right: 35px;
+      color: #d7d7d7;
+      font-size: 12px;
+      text-decoration: underline;
+      cursor: pointer;
+      padding-right: 25px; }
+      #site-header #site-top-nav h2:after {
+        content: "";
+        background: url(../images/arrow-down.png) no-repeat 0 0;
+        background-size: contain;
+        width: 12px;
+        height: 8px;
+        position: absolute;
+        right: 5px;
+        top: 53%;
+        margin-top: -3px; }
+    #site-header ul li.has-subnav:after {
+      display: none; }
+    #site-header #site-top-nav ul {
+      background: #363636;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      display: none;
+      overflow: hidden; }
+    #site-header #site-top-nav ul li {
+      float: none;
+      font-size: 13px; }
+    #site-header #site-top-nav ul li ul {
+      position: static;
+      display: block !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      height: auto !important; }
+      #site-header #site-top-nav ul li ul li:before, #site-header #site-top-nav ul li ul li:after {
+        display: none; }
+      #site-header #site-top-nav ul li ul li a {
+        padding: 8px 20px 8px 40px; }
+        #site-header #site-top-nav ul li ul li a:hover {
+          text-decoration: underline; } }
 /* Magnific Popup CSS */
 .mfp-bg {
   top: 0;
@@ -1514,29 +1630,60 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
       float: left;
       text-align: center;
       padding: 0 20px 20px 20px;
-      position: relative; }
+      position: relative;
+      color: #b0b0b0; }
+      .seq-tab-box .seq-tab-nav li a {
+        color: #b0b0b0; }
       .seq-tab-box .seq-tab-nav li .stat {
         display: none; }
       .seq-tab-box .seq-tab-nav li .seq-icon {
         text-align: center;
         display: block;
         border: solid 4px #b0b0b0;
-        color: #b0b0b0;
         padding-top: 5px;
         margin: 0 auto;
         border-radius: 40px;
         height: 80px;
-        width: 80px; }
+        width: 80px;
+        -webkit-transition: border, 0.2s, ease-in-out;
+        -moz-transition: border, 0.2s, ease-in-out;
+        -o-transition: border, 0.2s, ease-in-out;
+        transition: border, 0.2s, ease-in-out; }
+        .seq-tab-box .seq-tab-nav li .seq-icon .icon {
+          font-size: 2.5em;
+          font-weight: bold; }
       .seq-tab-box .seq-tab-nav li .seq-text {
         font-size: 16px;
         max-width: 120px;
-        padding: 20px 0 0 0; }
+        padding: 20px 0 0 0;
+        color: #979797;
+        font-weight: 500; }
+        .seq-tab-box .seq-tab-nav li .seq-text a {
+          color: #979797;
+          -webkit-transition: color, 0.2s, ease-in-out;
+          -moz-transition: color, 0.2s, ease-in-out;
+          -o-transition: color, 0.2s, ease-in-out;
+          transition: color, 0.2s, ease-in-out; }
+      .seq-tab-box .seq-tab-nav li:hover {
+        text-decoration: none;
+        color: #7d7d7d; }
+        .seq-tab-box .seq-tab-nav li:hover a {
+          color: #7d7d7d;
+          text-decoration: none; }
+        .seq-tab-box .seq-tab-nav li:hover .seq-icon {
+          border-color: #7d7d7d; }
+        .seq-tab-box .seq-tab-nav li:hover .seq-text a {
+          color: #636363; }
     .seq-tab-box .seq-tab-nav li.active .seq-icon {
       background: #f26c4f;
       border: solid 4px #f26c4f;
       color: #ffffff; }
     .seq-tab-box .seq-tab-nav li.active .seq-text {
       color: #f26c4f; }
+      .seq-tab-box .seq-tab-nav li.active .seq-text a {
+        color: #f26c4f; }
+        .seq-tab-box .seq-tab-nav li.active .seq-text a:hover {
+          text-decoration: none; }
     .seq-tab-box .seq-tab-nav li.active .seq-bar {
       background: #f26c4f;
       position: absolute;
@@ -2502,7 +2649,9 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     text-align: center;
     display: block;
     padding: 13px 0;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative;
+    z-index: 2; }
   #seq-site-search input[type="text"] {
     height: 60px;
     background: #ffffff;
@@ -2519,6 +2668,11 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     z-index: 1;
     top: 0;
     right: 0; }
+
+.seq-sidebar-active #seq-site-search button {
+  z-index: 2; }
+.seq-sidebar-active #seq-site-search .glyphicon {
+  z-index: 1; }
 
 /* end the 3 buttons */
 @media (max-width: 767px) {

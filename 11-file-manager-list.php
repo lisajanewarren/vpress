@@ -9,7 +9,7 @@
         <?php require 'includes/_sidebar.php'; ?>
 
         <div id="page-content-wrapper">
-            <div id="page-content-wrapper">
+            <div id="page-content-wrapper-inner">
 
                 <?php require 'includes/_topnav.php'; ?>
 

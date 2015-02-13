@@ -1,4 +1,4 @@
-var SlideNav = (function() {
+var LeftNav = (function() {
 
     var settings = { 
         'navPanel' : '#seq-sidebar',
@@ -11,7 +11,6 @@ var SlideNav = (function() {
     },
 
 
-    
     sn = {}, s = settings;
 
 
@@ -65,7 +64,6 @@ var SlideNav = (function() {
             return false;
         });
 
-
     }
 
     sn.addSlide = function() {
@@ -73,7 +71,6 @@ var SlideNav = (function() {
         var slideTemplate = $('#slide-template > div').clone('true');
 
         slideTemplate.find(s.subNavHolder).prop('id', 'subnav-holder-' + s.id );
-
         
         $(s.subNavItems).appendTo( slideTemplate.find(s.subNavHolder) );
 
@@ -84,7 +81,6 @@ var SlideNav = (function() {
     }
 
     sn.removeSlide = function() {
-        console.log('ddd');
         $(s.sliderContainer).find('.seq-sidebar-slide:last-child').remove();
     }
 
@@ -94,10 +90,6 @@ var SlideNav = (function() {
     }
 
     sn.updateScrollbar = function() {
-        console.log('here');
-
-        //$('.seq-sidebar-slide:last-child .subnav-holder').perfectScrollbar('destroy');
-        console.log(s.id);
         
         $('#subnav-holder-' + s.id).addClass('test');
 
@@ -105,7 +97,6 @@ var SlideNav = (function() {
             suppressScrollX : true,
             includePadding : true
         }); 
-        //$('.seq-sidebar-slide:last-child .subnav-holder').perfectScrollbar('update');
 
     }
 
@@ -133,3 +124,11 @@ var SlideNav = (function() {
 
     return sn;
  }());
+
+
+
+$(function() {
+    LeftNav.init();
+});
+
+

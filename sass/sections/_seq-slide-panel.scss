@@ -178,6 +178,8 @@ $sidebar-btns-width: 70px;
         display: block;
         padding: 13px 0;
         cursor: pointer;
+        position: relative;
+        z-index: 2;
     }
     input[type="text"] {
         height: 60px;
@@ -197,6 +199,16 @@ $sidebar-btns-width: 70px;
         top: 0;
         right: 0;
     }
+}
+
+.seq-sidebar-active #seq-site-search {
+    button {
+        z-index: 2;
+    }
+    .glyphicon {
+        z-index: 1;
+    }
+
 }
 
 /* end the 3 buttons */

@@ -82,8 +82,6 @@
 
             </ul>
 
-
-            <h1>Templates I have wireframes for...but no designs...</h1>
             <ul>
                 <li class="del">
                     <del><a href="7-product-details.php">7 - Product Details</a> no longer required</del>
@@ -113,23 +111,10 @@
                 <li>
                     <a href="13-login-register-page.php">13 - Login/Register</a> - <em>Awaiting signed off design from Steve</em>
                 </li>
-                <li>13. Left nav  - <em>Awaiting signed off design from Steve</em></li>
-                <li>14. Top Nav - also not currently correct - will make similar to design without changing content...</li>
+                <li>13. Left nav  - <span class="done">done</span></li>
+                <li>14. Top Nav - <span class="done">done</span></li>
             </ul>
 
-            <!--
-            <h1>Other notes...</h1>
-            <ul>
-                <li>- Banner needs to handle different content over the top (user editable). In phase 2 there will also be ability to change colours.</li>
-            </ul>-->
-            <!--
-            <h1>My To-Do List..</h1>
-            <ul>
-                <li><del>- Make sure all tables work consistently &amp; responsively &amp; double-check they will work with any number of columns</del></li>
-                <li>- Bootstrap plugin for equal height columns</li>
-                <li><del>- Remove js bootstrap sortable tables</del></li>
-            </ul>
-            -->
 
         </section>
     </body>

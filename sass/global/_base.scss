@@ -48,46 +48,216 @@ ul {
 
 
 
+#site-header {
+    background: #363636;
 
-/* vpress old styles */
-#top-navigation {
-    height: 60px;
-    margin-bottom:0px;
+    .inner {
+        max-width: 980px;
+        height: 60px;
+        padding: 10px 20px;
+        position: relative;
+        z-index: 1;
+        @extend .clear; 
+    }
+
+    .logo {
+        float: left;
+    }
+
+    #logout {
+        position: absolute;
+        right: 10px;
+        top: 24px;
+        color: #d7d7d7;
+        font-size: 16px;
+        &:hover {
+            color: #ffffff;
+        }
+    }
+
+    #site-top-nav {
+        float: right;
+        background: #363636;
+        margin: 0 20px 0 0;
+
+        h2 {
+            display: none;
+        }
+
+        ul {
+            text-align: left;
+            margin: 0;
+            padding: 0;
+
+            li {
+                float: left;
+                display: inline;
+                position: relative;
+
+                a {
+                    display: block;
+                    padding: 15px 25px;
+                    color: #d7d7d7;
+                    &:hover {text-decoration: none; color: #ffffff;}
+                }
+            }
+
+            li.has-subnav {
+                &:after {
+                    content: "";
+                    background: url(../images/arrow-down.png) no-repeat 0 0;
+                    background-size: contain;
+                    width: 12px;
+                    height: 8px;
+                    position: absolute;
+                    right: 5px;
+                    top: 50%;
+                    margin-top: -3px; 
+                }
+            }
+        }
+
+        ul li ul {
+            position: absolute; 
+            width: 230px;
+            background: #2f2f2f;
+            z-index: 1;
+            padding: 10px 0;
+
+            li {
+                width: 230px;
+                a {
+                    display: block;
+                    padding: 12px 20px;
+                    color: #d7d7d7;
+
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }
+
+
+                &:before, &:after {
+                    content: '';
+                    position: absolute;
+                    background: #5d5d5d;
+                    width: 10px;
+                    height: 2px;
+                    top: 51%;
+                    right: 22px;
+                    border-radius: 3px 0 0 3px;
+                    margin-top: 3px;
+                    @include transform(rotate(-45deg));
+                }
+                &:after {
+                    @include transform(rotate(45deg));
+                    margin-top: -3px;
+                }
+
+                &:hover:before,
+                &:hover:after {
+                    background: #ffffff;
+                }
+
+
+            }
+        }
+
+        ul li:last-child ul {
+            right: 0;
+        }
+
+    }
+    ul li ul.fallback {display:none;}
+    ul li:hover ul.fallback {display:block;}
 }
 
-#logo {
-    padding: 0;
-    margin: 0;
+@media (min-width: 768px) {
+    #site-header #site-top-nav > ul {
+        display: block !important;
+    }
+
 }
 
-#logobar-grey {
-    background-color: #363636;
-    color: #d7d7d7;
-}
 
-.navbar-inverse {
-    background-color: #363636;
-    background-image: none;
-    background-repeat: no-repeat;
-    filter: none;
-    border: 0;
-    border-radius: 0;
-}
+@media (max-width: 767px) {
+    #site-header {
+        padding-left: 70px;
 
-#username {
-    padding: 25px 0;
-}
+        .logo {
+            padding: 11px 0 0 0; 
+            img {
+                max-width: 60%;
+            }
+        }
 
-.icon {
-    font-size: 2.5em;
-    font-weight: bold;
-}
+        #site-top-nav {
+            h2 {
+                display: block;
+                margin: 0;
+                position: absolute;
+                top: 25px;
+                right: 35px;
+                color: #d7d7d7;
+                font-size: 12px;
+                text-decoration: underline;
+                cursor: pointer;
+                padding-right: 25px;
 
-.stat {
-    font-size: 2.0em;
-    font-weight: bold;
+
+                &:after {
+                    content: "";
+                    background: url(../images/arrow-down.png) no-repeat 0 0;
+                    background-size: contain;
+                    width: 12px;
+                    height: 8px;
+                    position: absolute;
+                    right: 5px;
+                    top: 53%;
+                    margin-top: -3px; 
+                }
+
+            }
+        }
+
+        ul li.has-subnav:after {
+            display: none;
+        }
+
+        #site-top-nav ul {
+            background: #363636;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            display: none;
+            overflow: hidden;
+        }
+        #site-top-nav ul li {
+            float: none;
+            font-size: 13px;
+        }
+        #site-top-nav ul li ul {
+            position: static;
+            display: block !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            height: auto !important;
+
+            li {
+                &:before, &:after {
+                    display: none;
+                }
+            }
+
+            li a {
+                padding: 8px 20px 8px 40px;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
-/* end vpress old styles */
 
 
 

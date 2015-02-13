@@ -42,6 +42,11 @@
                 text-align: center;
                 padding: 0 20px 20px 20px;
                 position: relative;
+                color: #b0b0b0;
+
+                a {
+                    color: #b0b0b0;
+                }
 
                 .stat {
                     display: none;
@@ -51,17 +56,43 @@
                     text-align: center;
                     display: block;
                     border: solid 4px #b0b0b0;
-                    color: #b0b0b0;
                     padding-top: 5px;
                     margin: 0 auto;
                     border-radius: 40px;
                     height: 80px;
                     width: 80px;
+                    @include transition(border, 0.2s, ease-in-out);
+
+                    .icon {
+                        font-size: 2.5em;
+                        font-weight: bold;
+                    }
                 }
                 .seq-text {
                     font-size: 16px;
                     max-width: 120px;
                     padding: 20px 0 0 0;
+                    color: darken(#b0b0b0, 10);
+                    font-weight: 500;
+                    a {
+                        color: darken(#b0b0b0, 10);
+                        @include transition(color, 0.2s, ease-in-out);
+                    }
+                }
+                &:hover {
+                    text-decoration: none;
+                    color: darken( #b0b0b0, 20);
+                    a {
+                        color: darken( #b0b0b0, 20);
+                        text-decoration: none;
+                    }
+                    .seq-icon {
+                        border-color: darken( #b0b0b0, 20);
+                    }
+                    .seq-text a {
+                        color: darken(#b0b0b0, 30);
+                    }
+
                 }
             }
 
@@ -73,6 +104,12 @@
                 }
                 .seq-text {
                     color: #f26c4f;
+                    a {
+                        color: #f26c4f;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
                 }
                 .seq-bar {
                     background: #f26c4f;

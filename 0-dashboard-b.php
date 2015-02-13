@@ -29,11 +29,11 @@
 
                         <ul class="seq-tab-nav">
                             <li>
-                                <div class="seq-icon">
+                                <a href="#" class="seq-icon">
                                     <div class="stat">888</div>
                                     <div class="hidden-s icon"><span class="glyphicon glyphicon-time"></span></div>
-                                </div>
-                                <p class="seq-text">Orders awaiting <br />approval</p>
+                                </a>
+                                <p class="seq-text"><a href="#">Orders awaiting <br />approval</a></p>
                                 <span class="seq-bar"></span>
                             </li>
                             <li class="active">
@@ -55,19 +55,19 @@
                             </li>
                             -->
                             <li>
-                                <div class="seq-icon">
+                                <a href="#" class="seq-icon">
                                     <div class="stat">04</div>
                                     <div class="hidden-m icon"><span class="glyphicon glyphicon-heart"></span></div>
-                                </div>
-                                <p class="seq-text">Favourite <br />products</p>
+                                </a>
+                                <p class="seq-text"><a href="#">Favourite <br />products</a></p>
                                 <span class="seq-bar"></span>
                             </li>
                             <li>
-                                <div class="seq-icon">
+                                <a href="#" class="seq-icon">
                                     <div class="stat">05</div>
                                     <div class="hidden-m icon"><span class="glyphicon glyphicon-floppy-disk"></span></div>
-                                </div>
-                                <p class="seq-text">Recently <br />saved</p>
+                                </a>
+                                <p class="seq-text"><a href="#">Recently <br />saved</a></p>
                                 <span class="seq-bar"></span>
                             </li>
                         </ul>

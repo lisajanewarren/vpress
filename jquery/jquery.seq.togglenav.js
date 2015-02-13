@@ -44,22 +44,24 @@
 			var resizeEvents = debounce(function() {
 		        //if screensize less that 768 && nav is open trigger click
 		        if(Modernizr.mq("(max-width: 767px)") && $('html').hasClass('seq-sidebar-active') ) {
-		        	console.log('clsoe');
 		        	$('#seq-hamburger').trigger('click');
 				};
 
-				/*if(Modernizr.mq("(min-width: 768px)") && ! $('html').hasClass('seq-sidebar-active') ) {
-		        	console.log('open');
+				if(Modernizr.mq("(min-width: 768px)") && ! $('html').hasClass('seq-sidebar-active') ) {
 		        	$('#seq-hamburger').trigger('click');
-				};*/
+				};
 
 		    }, 250);
 
-		    window.addEventListener('resize', resizeEvents);
+		    if (window.addEventListener) {
+		    	window.addEventListener('resize', resizeEvents);
+		    }
+		    else if (window.attachEvent) {
+				window.attachEvent('resize', resizeEvents );
+			}
 
 
 		    if(Modernizr.mq("(max-width: 767px)") && $('html').hasClass('seq-sidebar-active') ) {
-				console.log('herefff');
 	        	$('#seq-hamburger').trigger('click');
 			};
 
@@ -68,3 +70,8 @@
 	}
 
 })(jQuery, window, document);
+
+
+$(function() {
+	$("#seq-sidebar").togglenav();	
+});

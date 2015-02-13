@@ -4,7 +4,7 @@
     
     <!-- plugins -->
     <script type="text/javascript" src="jquery/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="jquery/modernizr.custom.84474.js"></script>
+    <script type="text/javascript" src="jquery/modernizr.custom.69408.js"></script>
 
     <link href="bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
@@ -19,7 +19,9 @@
     <script type="text/javascript" src="jquery/jquery.sticky.js"> </script>
     <script type="text/javascript" src="jquery/jquery.matchHeight.js"> </script>
     <script type="text/javascript" src="jquery/jquery.seq.togglenav.js"> </script>
-    <script type="text/javascript" src="jquery/slidenav.js"> </script>
+    <script type="text/javascript" src="jquery/leftnav.js"> </script>
+    <script type="text/javascript" src="jquery/topnav.js"> </script>
+
     <script type="text/javascript" src="jquery/jquery.seq.togglebox.js"> </script>
     <script type="text/javascript" src="jquery/perfect-scrollbar.js"> </script>
 
