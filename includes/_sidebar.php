@@ -7,6 +7,7 @@
             <button type="submit"></button>
             <span class="glyphicon glyphicon-search"></span>
         </li>
+        <li id="seq-home-icon"><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
         <li id="seq-shopping-cart">
             <a href="#">
                 <span class="glyphicon glyphicon-shopping-cart"></span>

@@ -8,8 +8,10 @@ html, body {
 }
 
 
-:focus, :active, :visited, :hover, .btn:focus {
+:focus, :active, :visited, :hover, .btn:focus,
+a:focus, a:active, a:visited, a:hover {
     outline: none;
+    text-decoration: none;
 }
 
 .form-control:focus {

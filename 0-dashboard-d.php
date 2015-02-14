@@ -89,15 +89,15 @@
                                     </div>
                                     <div class="seq-actions">
 
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-dropdown vpress">Create</button>
-                                            <button type="button" class="btn dropdown-toggle vpress" data-toggle="dropdown">
-                                                <span class="caret"></span>
-                                                <span class="sr-only">Toggle Dropdown</span>
-                                            </button>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Order</a></li>
-                                            </ul>
+                                        <div class="seq-select">
+                                            <div class="seq-select-inner">
+
+                                                <select class="selectpicker">
+                                                    <option value="volvo">Create</option>
+                                                    <option value="saab">Order</option>
+                                                </select>
+
+                                            </div>
                                         </div>
 
                                     </div>
@@ -134,15 +134,15 @@
                                     </div>
                                     <div class="seq-actions">
 
-                                        <div class="btn-group vpress">
-                                            <button type="button" class="btn btn-dropdown vpress">Create</button>
-                                            <button type="button" class="btn dropdown-toggle vpress" data-toggle="dropdown">
-                                                <span class="caret"></span>
-                                                <span class="sr-only">Toggle Dropdown</span>
-                                            </button>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Order</a></li>
-                                            </ul>
+                                        <div class="seq-select">
+                                            <div class="seq-select-inner">
+
+                                                <select class="selectpicker">
+                                                    <option value="volvo">Create</option>
+                                                    <option value="saab">Order</option>
+                                                </select>
+
+                                            </div>
                                         </div>
 
                                     </div>
