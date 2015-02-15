@@ -18,9 +18,10 @@ $ps-bar-hover: #999;
           border-radius: $r;
 }
 
-@mixin transition($t...) {
+@mixin transitionTwo($t...) {
   -webkit-transition: $t;
      -moz-transition: $t;
+      -ms-transition: $t;
        -o-transition: $t;
           transition: $t;
 }
@@ -31,7 +32,7 @@ $ps-bar-hover: #999;
   position: absolute; /* please don't change 'position' */
   @include border-radius(4px);
   @include opacity(0);
-  @include transition(background-color .2s linear, opacity .2s linear);
+  @include transitionTwo(background-color .2s linear, opacity .2s linear);
 }
 
 @mixin scrollbar-rail-hover {
@@ -43,7 +44,7 @@ $ps-bar-hover: #999;
   position: absolute; /* please don't change 'position' */
   background-color: $ps-bar-default;
   @include border-radius(4px);
-  @include transition(background-color .2s linear);
+  @include transitionTwo(background-color .2s linear);
 }
 
 @mixin scrollbar-hover {

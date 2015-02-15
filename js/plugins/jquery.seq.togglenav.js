@@ -15,11 +15,73 @@
 
 			$('html').addClass('seq-sidebar-active');
 
+			if ( $.cookie('menuStatus') === 'closed' ) {
+				console.log('a');
+				$('#seq-hamburger').trigger('click');
+			}
+			else {
+				console.log('b');
+			}
+			$(s.pagePanel, s.navPanel).addClass('has-transitions');
+
 
 			$(options.navToggle).on('click', function() {
-				$('html').toggleClass('seq-sidebar-active');
-				$(options.navPanel).find('#seq-sidebar-slider').fadeToggle();
-				$('#seq-shopping-cart').hide().fadeIn();
+
+				if(!Modernizr.csstransitions) {
+
+					if ( $('html').hasClass('seq-sidebar-active') ) {
+						$(options.navPanel).find('#seq-sidebar-slider').fadeToggle();
+						$('#seq-shopping-cart').hide().fadeIn();
+						$('#page-content-wrapper').animate({
+						    paddingLeft: 70
+						}, 400, function() {
+						});
+						$('#seq-sidebar').animate({
+						    left: -155
+						}, 400, function() {
+							$('html').toggleClass('seq-sidebar-active'); 
+						});
+
+						//set cookie to remember panel is closed
+						$.cookie('menuStatus', "closed");
+					}
+					else {
+						$(options.navPanel).find('#seq-sidebar-slider').fadeToggle();
+						$('#seq-shopping-cart').hide().fadeIn();
+
+						$('#page-content-wrapper').animate({
+						    paddingLeft: 225
+						}, 400, function() {
+						});
+						$('#seq-sidebar').animate({
+						    left: 0
+						}, 400, function() {
+							$('html').toggleClass('seq-sidebar-active'); 
+						});
+
+						//set cookie to remember panel is open
+						$.cookie('menuStatus', "open");
+
+					}
+
+				}
+				else if(Modernizr.csstransitions) {
+					$('html').toggleClass('seq-sidebar-active');
+					$(options.navPanel).find('#seq-sidebar-slider').fadeToggle();
+					$('#seq-shopping-cart').hide().fadeIn();
+
+					if ( $('html').hasClass('seq-sidebar-active') ) {
+						//set cookie to remember panel is open
+						$.cookie('menuStatus', "open");
+					}
+					else {
+						//set cookie to remember panel is closed
+						$.cookie('menuStatus', "closed");
+					}
+				}
+				
+
+				
 
 				return false;
 			});

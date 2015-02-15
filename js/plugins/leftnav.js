@@ -21,6 +21,9 @@ var LeftNav = (function() {
             suppressScrollX : true,
             includePadding : true
        });
+
+        //set initial position (based on cookie)
+        // this.setSlidePosition
     }
 
 
@@ -112,13 +115,23 @@ var LeftNav = (function() {
     }
 
     sn.animateSlide = function() {
-         $(s.sliderContainer).css({
-            '-moz-transform' : 'translate(' + s.translatePosition + 'px,0)',
-            '-o-transform' : 'translate(' + s.translatePosition + 'px,0)',
-            '-ms-transform' : 'translate(' + s.translatePosition + 'px,0)',
-            '-webkit-transform' : 'translate(' + s.translatePosition + 'px,0)',
-            'transform' : 'translate(' + s.translatePosition + 'px,0)'
-        });
+
+        if(!Modernizr.csstransitions) {
+            $(s.sliderContainer).animate({
+                left: s.translatePosition + 'px'
+            }, 400, function() {
+            });
+        }
+        else {
+            $(s.sliderContainer).css({
+                '-moz-transform' : 'translate(' + s.translatePosition + 'px,0)',
+                '-o-transform' : 'translate(' + s.translatePosition + 'px,0)',
+                '-ms-transform' : 'translate(' + s.translatePosition + 'px,0)',
+                '-webkit-transform' : 'translate(' + s.translatePosition + 'px,0)',
+                'transform' : 'translate(' + s.translatePosition + 'px,0)'
+            });
+        }
+        
     }
 
 

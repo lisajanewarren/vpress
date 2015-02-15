@@ -16,10 +16,12 @@
 
 
     <!-- plugins -->
+    <script type="text/javascript" src="js/plugins/jquery.cookie.js"></script>
     <script type="text/javascript" src="js/plugins/jquery.magnific-popup.js"></script>
     <script type="text/javascript" src="js/plugins/jquery.sticky.js"></script>
     <script type="text/javascript" src="js/plugins/jquery.matchHeight.js"></script>
-    <script type="text/javascript" src="js/plugins/jquery.seq.togglenav.js"></script>
+    <!--<script type="text/javascript" src="js/plugins/jquery.seq.togglenav.js"></script>-->
+    <script type="text/javascript" src="js/plugins/togglenav.js"></script>
     <script type="text/javascript" src="js/plugins/leftnav.js"></script>
     <script type="text/javascript" src="js/plugins/topnav.js"></script>
 

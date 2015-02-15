@@ -21,6 +21,14 @@ $body-font-colour: rgb(60, 60, 59);
   clear: both;
 }
 
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -79,7 +87,6 @@ ul {
   background: #363636;
 }
 #site-header .inner {
-  max-width: 980px;
   height: 60px;
   padding: 10px 20px;
   position: relative;
@@ -90,7 +97,7 @@ ul {
 }
 #site-header #logout {
   position: absolute;
-  right: 10px;
+  right: 25px;
   top: 24px;
   color: #d7d7d7;
   font-size: 16px;
@@ -101,7 +108,7 @@ ul {
 #site-header #site-top-nav {
   float: right;
   background: #363636;
-  margin: 0 20px 0 0;
+  margin: 0 40px 0 0;
 }
 #site-header #site-top-nav h2 {
   display: none;
@@ -200,11 +207,17 @@ ul {
   #site-header {
     padding-left: 70px;
   }
+  #site-header .inner {
+    padding: 10px;
+  }
   #site-header .logo {
     padding: 11px 0 0 0;
   }
   #site-header .logo img {
     max-width: 60%;
+  }
+  #site-header #logout {
+    right: 10px;
   }
   #site-header #site-top-nav h2 {
     display: block;
@@ -1624,6 +1637,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   filter: alpha(opacity=0);
   -webkit-transition: background-color 0.2s linear, opacity 0.2s linear;
   -moz-transition: background-color 0.2s linear, opacity 0.2s linear;
+  -ms-transition: background-color 0.2s linear, opacity 0.2s linear;
   -o-transition: background-color 0.2s linear, opacity 0.2s linear;
   transition: background-color 0.2s linear, opacity 0.2s linear;
   bottom: 3px;
@@ -1640,6 +1654,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   border-radius: 4px;
   -webkit-transition: background-color 0.2s linear;
   -moz-transition: background-color 0.2s linear;
+  -ms-transition: background-color 0.2s linear;
   -o-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
   bottom: 0;
@@ -1659,6 +1674,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   filter: alpha(opacity=0);
   -webkit-transition: background-color 0.2s linear, opacity 0.2s linear;
   -moz-transition: background-color 0.2s linear, opacity 0.2s linear;
+  -ms-transition: background-color 0.2s linear, opacity 0.2s linear;
   -o-transition: background-color 0.2s linear, opacity 0.2s linear;
   transition: background-color 0.2s linear, opacity 0.2s linear;
   right: 3px;
@@ -1675,6 +1691,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   border-radius: 4px;
   -webkit-transition: background-color 0.2s linear;
   -moz-transition: background-color 0.2s linear;
+  -ms-transition: background-color 0.2s linear;
   -o-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
   right: 0;
@@ -1942,10 +1959,11 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
     border-radius: 40px;
     height: 80px;
     width: 80px;
-    -webkit-transition: border, 0.2s, ease-in-out;
-    -moz-transition: border, 0.2s, ease-in-out;
-    -o-transition: border, 0.2s, ease-in-out;
-    transition: border, 0.2s, ease-in-out;
+    -webkit-transition: border 0.2s ease-in-out;
+    -moz-transition: border 0.2s ease-in-out;
+    -ms-transition: border 0.2s ease-in-out;
+    -o-transition: border 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
   }
   .seq-tab-box .seq-tab-nav li .seq-icon .icon {
     font-size: 2.5em;
@@ -1960,10 +1978,11 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   }
   .seq-tab-box .seq-tab-nav li .seq-text a {
     color: #979797;
-    -webkit-transition: color, 0.2s, ease-in-out;
-    -moz-transition: color, 0.2s, ease-in-out;
-    -o-transition: color, 0.2s, ease-in-out;
-    transition: color, 0.2s, ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
   }
   .seq-tab-box .seq-tab-nav li:hover {
     text-decoration: none;
@@ -3052,11 +3071,14 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 }
 
 #page-content-wrapper {
-  -webkit-transition: padding, 0.4s, ease-in-out;
-  -moz-transition: padding, 0.4s, ease-in-out;
-  -o-transition: padding, 0.4s, ease-in-out;
-  transition: padding, 0.4s, ease-in-out;
   padding-left: 70px;
+}
+#page-content-wrapper.has-transitions {
+  -webkit-transition: padding 0.4s ease-in-out;
+  -moz-transition: padding 0.4s ease-in-out;
+  -ms-transition: padding 0.4s ease-in-out;
+  -o-transition: padding 0.4s ease-in-out;
+  transition: padding 0.4s ease-in-out;
 }
 #page-content-wrapper-inner {
   position: relative;
@@ -3075,10 +3097,13 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   padding-bottom: 60px;
   /* to allow for the absolutely positioned basket button */
   left: -155px;
-  -webkit-transition: all, 0.4s, ease-in-out;
-  -moz-transition: all, 0.4s, ease-in-out;
-  -o-transition: all, 0.4s, ease-in-out;
-  transition: all, 0.4s, ease-in-out;
+}
+#seq-sidebar.has-transitions {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 #seq-home-icon {
@@ -3319,12 +3344,15 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   -ms-transform: translate(0, 0);
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
-  -webkit-transition: all, 0.4s, ease-in-out;
-  -moz-transition: all, 0.4s, ease-in-out;
-  -o-transition: all, 0.4s, ease-in-out;
-  transition: all, 0.4s, ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   overflow: hidden;
   height: 100%;
+  position: relative;
+  left: 0;
 }
 #seq-sidebar-slider .seq-sidebar-slide {
   width: 225px;

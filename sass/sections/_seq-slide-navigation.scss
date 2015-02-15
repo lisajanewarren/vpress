@@ -12,6 +12,8 @@
     	@include transition(all, 0.4s, ease-in-out);
     	overflow: hidden;
     	height: 100%;
+        position: relative;
+        left: 0;
     }
 
     .seq-sidebar-slide {
