@@ -15,11 +15,6 @@
 
                 <div id="header-graphic">
                     <div class="inner">
-                        <ul class="seq-breadcrumb">
-                            <li>Home</li> 
-                            <li>Reports</li>
-                            <li class="active"><a href="#">Order Report</a></li>
-                        </ul>
                         <h1>Order Report</h1>
                     </div>
                 </div>
@@ -70,20 +65,17 @@
                             </ul>
                             
                             <div class="seq-control-bar-sort">
-                                <form action="#" method="post">
-                                    <div class="input-group">
-                                            <div class="btn-group">
-                                                <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                                                    All orders <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu" role="menu">
-                                                    <li><a href="#">Option 1</a></li>
-                                                    <li><a href="#">Option 2</a></li>
-                                                    <li><a href="#">Option 3</a></li>
-                                                </ul>
-                                            </div><!-- /btn-group -->
-                                    </div><!-- /input-group -->
-                                </form>
+                                    <div class="seq-select">
+                                        <div class="seq-select-inner">
+
+                                            <select class="selectpicker">
+                                                <option value="">All orders</option>
+                                                <option value="">option 2</option>
+                                                <option value="">option 3</option>
+                                            </select>
+
+                                        </div>
+                                    </div>
                             </div>
                         </div>
 

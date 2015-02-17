@@ -3,8 +3,6 @@
         <a href="/" class="logo">
             <img src="images/logo-coreprint.png" alt="Coreprint">
         </a>
-
-
         <nav id="site-top-nav">
             <h2>user menu</h2>
             <ul>
@@ -38,7 +36,5 @@
         </nav>
 
         <a id="logout" href="#"><span class="glyphicon glyphicon-log-out"></span></a>
-
-
     </div>
 </header>

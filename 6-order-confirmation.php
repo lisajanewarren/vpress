@@ -15,10 +15,6 @@
 
                 <div id="header-graphic">
                     <div class="inner">
-                        <ul class="seq-breadcrumb">
-                            <li>Home</li> 
-                            <li class="active"><a href="#">Confirmation of order no. 1738</a></li>
-                        </ul>
                         <h1>Order Confirmation</h1>
                     </div>
                 </div>
@@ -159,60 +155,62 @@
                                 <img src="http://placehold.it/200x200/363636">
                                 <span class="product-code">PRODCODE</span>
                                 <h3 class="product-title">Product Title</h3>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-dropdown vpress">Create</button>
-                                    <button type="button" class="btn dropdown-toggle vpress" data-toggle="dropdown">
-                                        <span class="caret"></span>
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">Order</a></li>
-                                    </ul>
+                                
+                                <div class="seq-select">
+                                    <div class="seq-select-inner">
+
+                                        <select class="selectpicker">
+                                            <option value="">Create</option>
+                                            <option value="">Order</option>
+                                        </select>
+
+                                    </div>
                                 </div>
+                                
                             </li>
                             <li>
                                 <img src="http://placehold.it/200x200/363636">
                                 <span class="product-code">PRODCODE</span>
                                 <h3 class="product-title">Product Title</h3>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-dropdown vpress">Create</button>
-                                    <button type="button" class="btn dropdown-toggle vpress" data-toggle="dropdown">
-                                        <span class="caret"></span>
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">Order</a></li>
-                                    </ul>
+                                <div class="seq-select">
+                                    <div class="seq-select-inner">
+
+                                        <select class="selectpicker">
+                                            <option value="">Create</option>
+                                            <option value="">Order</option>
+                                        </select>
+
+                                    </div>
                                 </div>                            
                             </li>
                             <li>
                                 <img src="http://placehold.it/200x200/363636">
                                 <span class="product-code">PRODCODE</span>
                                 <h3 class="product-title">Product Title</h3>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-dropdown vpress">Create</button>
-                                    <button type="button" class="btn dropdown-toggle vpress" data-toggle="dropdown">
-                                        <span class="caret"></span>
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">Order</a></li>
-                                    </ul>
+                                <div class="seq-select">
+                                    <div class="seq-select-inner">
+
+                                        <select class="selectpicker">
+                                            <option value="">Create</option>
+                                            <option value="">Order</option>
+                                        </select>
+
+                                    </div>
                                 </div>
                             </li>  
                             <li>
                                 <img src="http://placehold.it/200x200/363636">
                                 <span class="product-code">PRODCODE</span>
                                 <h3 class="product-title">Product Title</h3>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-dropdown vpress">Create</button>
-                                    <button type="button" class="btn dropdown-toggle vpress" data-toggle="dropdown">
-                                        <span class="caret"></span>
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">Order</a></li>
-                                    </ul>
+                                <div class="seq-select">
+                                    <div class="seq-select-inner">
+
+                                        <select class="selectpicker">
+                                            <option value="">Create</option>
+                                            <option value="">Order</option>
+                                        </select>
+
+                                    </div>
                                 </div>
                             </li>
                         </ul>

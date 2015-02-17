@@ -1,10 +1,9 @@
 #seq-sidebar-slider {
     position: relative;
     overflow: hidden;
-    margin: 5px 0;
     height: 80%; //fallback for if calc() not supported
-	height: -webkit-calc(100% - 120px - 10px); //minus the 2 top buttons minus the two 5px margins
-	height: calc(100% - 120px - 10px); //minus the 2 top buttons minus the 2 5px margins
+	height: -webkit-calc(100% - 120px); //minus the 2 top buttons minus the two 5px margins
+	height: calc(100% - 120px); //minus the 2 top buttons minus the 2 5px margins
 
     .inner {
         width: 200%; /* width set dnamically in js, depending on how many slides */
@@ -90,7 +89,7 @@
     }
 
     li {
-        a, span {
+        a, .no-link {
             display: block;
             padding: 10px 34px 10px 15px;
             color: #d7d7d7;

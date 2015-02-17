@@ -15,12 +15,6 @@
 
                 <div id="header-graphic">
                     <div class="inner">
-                        <ul class="seq-breadcrumb">
-                            <li>Home</li> 
-                            <li><a href="#">Product Category</a></li>
-                            <li><a href="#">Product Name</a></li>
-                            <li class="active"><a href="#">Order</a></li>
-                        </ul>
                         <h1>Order</h1>
                     </div>
                 </div>
@@ -32,34 +26,44 @@
                         <div class="seq-control-bar">
 
                             <div class="seq-control-bar-search">
-                                <form action="#" method="post">
-                                    <div class="input-group">
-                                        <input class="form-control" placeholder="Enter keyword" type="text">
-                                        <span class="input-group-btn">
-                                            <button class="btn btn-default" type="button">Search</button>
-                                        </span>
-                                    </div><!-- /input-group -->
-                                </form>
+                                <label>Search for an order</label>
+                                <div class="input-group">
+                                    <input class="form-control" placeholder="Enter keyword" type="text">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">Search</button>
+                                    </span>
+                                </div><!-- /input-group -->
                             </div>
+
+                           
+                        </div>
+
+                        <div class="seq-btn-bar-holder">
+
+                            <ul class="seq-btn-bar seq-btn-bar-left">
+                                <li>
+                                    <button type="button" class="seq-btn-grey">
+                                        <span class="glyphicon glyphicon-expand"></span>
+                                            <span class="btn-text">Order Selected</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="seq-btn-grey">
+                                        <span class="glyphicon glyphicon-remove"></span>
+                                            <span class="btn-text">Delete selected</span>
+                                    </button>
+                                </li>
+                            </ul>
 
                             <ul class="seq-btn-bar seq-btn-bar-right">
                                 <li>
                                     <button type="button" class="seq-btn-orange">
-                                        <span class="btn-text">Order Selected</span>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button type="button" class="seq-btn-orange">
-                                        <span class="btn-text">Delete selected</span>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button type="button" class="seq-btn-orange">
+                                        <span class="glyphicon glyphicon-plus"></span>
                                         <span class="btn-text">Create new</span>
                                     </button>
                                 </li>
                             </ul>
-                            
+
                         </div>
                         
 

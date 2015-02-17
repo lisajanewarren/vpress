@@ -10,12 +10,6 @@
     border-radius: 0;
 }
 
-.btn.vpress-black {
-    background-color: #101010;
-    border: none;
-    color: $white;
-}
-
 .btn.vpress {
     background-color: #f26c4f;
     border: #f26c4f;
@@ -23,7 +17,20 @@
     border-radius: 4px;
     color: $white;
     text-align: left;
+
+    &:hover {
+        background: darken(#f26c4f, 10);
+        @include transition(background, 0.2s, ease-in-out);
+    }
+
 }
+
+.btn.vpress-black {
+    background-color: #101010;
+    border: none;
+    color: $white;
+}
+
 
 .label.vpress {
     background-color: #f26c4f;

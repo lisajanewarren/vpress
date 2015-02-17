@@ -23,7 +23,7 @@
 
                     <div id="seq-product-editor">
                         <div class="seq-product-editor-head">
-                            <div class="inner">
+                            <div class="seq-product-editor-inner">
 
                                 <div class="seq-product-editor-user-controls">
                                    <ul class="pagination">
@@ -130,7 +130,7 @@
                         </div>
 
                         <div class="seq-product-editor-foot">
-                            <div class="inner">
+                            <div class="seq-product-editor-inner">
 
                                 <ul class="seq-product-editor-actions">
                                     <li><button type="button" class="btn vpress">

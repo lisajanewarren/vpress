@@ -15,11 +15,6 @@
 
                 <div id="header-graphic">
                     <div class="inner">
-                        <ul class="seq-breadcrumb">
-                            <li>Home</li> 
-                            <li>Campaigns</li> 
-                            <li class="active"><a href="#">Campaign Name</a></li>
-                        </ul>
                         <h1>Campaign</h1>
                     </div>
                 </div>

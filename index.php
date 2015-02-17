@@ -96,8 +96,8 @@
                     <a href="10-order.php">10 - Order</a> <span class="done">done</span>
                 </li>
                 <li>
-                     <a href="10-order-selected.php">10 - Order Selected</a>
-                    <p>Could do with a design (or accurate wireframe) to confirm exactly what is needed on this page. Remove 'refresh' button. Table needs a scrollbar as it could be long. Check what the buttons should be on this page? Remove 'Save and Continue' button? Remove Two layout options. Remove 'proof' button. Add an 'add to basket' button?<em> - awaiting the signed off design from Steve.</em>.</p>
+                     <a href="10-order-selected.php">10 - Order Selected</a> <span class="done">done</span>
+                    
                 </li>
                 <li>
                     <a href="11-file-manager-grid.php">11 - File Manager (Grid)</a> <span class="done">done</span>

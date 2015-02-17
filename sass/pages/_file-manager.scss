@@ -27,6 +27,7 @@
 		> ul > li.active > a
 		/*> ul > li > a:hover*/ {
 			background: #d3d3d3;
+
 		}
 		> ul > li.active > a:after {
 			content: "\e113";
@@ -38,6 +39,8 @@
 		/*> ul > li.active > ul > li > a:hover*/ {
 			background: #f26c4f;
 			color: #ffffff;	
+
+			
 		}
 
 		
@@ -48,6 +51,7 @@
 			padding: 0;
 
 			li a {
+				background: #eeeeee;
 				color: #363636;
 				font-size: 16px;
 				padding: 15px 20px;
@@ -55,6 +59,7 @@
 				position: relative;
 				&:hover {
 					text-decoration: none;
+					background: darken(#eeeeee, 10);
 				}
 				&:after {
 					font-family: 'Glyphicons Halflings';

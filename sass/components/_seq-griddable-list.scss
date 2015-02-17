@@ -7,13 +7,13 @@
 		margin: 0;
 		padding: 0;
 
-		li {
+		> li {
 			margin: 0;
 			padding: 0;
 			float: left;
 			width: 20%;
 		}
-		li:first-child {
+		> li:first-child {
 			width: 80%;
 			padding: 0 5px 0 0;
 		}
@@ -22,21 +22,6 @@
 		}
 
 		
-		.btn-group {
-			width: 100%;
-		}
-		.btn-dropdown {
-			width: 80%;
-		}
-		.dropdown-toggle {
-			width: 20%;
-		}
-
-		.dropdown-menu {
-			left: auto;
-			right: 0;
-			min-width: 100%;
-		}
 
 		.btn-singular .btn {
 			width: 100%;
@@ -132,8 +117,14 @@
 
 	.seq-griddable-item {
 		width: 100%;
-		padding: 0 10px 60px 10px;
+		padding: 0 10px 100px 10px;
 		position: relative;
+	}
+
+	.seq-select {
+		position: absolute;
+		bottom: 60px;
+		width: 80%;
 	}
 
 	.seq-griddable-image {

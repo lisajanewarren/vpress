@@ -1,9 +1,38 @@
-#seq-order-page {
-	.seq-btn-bar {
-		padding: 0 0 0 20px;
+#seq-order-page .seq-control-bar .seq-btn-bar {
+
+	li {
+		padding: 0 0 0 12px;
 
 		button {
-			padding: 8px 20px;
+			padding: 8px 12px;
 		}
+	}
+}
+
+#seq-order-page .seq-btn-bar {
+	&-holder {
+		padding: 40px 0 30px 0;
+	}
+}
+
+#seq-order-page .seq-datepicker-bar {
+	.seq-btn-bar button {
+		padding: 8px 12px;
+	}
+}
+
+#seq-order-page .seq-control-bar-search {
+	width: 100%;
+	float: none;
+
+	label {
+		float: left;
+		padding: 4px 16px 0 0;
+		font-size: 18px;
+		margin: 0;
+	}
+
+	.input-group {
+		width: 33%;
 	}
 }

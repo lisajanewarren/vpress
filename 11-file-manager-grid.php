@@ -16,10 +16,6 @@
 
                 <div id="header-graphic">
                     <div class="inner">
-                        <ul class="seq-breadcrumb">
-                            <li>Home</li> 
-                            <li class="active"><a href="#">File Manager</a></li>
-                        </ul>
                         <h1>File Manager</h1>
                     </div>
                 </div>
@@ -64,22 +60,19 @@
                                 </div>
 
                                 <div class="seq-control-bar-sort">
-                                    <form action="#" method="post">
-                                        <div class="input-group">
-                                                <div class="btn-group">
-                                                    <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                                                        All file types <span class="caret"></span>
-                                                    </button>
-                                                    <ul class="dropdown-menu" role="menu">
-                                                        <li><a href="#">option 1</a></li>
-                                                        <li><a href="#">option 2</a></li>
-                                                        <li><a href="#">option 3</a></li>
-                                                        <li class="divider"></li>
-                                                        <li><a href="#">Separated link</a></li>
-                                                    </ul>
-                                                </div><!-- /btn-group -->
-                                        </div><!-- /input-group -->
-                                    </form>
+
+                                        <div class="seq-select">
+                                            <div class="seq-select-inner">
+
+                                                <select class="selectpicker">
+                                                    <option value="">All file types</option>
+                                                    <option value="">option 2</option>
+                                                    <option value="">option 3</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+
                                 </div>
                             </div>
                             <!-- End search bar -->
@@ -90,39 +83,40 @@
                                 Folder title
                             </h2>
 
+                            <div class="seq-btn-bar-holder">
+                                <ul class="seq-btn-bar seq-btn-bar-left">
+                                    <li>
+                                        <button type="button" class="seq-btn-orange">
+                                            <span class="glyphicon glyphicon-plus"></span>
+                                            <span class="btn-text">New folder</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="seq-btn-orange">
+                                            <span class="glyphicon glyphicon-open"></span>
+                                            <span class="btn-text">Upload</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="seq-btn-grey">
+                                            <span class="glyphicon glyphicon-remove"></span>
+                                            <span class="btn-text">Delete</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="seq-btn-grey">
+                                            <span class="glyphicon glyphicon-move"></span>
+                                            <span class="btn-text">Move</span>
+                                        </button>
+                                    </li>
+                                </ul>
 
-                            <ul class="seq-btn-bar seq-btn-bar-left">
-                                <li>
-                                    <button type="button" class="seq-btn-orange">
-                                        <span class="glyphicon glyphicon-plus"></span>
-                                        <span class="btn-text">New folder</span>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button type="button" class="seq-btn-orange">
-                                        <span class="glyphicon glyphicon-open"></span>
-                                        <span class="btn-text">Upload</span>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button type="button" class="seq-btn-grey">
-                                        <span class="glyphicon glyphicon-remove"></span>
-                                        <span class="btn-text">Delete</span>
-                                    </button>
-                                </li>
-                                <li>
-                                    <button type="button" class="seq-btn-grey">
-                                        <span class="glyphicon glyphicon-move"></span>
-                                        <span class="btn-text">Move</span>
-                                    </button>
-                                </li>
-                            </ul>
 
-
-                            <ul class="seq-layout-toggle seq-layout-toggle-right">
-                                <li><a href="11-file-manager-list.php"><span class="glyphicon glyphicon-th-list"></span></a></li>
-                                <li class="active"><span class="glyphicon glyphicon-th"></span></li>
-                            </ul>
+                                <ul class="seq-layout-toggle seq-layout-toggle-right">
+                                    <li><a href="11-file-manager-list.php"><span class="glyphicon glyphicon-th-list"></span></a></li>
+                                    <li class="active"><span class="glyphicon glyphicon-th"></span></li>
+                                </ul>
+                            </div>
 
 
                             <!-- grid layout -->

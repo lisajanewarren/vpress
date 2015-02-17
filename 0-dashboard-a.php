@@ -6,6 +6,8 @@
 
     <body>
 
+
+
         <?php require 'includes/_sidebar.php'; ?>
 
         <div id="page-content-wrapper" class="page-dashboard">
@@ -16,8 +18,14 @@
                 <!-- header banner -->
                 <div id="header-graphic">
                     <div class="inner">
-                        <h1>Welcome...</h1>
-                        <h4>Welcome to Coreprint Web2Print for all<br />your print ordering requirements...</h4>
+                        <div id="summernote">
+                            <h1>Welcome...</h1>
+                            <h4>Welcome to Coreprint Web2Print for all<br />your print ordering requirements...</h4>
+                        </div>
+                        <ul class="seq-btn-bar">
+                            <li><button class="btn vpress">Save</button></li>
+                            <li><button class="btn vpress">Cancel</button></li>
+                        </ul>
                     </div>
                 </div>
                 <!-- end header banner -->

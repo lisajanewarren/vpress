@@ -21,7 +21,8 @@
 	}
 }
 
-.seq-box-table { 
+.seq-faux-table {
+	margin: 30px -18px -14px -18px;
 
 	&-header {
 		margin: 0;
@@ -31,35 +32,44 @@
 		font-weight: bold;
 	}
 
-	border: none;
-	padding: 0;
-	margin: 0 -18px -18px -18px;
-	width: 100%;
-	max-width: none;
-	@include calc( width, '100% + 36px');
+	.seq-thead {
+		background: #f6f6f6;
+		margin: 0 0 2px 0;
+	}
 
-	th, td {
+
+	.seq-tbody {
+		height: 178px;
+		overflow-y: hidden;
+		position: relative;
+		clear: both;
+	}
+
+	.seq-tr {
+		overflow: hidden;
+		border-top: 1px solid #ebebeb;
+
+		&:first-child {
+			border-top: none;
+		}
+	}
+
+	.seq-th,
+	.seq-td {
+		width: 50%;
+		float: left;
 		border-left: 1px solid #ebebeb;
 		padding: 12px 15px;
-		width: 33.3333333%;
 		text-align: center;
 		font-weight: bold;
-	}
 
-	tr td:first-child,
-	tr th:first-child {
-		border-left: none;
-	}
-
-	th {
-		background: #f6f6f6;
-	}
-
-	td {
-		border-top: 1px solid #ebebeb;
+		&:first-child {
+			border-left: none;
+		}
 	}
 
 }
+
 
 .seq-box-form {
 	@extend .clear;
@@ -68,22 +78,17 @@
 		@extend .clear;
 	}
 
-	.btn-group {
+	.seq-select {
 		width: 100%;
 		.dropdown-toggle {
 			background: #ebebeb;
 			border: none;
+			border-radius: 0;
 			padding: 8px 12px;
 			text-align: left;
-			width: 100%;
 			box-shadow: none;
-		}
-		.dropdown-menu {
-			width: 100%;
-		}
-		.caret {
-			float: right;
-			margin: 8px 0 0 0;
+			color: #000;
+			font-size: 14px;
 		}
 	}
 

@@ -24,7 +24,7 @@
 
                     <div id="seq-product-editor">
                         <div class="seq-product-editor-head js-sticky-header">
-                            <div class="inner">
+                            <div class="seq-product-editor-inner">
 
                             
                                 <div class="seq-word-pagination seq-word-pagination-left seq-word-pagination-dark">
@@ -69,7 +69,7 @@
                                     <li class="control-three">pdf</li>
                                 </ul>
                                 
-                                <div class="seq-interactive-image js-sticky-image">
+                                <div class="seq-interactive-image">
                                 </div>
 
                             </div>
@@ -96,16 +96,20 @@
                                         <div class="seq-inner">
 
                                             <div class="seq-box-form">
-                                               <div class="btn-group">
-                                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown">
-                                                      Please choose... <span class="caret"></span>
-                                                    </button>
-                                                    <ul class="dropdown-menu" role="menu">
-                                                        <li><a href="#">option 2</a></li>
-                                                        <li><a href="#">option 3</a></li>
-                                                        <li><a href="#">option 4</a></li>
-                                                    </ul>
+
+                                                <div class="seq-select">
+                                                    <div class="seq-select-inner">
+
+                                                        <select class="selectpicker">
+                                                            <option value="">Please choose...</option>
+                                                            <option value="">option 1</option>
+                                                            <option value="">option 2</option>
+                                                        </select>
+
+                                                    </div>
                                                 </div>
+
+                                               
                                             </div> <!-- end seq box form-->
 
                                         </div>
@@ -126,15 +130,17 @@
                                         <div class="seq-inner">
                                            
                                             <div class="seq-box-form">
-                                               <div class="btn-group">
-                                                    <button class="dropdown-toggle" type="button" data-toggle="dropdown">
-                                                      Please choose... <span class="caret"></span>
-                                                    </button>
-                                                    <ul class="dropdown-menu" role="menu">
-                                                        <li><a href="#">option 2</a></li>
-                                                        <li><a href="#">option 3</a></li>
-                                                        <li><a href="#">option 4</a></li>
-                                                    </ul>
+                                                
+                                               <div class="seq-select">
+                                                    <div class="seq-select-inner">
+
+                                                        <select class="selectpicker">
+                                                            <option value="">Please choose...</option>
+                                                            <option value="">option 1</option>
+                                                            <option value="">option 2</option>
+                                                        </select>
+
+                                                    </div>
                                                 </div>
 
                                                 <div class="address-info">
@@ -171,11 +177,32 @@
                                             <div class="seq-box-form">
                                                 
                                                 <div class="update-quantity">
+                                                    
+
                                                     <div class="seq-box-form-field">
+
+                                                        <!-- either a textbox... -->
                                                         <input placeholder="Enter quantity..." type="text">
                                                         <span class="info">Box of 500</span>
+
+                                                        <!-- ...or a dropdown -->
+                                                        <!--
+                                                        <div class="seq-select">
+                                                            <div class="seq-select-inner">
+                                                                <select class="selectpicker">
+                                                                    <option value="">Select...</option>
+                                                                    <option value="">option 1</option>
+                                                                    <option value="saab">option 2</option>
+                                                                </select>
+                                                                <span class="info">Box of 500</span>
+                                                            </div>
+
+                                                        </div>--> <!-- end seq select -->
+
                                                     </div>
                                                     <p class="result">= &pound;0.00</p>
+
+                                                    
                                                 </div>
 
                                                 <div class="info-row">
@@ -185,30 +212,53 @@
 
                                             </div> <!-- end seq box form-->
 
-                                            <h4 class="seq-box-table-header">Sample prices</h4>
+                                           
 
-                                            <table class="seq-box-table" style="margin-top: 30px">
-                                                <tr>
-                                                    <th>Quantity</th>
-                                                    <th>Price</th>
-                                                </tr>
-                                                <tr>
-                                                    <td>1000</td>
-                                                    <td>£350.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>200</td>
-                                                    <td>£700.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3000</td>
-                                                    <td>£1050.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4000</td>
-                                                    <td>1400.00</td>
-                                                </tr>
-                                            </table>
+                                            <h4 class="seq-faux-table-header">Sample prices</h4>
+
+                                            <div class="seq-faux-table">
+                                                <div class="seq-thead">
+                                                    <div class="seq-tr">
+                                                        <div class="seq-th">
+                                                            Quantity
+                                                        </div>
+                                                         <div class="seq-th">
+                                                            Price
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="seq-tbody">
+                                                    <div class="seq-tr">
+                                                        <div class="seq-td">1000</div>
+                                                        <div class="seq-td">£350.00</div>
+                                                    </div>
+                                                    <div class="seq-tr">
+                                                        <div class="seq-td">200</div>
+                                                        <div class="seq-td">£700.00</div>
+                                                    </div>
+                                                    <div class="seq-tr">
+                                                        <div class="seq-td">3000</div>
+                                                        <div class="seq-td">£1050.00</div>
+                                                    </div>
+                                                    <div class="seq-tr">
+                                                        <div class="seq-td">4000</div>
+                                                        <div class="seq-td">£1400.00</div>
+                                                    </div>
+                                                    <div class="seq-tr">
+                                                        <div class="seq-td">4000</div>
+                                                        <div class="seq-td">£1400.00</div>
+                                                    </div>
+                                                    <div class="seq-tr">
+                                                        <div class="seq-td">4000</div>
+                                                        <div class="seq-td">£1400.00</div>
+                                                    </div>
+                                                    <div class="seq-tr">
+                                                        <div class="seq-td">4000</div>
+                                                        <div class="seq-td">£1400.00</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div> <!-- end seq box -->
@@ -218,7 +268,7 @@
                         </div>
 
                         <div class="seq-product-editor-foot">
-                            <div class="inner">
+                            <div class="seq-product-editor-inner">
 
                                 <ul class="seq-product-editor-actions">
                                     <li>

@@ -15,10 +15,6 @@
 
                 <div id="header-graphic">
                     <div class="inner">
-                        <ul class="seq-breadcrumb">
-                            <li>Home</li> 
-                            <li class="active"><a href="#">Product Category</a></li>
-                        </ul>
                         <h1>Variable data product</h1>
                     </div>
                 </div>
@@ -31,26 +27,28 @@
                         <section class="seq-vdp-search">
                             <div class="seq-filter-row">
 
-                                <div class="seq-filter btn-group">
-                                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
-                                          Surname <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">option 2</a></li>
-                                            <li><a href="#">option 3</a></li>
-                                            <li><a href="#">option 4</a></li>
-                                        </ul>
+                                <div class="seq-select seq-filter">
+                                    <div class="seq-select-inner">
+
+                                        <select class="selectpicker">
+                                            <option value="">Surname</option>
+                                            <option value="">option 2</option>
+                                        </select>
+
+                                    </div>
                                 </div>
-                                <div class="seq-filter btn-group">
-                                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
-                                          Contains <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">option 2</a></li>
-                                            <li><a href="#">option 3</a></li>
-                                            <li><a href="#">option 4</a></li>
-                                        </ul>
+
+                                <div class="seq-select seq-filter">
+                                    <div class="seq-select-inner">
+
+                                        <select class="selectpicker">
+                                            <option value="">Contains</option>
+                                            <option value="">option 2</option>
+                                        </select>
+
+                                    </div>
                                 </div>
+                                
                                 <div class="seq-filter btn-group">
                                         <input class="form-control" placeholder="" type="text">
                                 </div>
@@ -58,17 +56,18 @@
                             </div>
 
                             <div class="seq-filter-row">
-                                <div class="seq-filter btn-group">
-                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
-                                      Show <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#">option 2</a></li>
-                                        <li><a href="#">option 3</a></li>
-                                        <li><a href="#">option 4</a></li>
-                                    </ul>
-                                </div>
 
+                                <div class="seq-select seq-filter">
+                                    <div class="seq-select-inner">
+
+                                        <select class="selectpicker">
+                                            <option value="">show</option>
+                                            <option value="">option 2</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                                
                                 <div class="seq-filter">
                                     <div class="checkbox checkbox-inline">
                                         <label>

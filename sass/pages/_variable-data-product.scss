@@ -47,22 +47,15 @@
         }
     }
 
-    .seq-filter .dropdown-menu {
-        min-width: 100%;
-        left: 5px;
-    }
+   
 
     .seq-filter button {
         background: #ffffff;
         border: 1px solid #d5d3d3;
+        color: #363636;
         padding: 10px 12px;
-        width: 100%;
         text-align: left;
-
-        .caret {
-            float: right;
-            margin: 7px 0 0 0;
-        }
+        border-radius: 0;
     }
 
     .seq-filter input[type="text"] {
@@ -111,6 +104,11 @@
         margin: 0 21px 0 0;
         height: 40px;
         padding: 10px 20px;
+
+        &:hover {
+            background: darken(#f26c4f, 10);
+            @include transition(background, 0.2s, ease-in-out);
+        }
     }
     .bootstrap-filestyle input[type="text"] {
         background: #ffffff;
@@ -185,8 +183,14 @@
             }
         }
         .btn {
+            background: #b5b5b5;
             float: right;
             border-radius: 4px;
+
+            &:hover {
+                background: darken(#b5b5b5, 10);
+                @include transition(background, 0.2s, ease-in-out);
+            }
         }
 
     }

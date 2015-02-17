@@ -7,6 +7,7 @@ var LeftNav = (function() {
         'subNavHolder' : '.subnav-holder',
         'translatePosition' : 0,
         'sectionTitle' : '',
+        'currActiveItem' : '',
         'id' : 0
     },
 
@@ -21,9 +22,6 @@ var LeftNav = (function() {
             suppressScrollX : true,
             includePadding : true
        });
-
-        //set initial position (based on cookie)
-        // this.setSlidePosition
     }
 
 
@@ -33,7 +31,7 @@ var LeftNav = (function() {
 
             if ( $(this).find(' > ul').length > 0 ) {
                 s.subNavItems = $(this).find(' > ul').clone(true); 
-                s.sectionTitle = $('> span', this).text();
+                s.sectionTitle = $('> .no-link', this).text();
 
                 //add the new slide for the subnav
                 sn.addSlide();
@@ -80,10 +78,10 @@ var LeftNav = (function() {
         $(slideTemplate).find('.back').text(s.sectionTitle);
 
         slideTemplate.appendTo(s.sliderContainer);
-
     }
 
     sn.removeSlide = function() {
+
         $(s.sliderContainer).find('.seq-sidebar-slide:last-child').remove();
     }
 
@@ -100,7 +98,6 @@ var LeftNav = (function() {
             suppressScrollX : true,
             includePadding : true
         }); 
-
     }
 
 
@@ -133,7 +130,6 @@ var LeftNav = (function() {
         }
         
     }
-
 
     return sn;
  }());

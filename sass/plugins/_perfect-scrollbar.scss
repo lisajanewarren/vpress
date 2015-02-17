@@ -33,6 +33,7 @@ $ps-bar-hover: #999;
   @include border-radius(4px);
   @include opacity(0);
   @include transitionTwo(background-color .2s linear, opacity .2s linear);
+  z-index: 3;
 }
 
 @mixin scrollbar-rail-hover {

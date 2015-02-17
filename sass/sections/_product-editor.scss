@@ -1,7 +1,7 @@
 #seq-product-editor {
 	padding: 0 0 60px 0;
 
-	.inner {
+	.seq-product-editor-inner {
 		max-width: 980px;
 		padding: 0 20px;
 		margin: 0 auto;
@@ -76,9 +76,9 @@
 				padding: 2px 0 0 0;
 			}
 
-			&:hover {
+			/*&:hover {
 				background: #363636;
-			}
+			}*/
 		}
 		li:after {
 			background: url(../images/interactive-image-controls.png) no-repeat 0 0;
@@ -92,18 +92,18 @@
 			margin-left: -13px;
 		}
 		.control-one {
-			&:hover:after {
+			/*&:hover:after {
 				background-position: 0 -26px;
-			}
+			}*/
 		}
 
 		.control-two {
 			&:after {
 				background-position: -26px 0;
 			}
-			&:hover:after {
+			/*&:hover:after {
 				background-position: -26px -26px;
-			}
+			}*/
 		}
 
 		.control-three {
@@ -111,9 +111,9 @@
 				width: 27px;
 				background-position: -52px 0;
 			}
-			&:hover:after {
+			/*&:hover:after {
 				background-position: -52px -26px;
-			}
+			}*/
 		}
 
 		.control-four {
@@ -123,9 +123,9 @@
 				margin-left: -11px;
 				margin-top: -11px;
 			}
-			&:hover:after {
+			/*&:hover:after {
 				background-position: -79px -26px;
-			}
+			}*/
 		}
 	}
 
@@ -311,7 +311,7 @@
 	}
 
 	.update-quantity {
-		overflow: hidden;
+		@extend .clear;
 		margin: 0;
 
 		.seq-box-form-field {
@@ -358,9 +358,19 @@
 }
 
 #seq-product-editor .is-sticky .seq-product-editor-head.js-sticky-header {
+	background: #434343;
 	left: auto;
 	right: 0;
 	z-index: 1;
+	color: #ffffff;
+
+	.seq-word-pagination-right .current {
+		color: #ffffff;
+	}
+	.seq-word-pagination .next a,
+	.seq-word-pagination .prev a {
+		color: #ffffff;
+	}
 }
 
 #seq-product-editor .is-sticky + .seq-product-editor-main .seq-interactive-image-controls {

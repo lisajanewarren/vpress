@@ -25,12 +25,14 @@
                     <ul class="seq-sidebar-nav">
                         <li><a href="testpage.html">Dashboard</a></li>
                         <li>
-                            <span>Catalogues</span>
+                            <span class="no-link">Catalogues</span>
                             <ul class="seq-sidebar-nav">
                                 <li>
-                                    <span>View Catalogues</span>
+                                    <span class="no-link">View Catalogues</span>
                                     <ul class="seq-sidebar-nav">
-                                        <li><a href="#">long list of links and a long title</a></li>
+                                        <li>
+                                            <a href="#">long list of links and a long title</a>
+                                        </li>
                                         <li><a href="#">Link 2</a></li>
                                         <li><a href="#">Link 3</a></li>
                                         <li><a href="#">Link 1</a></li>
@@ -50,37 +52,37 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <span>Sub section 1</span>
+                                    <span class="no-link">Sub section 1</span>
                                     <ul class="seq-sidebar-nav">
                                         <li><a href="#">Link 1</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <span>Sub section 2</span>
+                                    <span class="no-link">Sub section 2</span>
                                     <ul class="seq-sidebar-nav">
                                         <li><a href="#">Link 1</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <span>Sub section 3</span>
+                                    <span class="no-link">Sub section 3</span>
                                     <ul class="seq-sidebar-nav">
                                         <li><a href="#">Link 1</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <span>Sub section 4</span>
+                                    <span class="no-link">Sub section 4</span>
                                     <ul class="seq-sidebar-nav">
                                         <li><a href="#">Link 1</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <span>Sub section 5</span>
+                                    <span class="no-link">Sub section 5</span>
                                     <ul class="seq-sidebar-nav">
                                         <li><a href="#">Link 1</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <span>Sub section 6</span>
+                                    <span class="no-link">Sub section 6</span>
                                     <ul class="seq-sidebar-nav">
                                         <li><a href="#">Link 1</a></li>
                                     </ul>
@@ -88,13 +90,27 @@
                             </ul>
                         </li>
                         <li>
-                            <span>Reports</span>
+                            <span class="no-link">Reports</span>
                             <ul class="seq-sidebar-nav">
-                                <li><a href="#">Link 1</a></li>
+                                <li><span class="no-link">level 1</span>
+                                    <ul class="seq-sidebar-nav">
+                                        <li>
+                                            <span class="no-link">level 2</span>
+                                            <ul class="seq-sidebar-nav">
+                                                <li>
+                                                    <span class="no-link">level 3</span>
+                                                    <ul class="seq-sidebar-nav">
+                                                        <li><a href="#">level 4</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         <li>
-                            <span>Orders</span>
+                            <span class="no-link">Orders</span>
                             <ul class="seq-sidebar-nav">
                                 <li><a href="#">Link 1</a></li>
                             </ul>

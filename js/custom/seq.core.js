@@ -25,6 +25,8 @@ $(function() {
 	});
 
 	$('.selectpicker').selectpicker();
+	$('#summernote').summernote();
+	$('.seq-faux-table .seq-tbody').perfectScrollbar();
 
 	
 });

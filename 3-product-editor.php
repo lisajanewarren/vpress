@@ -24,7 +24,7 @@
 
                     <div id="seq-product-editor">
                         <div class="seq-product-editor-head js-sticky-header">
-                            <div class="inner">
+                            <div class="seq-product-editor-inner">
 
                             
                                 <div class="seq-word-pagination seq-word-pagination-left seq-word-pagination-dark">
@@ -247,7 +247,7 @@
                         </div>
 
                         <div class="seq-product-editor-foot">
-                            <div class="inner">
+                            <div class="seq-product-editor-inner">
 
                                 <ul class="seq-product-editor-actions">
                                     <li>

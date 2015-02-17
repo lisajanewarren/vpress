@@ -3,18 +3,18 @@
    /* background-attachment: fixed;*/
     background-position: left top;
     background-repeat: no-repeat;
+    background-color: #363636;
     color: $white;
     margin-top : 0;
     width: 100%;
-    height: 200px;
-
+    min-height: 200px;
     .inner {
         max-width: 980px;
         padding: 20px;
         margin: 0 auto;
         display: block;
-        @include vertical-centre();
     }
+
 
     .text {
         display: table-cell;
@@ -48,12 +48,25 @@
 
 .page-dashboard  #header-graphic {
     background-image: url(../images/header-image.png);
-    height: 200px;
+    min-height: 200px;
 }
 
 @media (min-width: 1070px) {
+
+    #header-graphic .inner {
+        padding: 40px 20px 20px 20px;
+    }
+    .page-dashboard  #header-graphic .inner {
+        padding: 20px;
+    }
+
     .page-dashboard  #header-graphic {
-        height: 400px;
+        min-height: 400px;
+
+        #no-summernote {
+            padding: 60px 0 0 0;
+        }
+        
         h1 {
             font-size: 80px;
         }

@@ -15,10 +15,6 @@
 
                 <div id="header-graphic">
                     <div class="inner">
-                        <ul class="seq-breadcrumb">
-                            <li>Home</li> 
-                            <li class="active"><a href="#">Product Category</a></li>
-                        </ul>
                         <h1>Product category (list view)</h1>
                     </div>
                 </div>
@@ -45,23 +41,17 @@
                         </div>
 
                         <div class="seq-control-bar-sort">
-                            <form action="#" method="post">
-                                <label class="seq-label">Sort by</label>
-                                <div class="input-group">
-                                        <div class="btn-group">
-                                            <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                                                Most popular <span class="caret"></span>
-                                            </button>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">Action</a></li>
-                                                <li><a href="#">Another action</a></li>
-                                                <li><a href="#">Something else here</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">Separated link</a></li>
-                                            </ul>
-                                        </div><!-- /btn-group -->
-                                </div><!-- /input-group -->
-                            </form>
+                            <label class="seq-label">Sort by</label>
+                            <div class="seq-select">
+                                <div class="seq-select-inner">
+
+                                    <select class="selectpicker">
+                                        <option value="">Most popular</option>
+                                        <option value="">option 2</option>
+                                    </select>
+
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -78,21 +68,21 @@
                                 <p class="seq-griddable-prod-code">PRODCODE</p>
                                 <h2 class="seq-griddable-title">Product Title</h2>
                                 <div class="seq-griddable-text">
-                                    <p>Std stationery catalogue. 40pp, full colour, 200gsm cover, 60sgm inners, glued. Box of 100...</p>
+                                    <p>Std stationery catalogue. 40pp, full colour, 200gsm cover, 60sgm inners, glued. Box of 100. Std stationery catalogue. 40pp, full colour, 200gsm cover, 60sgm inners, glued. Box of 100.</p>
                                 </div>
                             </div>
                             <ul class="seq-griddable-actions">
 
                                 <li>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-dropdown vpress">Create</button>
-                                        <button type="button" class="btn dropdown-toggle vpress" data-toggle="dropdown">
-                                            <span class="caret"></span>
-                                            <span class="sr-only">Toggle Dropdown</span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Order</a></li>
-                                        </ul>
+                                    <div class="seq-select">
+                                        <div class="seq-select-inner">
+
+                                            <select class="selectpicker">
+                                                <option value="">Create</option>
+                                                <option value="">Order</option>
+                                            </select>
+
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -115,15 +105,15 @@
                             <ul class="seq-griddable-actions">
 
                                 <li>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-dropdown vpress">Create</button>
-                                        <button type="button" class="btn dropdown-toggle vpress" data-toggle="dropdown">
-                                            <span class="caret"></span>
-                                            <span class="sr-only">Toggle Dropdown</span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Order</a></li>
-                                        </ul>
+                                    <div class="seq-select">
+                                        <div class="seq-select-inner">
+
+                                            <select class="selectpicker">
+                                                <option value="">Create</option>
+                                                <option value="">Order</option>
+                                            </select>
+
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -146,15 +136,15 @@
                             <ul class="seq-griddable-actions">
 
                                 <li>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-dropdown vpress">Create</button>
-                                        <button type="button" class="btn dropdown-toggle vpress" data-toggle="dropdown">
-                                            <span class="caret"></span>
-                                            <span class="sr-only">Toggle Dropdown</span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Order</a></li>
-                                        </ul>
+                                    <div class="seq-select">
+                                        <div class="seq-select-inner">
+
+                                            <select class="selectpicker">
+                                                <option value="">Create</option>
+                                                <option value="">Order</option>
+                                            </select>
+
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -177,15 +167,15 @@
                             <ul class="seq-griddable-actions">
 
                                 <li>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-dropdown vpress">Create</button>
-                                        <button type="button" class="btn dropdown-toggle vpress" data-toggle="dropdown">
-                                            <span class="caret"></span>
-                                            <span class="sr-only">Toggle Dropdown</span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Order</a></li>
-                                        </ul>
+                                    <div class="seq-select">
+                                        <div class="seq-select-inner">
+
+                                            <select class="selectpicker">
+                                                <option value="">Create</option>
+                                                <option value="">Order</option>
+                                            </select>
+
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -208,15 +198,15 @@
                             <ul class="seq-griddable-actions">
 
                                 <li>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-dropdown vpress">Create</button>
-                                        <button type="button" class="btn dropdown-toggle vpress" data-toggle="dropdown">
-                                            <span class="caret"></span>
-                                            <span class="sr-only">Toggle Dropdown</span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Order</a></li>
-                                        </ul>
+                                    <div class="seq-select">
+                                        <div class="seq-select-inner">
+
+                                            <select class="selectpicker">
+                                                <option value="">Create</option>
+                                                <option value="">Order</option>
+                                            </select>
+
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -239,15 +229,15 @@
                             <ul class="seq-griddable-actions">
 
                                 <li>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-dropdown vpress">Create</button>
-                                        <button type="button" class="btn dropdown-toggle vpress" data-toggle="dropdown">
-                                            <span class="caret"></span>
-                                            <span class="sr-only">Toggle Dropdown</span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Order</a></li>
-                                        </ul>
+                                    <div class="seq-select">
+                                        <div class="seq-select-inner">
+
+                                            <select class="selectpicker">
+                                                <option value="">Create</option>
+                                                <option value="">Order</option>
+                                            </select>
+
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -270,15 +260,15 @@
                             <ul class="seq-griddable-actions">
 
                                 <li>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-dropdown vpress">Create</button>
-                                        <button type="button" class="btn dropdown-toggle vpress" data-toggle="dropdown">
-                                            <span class="caret"></span>
-                                            <span class="sr-only">Toggle Dropdown</span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Order</a></li>
-                                        </ul>
+                                    <div class="seq-select">
+                                        <div class="seq-select-inner">
+
+                                            <select class="selectpicker">
+                                                <option value="">Create</option>
+                                                <option value="">Order</option>
+                                            </select>
+
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
@@ -301,15 +291,15 @@
                             <ul class="seq-griddable-actions">
 
                                 <li>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-dropdown vpress">Create</button>
-                                        <button type="button" class="btn dropdown-toggle vpress" data-toggle="dropdown">
-                                            <span class="caret"></span>
-                                            <span class="sr-only">Toggle Dropdown</span>
-                                        </button>
-                                        <ul class="dropdown-menu" role="menu">
-                                            <li><a href="#">Order</a></li>
-                                        </ul>
+                                    <div class="seq-select">
+                                        <div class="seq-select-inner">
+
+                                            <select class="selectpicker">
+                                                <option value="">Create</option>
+                                                <option value="">Order</option>
+                                            </select>
+
+                                        </div>
                                     </div>
                                 </li>
                                 <li>

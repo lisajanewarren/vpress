@@ -36,6 +36,12 @@
 			border-radius: 0 4px 4px 0;
 			border: none;
 			color: #ffffff;
+
+			&:hover {
+				background: darken(#f26c4f, 10);
+	            @include transition(background, 0.2s, ease-in-out);
+			}
+
 		}
 
 	}
@@ -69,6 +75,13 @@
 			font-weight: normal;
 			padding: 5px 10px;
 			margin: 0;
+		}
+
+		.seq-select {
+			float: left;
+			button {
+				border-radius: 0;
+			}
 		}
 
 		.dropdown-menu {

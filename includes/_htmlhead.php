@@ -13,9 +13,12 @@
     <!-- bootstrap plugins -->
     <script type="text/javascript" src="bootstrap/bootstrap-plugins.min.js"> </script>
     <link href="bootstrap/bootstrap-plugins.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+
 
 
     <!-- plugins -->
+    <script type="text/javascript" src="js/plugins/summernote.min.js"></script>
     <script type="text/javascript" src="js/plugins/jquery.cookie.js"></script>
     <script type="text/javascript" src="js/plugins/jquery.magnific-popup.js"></script>
     <script type="text/javascript" src="js/plugins/jquery.sticky.js"></script>
