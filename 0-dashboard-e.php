@@ -17,8 +17,13 @@
                 <!-- header banner -->
                 <div id="header-graphic">
                     <div class="inner">
-                        <h1>Welcome...</h1>
-                        <h4>Welcome to Coreprint Web2Print for all<br />your print ordering requirements...</h4>
+                        <div id="no-summernote">
+                            <h1>Welcome...</h1>
+                            <h4>Welcome to Coreprint Web2Print for all<br />your print ordering requirements...</h4>
+                        </div>
+                        <ul class="seq-btn-bar">
+                            <li><button class="btn vpress">Edit</button></li>
+                        </ul>
                     </div>
                 </div>
                 <!-- end header banner -->

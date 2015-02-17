@@ -34,8 +34,7 @@
                                     </span>
                                 </div><!-- /input-group -->
                             </div>
-
-                           
+       
                         </div>
 
                         <div class="seq-btn-bar-holder">

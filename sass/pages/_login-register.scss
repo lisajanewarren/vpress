@@ -1,8 +1,73 @@
-#login-register {
+.login {
 	background-size: cover;
-	height: 100%;
+	min-height: 100%;
 	position: relative;
 	overflow: hidden;
+
+	&-inner {
+		max-width: 460px;
+		height: 475px;
+		margin: 40px auto;
+		position: relative;
+	}
+
+	&-logo {
+		position: relative;
+		z-index: 1;
+		img {
+			display: block;
+			max-width: 75px;
+			max-height: 75px;
+			margin: 40px auto 0 auto;
+		}
+	}
+
+	&-box {
+		&-black,
+		&-white {
+			padding: 35px;
+			position: relative;
+			z-index: 1;
+			p {
+				text-align: center;
+				margin: 0 0 20px 0;
+			}
+
+			a {
+				text-decoration: underline;
+			}
+		}
+
+		&-black {
+			background: rgb(0,0,0);
+			background: rgba(0,0,0,0.4);
+			color: #fff;
+
+			a {
+				color: #ffffff;
+			}
+		}
+
+		&-white {
+			background: #ffffff;
+			background: #ffffff;
+			color: #2b2b2b;
+			a {
+				color: #2b2b2b;
+			}
+
+			button {
+				background: #363636;
+				border-bottom: 2px solid #252525;
+				&:hover {
+		            background: darken(#363636, 10);
+		            @include transition(background, 0.2s, ease-in-out);
+		        }
+			}
+		}	
+	}
+
+	
 
 	h1 {
 		text-align: center;
@@ -10,20 +75,12 @@
 		line-height: 1.2em;
 	}
 
-	p {
-		text-align: center;
-		margin: 0 0 20px 0;
-		a {
-			color: #363636;
-			text-decoration: underline;
-		}
-	}
 
 	.seq-box-form-field {
 		margin: 1px 0;
 	}
 
-	button {
+	.seq-box-form button {
 		text-align: center;
 		float: none;
 		display: block;
@@ -33,11 +90,7 @@
 		padding: 6px 35px;
 	}
 
-	.panel {
-		padding: 35px;
-	}
-
-	&:after {
+	/*&:after {
 		content: '';
 		position: absolute;
 		top: 0;
@@ -46,29 +99,66 @@
 		bottom: 0;
 		background: rgba(0,0,0,0.5);
 		z-index: 0;
-	}
+	}*/
 
-	&-logo {
-		position: relative;
-		z-index: 1;
-		img {
-			display: block;
-			max-width: 200px;
-			max-height: 200px;
-			margin: 40px auto 0 auto;
+}
+
+
+.register-box {
+	position: absolute;
+	top: 0;
+	z-index: 1;
+
+	/* then need to translate the box down */
+
+	header {
+		h2 {
+			background: #ebebeb;
+			margin: 0;
+			padding: 20px;
+			font-size: 18px;
 		}
 	}
 
-	&-box {
+	&-content {
 		background: #ffffff;
-		width: 400px;
-		height: 400px;
+		padding: 35px;
 		position: relative;
 		z-index: 1;
-		margin: 40px auto;
+		p {
+			text-align: center;
+			margin: 0 0 20px 0;
+		}
+
+		a {
+			text-decoration: underline;
+		}
+
+		
+
 	}
 
-	.question {
-		background: #ebebeb;
+}
+
+
+@media (min-width: 768px) {
+
+	.login {
+
+		&-logo {
+			img {
+				max-width: 150px;
+				max-height: 150px;
+			}
+		}
+
+	}
+
+}
+
+@media (max-width: 440px) {
+	.login-box {
+		margin: 40px 20px;	
 	}
 }
+

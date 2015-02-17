@@ -108,9 +108,11 @@
                 <li>
                     <a href="12-report-orders.php">12 - Report: Orders</a> <span class="done">done</span>
                 </li>
+                <!--
                 <li>
-                    <a href="13-login-register-page.php">13 - Login/Register</a> - <em>Awaiting signed off design from Steve</em>
+                    <a href="13-login-register.php">13 - Login/Register</a> - <em>Awaiting signed off design from Steve</em>
                 </li>
+                -->
                 <li>13. Left nav  - <span class="done">done</span></li>
                 <li>14. Top Nav - <span class="done">done</span></li>
             </ul>
